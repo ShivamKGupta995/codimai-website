@@ -303,13 +303,76 @@
   z-index: 1;
 }
 
-.error-code {
-  font-family: var(--cd-font-display);
-  font-size: clamp(7rem, 20vw, 14rem);
-  font-weight: 400;
+/* SVG 4-face-4 display */
+.error-display {
+  display: flex;
+  align-items: center;
+  gap: clamp(0.25rem, 1.5vw, 1rem);
   color: var(--cd-ink);
-  line-height: 1;
-  letter-spacing: -0.03em;
+  margin-bottom: 2.5rem;
+}
+
+.error-digit {
+  height: clamp(130px, 22vw, 220px);
+  width: auto;
+  display: block;
+  overflow: visible;
+}
+
+.error-display .face {
+  height: clamp(130px, 22vw, 220px);
+  width: auto;
+  display: block;
+  overflow: visible;
+}
+
+/* Face animation */
+.error-display .face__eyes,
+.error-display .face__eye-lid,
+.error-display .face__mouth-left,
+.error-display .face__mouth-right,
+.error-display .face__nose,
+.error-display .face__pupil {
+  animation: face-in 1s 0.8s forwards;
+}
+
+.error-display .face__eye-lid,
+.error-display .face__pupil {
+  animation-duration: 4s;
+  animation-delay: 1.8s;
+  animation-iteration-count: infinite;
+}
+
+.error-display .face__eye-lid  { animation-name: face-eye-lid; }
+.error-display .face__mouth-left  { animation-name: face-mouth-left; }
+.error-display .face__mouth-right { animation-name: face-mouth-right; }
+.error-display .face__nose        { animation-name: face-nose; }
+.error-display .face__pupil       { animation-name: face-pupil; }
+
+@keyframes face-in {
+  from { transform: translateY(112.5px); }
+  to   { transform: translateY(15px); }
+}
+@keyframes face-eye-lid {
+  0%, 40%, 45%, 100% { transform: translateY(0); }
+  42.5%              { transform: translateY(17.5px); }
+}
+@keyframes face-pupil {
+  0%, 37.5%, 40%, 45%, 87.5%, 100% { stroke-dashoffset: 0; transform: translate(0, 0); }
+  12.5%, 25%, 62.5%, 75%           { transform: translate(-35px, 0); }
+  42.5%                            { stroke-dashoffset: 35; transform: translate(0, 17.5px); }
+}
+@keyframes face-mouth-left {
+  from, 50% { stroke-dashoffset: -102; }
+  to        { stroke-dashoffset: 0; }
+}
+@keyframes face-mouth-right {
+  from, 50% { stroke-dashoffset: 102; }
+  to        { stroke-dashoffset: 0; }
+}
+@keyframes face-nose {
+  from { transform: translate(0, 0); }
+  to   { transform: translate(0, 22.5px); }
 }
 
 .error-message {
