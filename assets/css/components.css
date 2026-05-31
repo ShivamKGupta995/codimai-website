@@ -282,19 +282,30 @@
 
 /* ---- 404 Error Page -------------------------------------- */
 
+/* Full-viewport canvas sits behind all content */
+#bg-canvas {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  width: 100%;
+  height: 100%;
+}
+
 .error-page {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
-  min-height: calc(100vh - 64px - 240px);
-  padding-block: 80px;
+  min-height: calc(100vh - 64px);
+  position: relative;
+  z-index: 1;
 }
 
 .error-code {
   font-family: var(--cd-font-display);
-  font-size: clamp(6rem, 18vw, 12rem);
+  font-size: clamp(7rem, 20vw, 14rem);
   font-weight: 400;
   color: var(--cd-ink);
   line-height: 1;
@@ -316,68 +327,16 @@
   margin-bottom: 2.5rem;
 }
 
-.error-face {
-  color: var(--cd-ink);
-  margin-bottom: 2.5rem;
+/* Entrance animation — JS adds .is-visible */
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
 }
-
-.error-face svg {
-  width: 160px;
-  height: auto;
-}
-
-/* SVG face animation keyframes */
-.error-face .face__eyes,
-.error-face .face__eye-lid,
-.error-face .face__mouth-left,
-.error-face .face__mouth-right,
-.error-face .face__nose,
-.error-face .face__pupil {
-  animation: face-in 1s 0.3s forwards;
-}
-
-.error-face .face__eye-lid,
-.error-face .face__pupil {
-  animation-duration: 4s;
-  animation-delay: 1.3s;
-  animation-iteration-count: infinite;
-}
-
-.error-face .face__eye-lid  { animation-name: face-eye-lid; }
-.error-face .face__mouth-left  { animation-name: face-mouth-left; }
-.error-face .face__mouth-right { animation-name: face-mouth-right; }
-.error-face .face__nose        { animation-name: face-nose; }
-.error-face .face__pupil       { animation-name: face-pupil; }
-
-@keyframes face-in {
-  from { transform: translateY(112.5px); }
-  to   { transform: translateY(15px); }
-}
-
-@keyframes face-eye-lid {
-  0%, 40%, 45%, 100% { transform: translateY(0); }
-  42.5%              { transform: translateY(17.5px); }
-}
-
-@keyframes face-pupil {
-  0%, 37.5%, 40%, 45%, 87.5%, 100% { stroke-dashoffset: 0; transform: translate(0, 0); }
-  12.5%, 25%, 62.5%, 75%           { transform: translate(-35px, 0); }
-  42.5%                            { stroke-dashoffset: 35; transform: translate(0, 17.5px); }
-}
-
-@keyframes face-mouth-left {
-  from, 50% { stroke-dashoffset: -102; }
-  to        { stroke-dashoffset: 0; }
-}
-
-@keyframes face-mouth-right {
-  from, 50% { stroke-dashoffset: 102; }
-  to        { stroke-dashoffset: 0; }
-}
-
-@keyframes face-nose {
-  from { transform: translate(0, 0); }
-  to   { transform: translate(0, 22.5px); }
+.reveal.is-visible {
+  opacity: 1;
+  transform: none;
 }
 
 /* ---- Responsive ------------------------------------------ */
