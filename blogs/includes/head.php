@@ -7,6 +7,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <!-- Favicon — CodimAI bar mark -->
+  <link rel="icon" type="image/png" href="/assets/img/favicon.png">
+  <link rel="apple-touch-icon" href="/assets/img/favicon.png">
+
   <title><?= htmlspecialchars($pageTitle) ?> | CodimAI</title>
   <meta name="description" content="<?= htmlspecialchars($pageDesc) ?>">
   <link rel="canonical" href="<?= htmlspecialchars($canonicalUrl) ?>">

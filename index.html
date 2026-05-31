@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Favicon — CodimAI bar mark -->
+  <link rel="icon" type="image/png" href="/assets/img/favicon.png">
+  <link rel="apple-touch-icon" href="/assets/img/favicon.png">
+
+  <title>CodimAI — From Intent to Worlds</title>
+  <meta name="description" content="CodimAI is a frontier research company building agents that perceive, reason, and create alongside you — spatial, agentic, frontier AI.">
+  <link rel="canonical" href="https://codimai.com/">
+
+  <!-- Open Graph -->
+  <meta property="og:type"        content="website">
+  <meta property="og:site_name"   content="CodimAI">
+  <meta property="og:title"       content="CodimAI — From Intent to Worlds">
+  <meta property="og:description" content="A frontier research company building agents that perceive, reason, and create alongside you.">
+  <meta property="og:url"         content="https://codimai.com/">
+  <meta property="og:image"       content="/assets/img/og-default.jpg">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card"        content="summary_large_image">
+  <meta name="twitter:title"       content="CodimAI — From Intent to Worlds">
+  <meta name="twitter:description" content="A frontier research company building agents that perceive, reason, and create alongside you.">
+  <meta name="twitter:image"       content="/assets/img/og-default.jpg">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gilda+Display&family=Inter:wght@400;500&family=JetBrains+Mono&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="/assets/css/tokens.css">
+  <link rel="stylesheet" href="/assets/css/base.css">
+  <link rel="stylesheet" href="/assets/css/components.css">
+
+  <!-- JSON-LD: Organization + WebSite -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "name": "CodimAI",
+        "url": "https://codimai.com/",
+        "logo": "https://codimai.com/assets/img/og-default.jpg",
+        "description": "A frontier research company building agents that perceive, reason, and create alongside you."
+      },
+      {
+        "@type": "WebSite",
+        "name": "CodimAI",
+        "url": "https://codimai.com/",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://codimai.com/blogs/?q={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- ======================================================
+       Header
+       ====================================================== -->
+  <header class="site-header" role="banner">
+    <div class="container site-header__inner">
+
+      <a href="/" class="nav-logo" aria-label="CodimAI — home"><span class="nav-logo__mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span><img src="/assets/img/logo-word.png" alt="" class="nav-logo__word" width="223" height="44"></a>
+
+      <nav aria-label="Primary navigation">
+        <ul class="nav-links" role="list">
+
+          <li><a href="/">Home</a></li>
+
+          <li class="nav-dropdown">
+            <button class="nav-btn-ghost" aria-haspopup="true" aria-expanded="false">AI</button>
+            <ul class="nav-dropdown__menu" role="menu">
+              <li role="none"><a href="/ai.html#agentic-ai"    role="menuitem">Agentic AI</a></li>
+              <li role="none"><a href="/ai.html#generative"    role="menuitem">Generative</a></li>
+              <li role="none"><a href="/ai.html#insights"      role="menuitem">Insights</a></li>
+              <li role="none"><a href="/ai.html#recommendation"role="menuitem">Recommendation</a></li>
+              <li role="none"><a href="/ai.html#prediction"    role="menuitem">Prediction</a></li>
+              <li role="none"><a href="/ai.html#data-analytics"role="menuitem">Data Analytics</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-dropdown">
+            <button class="nav-btn-ghost" aria-haspopup="true" aria-expanded="false">Agents</button>
+            <ul class="nav-dropdown__menu" role="menu">
+              <li role="none"><a href="/agents.html#whatsapp"     role="menuitem">WhatsApp</a></li>
+              <li role="none"><a href="/agents.html#email"        role="menuitem">Email</a></li>
+              <li role="none"><a href="/agents.html#google-review"role="menuitem">Google Review</a></li>
+              <li role="none"><a href="/agents.html#blogs-agent"  role="menuitem">Blogs Agent</a></li>
+            </ul>
+          </li>
+
+          <li><a href="/blogs/">Blogs</a></li>
+
+        </ul>
+      </nav>
+
+      <a href="/get-started.html" class="cd-btn-primary nav-cta">Get Started</a>
+
+      <button class="nav-hamburger" aria-expanded="false" aria-controls="nav-mobile-overlay" aria-label="Open menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+    </div>
+  </header>
+
+  <!-- Mobile overlay -->
+  <div id="nav-mobile-overlay" class="nav-mobile-overlay" role="navigation" aria-label="Mobile navigation">
+    <a href="/">Home</a>
+    <button class="nav-btn-ghost" aria-expanded="false">AI</button>
+    <ul class="nav-mobile-submenu">
+      <li><a href="/ai.html#agentic-ai">Agentic AI</a></li>
+      <li><a href="/ai.html#generative">Generative</a></li>
+      <li><a href="/ai.html#insights">Insights</a></li>
+      <li><a href="/ai.html#recommendation">Recommendation</a></li>
+      <li><a href="/ai.html#prediction">Prediction</a></li>
+      <li><a href="/ai.html#data-analytics">Data Analytics</a></li>
+    </ul>
+    <button class="nav-btn-ghost" aria-expanded="false">Agents</button>
+    <ul class="nav-mobile-submenu">
+      <li><a href="/agents.html#whatsapp">WhatsApp</a></li>
+      <li><a href="/agents.html#email">Email</a></li>
+      <li><a href="/agents.html#google-review">Google Review</a></li>
+      <li><a href="/agents.html#blogs-agent">Blogs Agent</a></li>
+    </ul>
+    <a href="/blogs/">Blogs</a>
+    <a href="/get-started.html" class="cd-btn-primary" style="margin-top:1rem;justify-content:center;">Get Started</a>
+  </div>
+
+  <!-- ======================================================
+       Main — Hero (one full screen, signature rendering)
+       ====================================================== -->
+  <main id="main-content">
+
+    <section class="hero" aria-labelledby="hero-heading">
+
+      <!-- Signature rendering: pixels settling into a spatial world -->
+      <canvas id="hero-canvas" class="hero__canvas" aria-hidden="true"></canvas>
+
+      <div class="container hero__inner">
+        <div class="hero__content">
+
+          <p class="hero__eyebrow reveal" style="--delay:0.05s">Spatial · Agentic · Frontier</p>
+
+          <h1 id="hero-heading" class="hero__title cd-display reveal" style="--delay:0.15s">
+            From intent to worlds<br>you can build in.
+          </h1>
+
+          <p class="hero__lede reveal" style="--delay:0.3s">
+            CodimAI is a frontier research company building agents that
+            perceive, reason, and create alongside you.
+          </p>
+
+          <div class="hero__actions reveal" style="--delay:0.45s">
+            <a href="/get-started.html" class="cd-btn-primary">Get Started</a>
+            <a href="/ai.html" class="cd-btn-secondary">Explore the AI</a>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ====================================================
+         Capabilities — one full screen, 6-card grid
+         ==================================================== -->
+    <section class="capabilities" aria-labelledby="cap-heading">
+      <div class="container">
+
+        <header class="capabilities__header reveal">
+          <div>
+            <p class="section__eyebrow">Capabilities</p>
+            <h2 id="cap-heading" class="capabilities__sub">A complete intelligence layer.</h2>
+            <p class="capabilities__lede">Six capabilities that compose into one system — from autonomous agents to the analytics that keep them honest.</p>
+          </div>
+          <a href="/ai.html" class="capabilities__all">
+            Explore the AI
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg>
+          </a>
+        </header>
+
+        <div class="capabilities__grid">
+
+          <a href="/ai.html#agentic-ai" class="cap-card reveal" style="--delay:0.05s">
+            <span class="cap-card__top">
+              <span class="cap-card__num">01</span>
+              <svg class="cap-card__arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg>
+            </span>
+            <h3 class="cap-card__title">Agentic AI</h3>
+            <p class="cap-card__body">Plans, calls tools, verifies its own work, and ships.</p>
+          </a>
+
+          <a href="/ai.html#generative" class="cap-card reveal" style="--delay:0.10s">
+            <span class="cap-card__top">
+              <span class="cap-card__num">02</span>
+              <svg class="cap-card__arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg>
+            </span>
+            <h3 class="cap-card__title">Generative</h3>
+            <p class="cap-card__body">Worlds, text, and assets generated with structure.</p>
+          </a>
+
+          <a href="/ai.html#insights" class="cap-card reveal" style="--delay:0.15s">
+            <span class="cap-card__top">
+              <span class="cap-card__num">03</span>
+              <svg class="cap-card__arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg>
+            </span>
+            <h3 class="cap-card__title">Insights</h3>
+            <p class="cap-card__body">Patterns surfaced from your data, in plain language.</p>
+          </a>
+
+          <a href="/ai.html#recommendation" class="cap-card reveal" style="--delay:0.20s">
+            <span class="cap-card__top">
+              <span class="cap-card__num">04</span>
+              <svg class="cap-card__arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg>
+            </span>
+            <h3 class="cap-card__title">Recommendation</h3>
+            <p class="cap-card__body">Context-aware suggestions tuned to your users.</p>
+          </a>
+
+          <a href="/ai.html#prediction" class="cap-card reveal" style="--delay:0.25s">
+            <span class="cap-card__top">
+              <span class="cap-card__num">05</span>
+              <svg class="cap-card__arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg>
+            </span>
+            <h3 class="cap-card__title">Prediction</h3>
+            <p class="cap-card__body">Forecasts that earn their place in a decision.</p>
+          </a>
+
+          <a href="/ai.html#data-analytics" class="cap-card reveal" style="--delay:0.30s">
+            <span class="cap-card__top">
+              <span class="cap-card__num">06</span>
+              <svg class="cap-card__arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg>
+            </span>
+            <h3 class="cap-card__title">Data Analytics</h3>
+            <p class="cap-card__body">Question your data. Get charts back.</p>
+          </a>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ====================================================
+         Mission statement — one full screen, the voice moment
+         ==================================================== -->
+    <section class="mission" aria-labelledby="mission-heading">
+      <h2 id="mission-heading" class="visually-hidden">Our mission</h2>
+      <div class="container">
+        <p class="mission__text reveal">
+          We build agents that understand <em>space</em> —
+          <span class="mission__tail">that perceive, reason, and create the worlds you work in.</span>
+        </p>
+      </div>
+    </section>
+
+    <!-- ====================================================
+         Agents — one full screen, 2×2 grid
+         ==================================================== -->
+    <section class="agents" aria-labelledby="agents-heading">
+      <div class="container">
+
+        <header class="agents__header reveal">
+          <p class="section__eyebrow">Agents</p>
+          <h2 id="agents-heading" class="agents__heading">Where your customers already are.</h2>
+        </header>
+
+        <div class="agents__grid">
+
+          <a href="/agents.html#whatsapp" class="agent-card reveal" style="--delay:0.05s">
+            <span class="agent-card__label">WhatsApp
+              <svg class="agent-card__arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg>
+            </span>
+            <h3 class="agent-card__title">Conversational support, automated end-to-end.</h3>
+            <p class="agent-card__body">Answer, qualify, and resolve inside the chat your customers already use.</p>
+          </a>
+
+          <a href="/agents.html#email" class="agent-card reveal" style="--delay:0.10s">
+            <span class="agent-card__label">Email
+              <svg class="agent-card__arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg>
+            </span>
+            <h3 class="agent-card__title">Inbox triage that thinks before it replies.</h3>
+            <p class="agent-card__body">Reads thread context, drafts in your tone, escalates only when needed.</p>
+          </a>
+
+          <a href="/agents.html#google-review" class="agent-card reveal" style="--delay:0.15s">
+            <span class="agent-card__label">Google Review
+              <svg class="agent-card__arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg>
+            </span>
+            <h3 class="agent-card__title">A thoughtful reply to every review.</h3>
+            <p class="agent-card__body">Sentiment-aware, brand-safe, on-time. Without the copy-paste.</p>
+          </a>
+
+          <a href="/agents.html#blogs-agent" class="agent-card reveal" style="--delay:0.20s">
+            <span class="agent-card__label">Blogs Agent
+              <svg class="agent-card__arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg>
+            </span>
+            <h3 class="agent-card__title">Editorial drafts, researched and structured.</h3>
+            <p class="agent-card__body">From outline to publishable post, with citations and your house style.</p>
+          </a>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ======================================================
+       Footer
+       ====================================================== -->
+  <footer class="site-footer cd-block-dark" role="contentinfo">
+    <div class="container site-footer__inner">
+
+      <div class="footer-top">
+
+        <div class="footer-brand">
+          <a href="/" class="nav-logo nav-logo--on-dark" aria-label="CodimAI — home"><span class="nav-logo__mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span><img src="/assets/img/logo-word.png" alt="" class="nav-logo__word" width="223" height="44"></a>
+          <p>Frontier AI solutions for the next generation of intelligent business.</p>
+        </div>
+
+        <div class="footer-col">
+          <h3>AI</h3>
+          <ul>
+            <li><a href="/ai.html#agentic-ai">Agentic AI</a></li>
+            <li><a href="/ai.html#generative">Generative</a></li>
+            <li><a href="/ai.html#insights">Insights</a></li>
+            <li><a href="/ai.html#recommendation">Recommendation</a></li>
+            <li><a href="/ai.html#prediction">Prediction</a></li>
+            <li><a href="/ai.html#data-analytics">Data Analytics</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3>Agents</h3>
+          <ul>
+            <li><a href="/agents.html#whatsapp">WhatsApp</a></li>
+            <li><a href="/agents.html#email">Email</a></li>
+            <li><a href="/agents.html#google-review">Google Review</a></li>
+            <li><a href="/agents.html#blogs-agent">Blogs Agent</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3>Company</h3>
+          <ul>
+            <li><a href="/blogs/">Blogs</a></li>
+            <li><a href="/get-started.html">Get Started</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-legal">&copy; <span id="footer-year">2025</span> CodimAI. All rights reserved.</p>
+      </div>
+
+    </div>
+  </footer>
+
+  <script>
+    var el = document.getElementById('footer-year');
+    if (el) el.textContent = new Date().getFullYear();
+  </script>
+
+  <script src="/assets/js/nav.js" defer></script>
+  <script src="/assets/js/reveal.js" defer></script>
+  <script src="/assets/js/hero.js" defer></script>
+
+</body>
+</html>
