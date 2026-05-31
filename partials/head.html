@@ -1,0 +1,42 @@
+<!--
+  Shared <head> partial — copy this block into every page and fill in the
+  per-page variables marked with <!-- VAR: ... -->
+-->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Per-page: title (≤60 chars) -->
+  <title><!-- VAR: PAGE_TITLE --> | CodimAI</title>
+
+  <!-- Per-page: description (≤155 chars) -->
+  <meta name="description" content="<!-- VAR: PAGE_DESC -->">
+
+  <!-- Per-page: canonical URL -->
+  <link rel="canonical" href="<!-- VAR: CANONICAL_URL -->">
+
+  <!-- Open Graph -->
+  <meta property="og:type"        content="website">
+  <meta property="og:site_name"   content="CodimAI">
+  <meta property="og:title"       content="<!-- VAR: PAGE_TITLE -->">
+  <meta property="og:description" content="<!-- VAR: PAGE_DESC -->">
+  <meta property="og:url"         content="<!-- VAR: CANONICAL_URL -->">
+  <meta property="og:image"       content="<!-- VAR: OG_IMAGE -->">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card"        content="summary_large_image">
+  <meta name="twitter:title"       content="<!-- VAR: PAGE_TITLE -->">
+  <meta name="twitter:description" content="<!-- VAR: PAGE_DESC -->">
+  <meta name="twitter:image"       content="<!-- VAR: OG_IMAGE -->">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gilda+Display&family=Inter:wght@400;500&family=JetBrains+Mono&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="/assets/css/tokens.css">
+  <link rel="stylesheet" href="/assets/css/base.css">
+  <link rel="stylesheet" href="/assets/css/components.css">
+
+  <!-- Per-page: JSON-LD structured data -->
+  <!-- VAR: JSON_LD_SCRIPT -->

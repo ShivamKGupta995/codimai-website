@@ -1,0 +1,49 @@
+<?php /* Shared footer — mirrors partials/footer.html */ ?>
+<footer class="site-footer cd-block-dark" role="contentinfo">
+  <div class="container site-footer__inner">
+
+    <div class="footer-top">
+
+      <div class="footer-brand">
+        <a href="/" class="nav-logo">CodimAI</a>
+        <p>Frontier AI solutions for the next generation of intelligent business.</p>
+      </div>
+
+      <div class="footer-col">
+        <h3>AI</h3>
+        <ul>
+          <li><a href="/ai.html#agentic-ai">Agentic AI</a></li>
+          <li><a href="/ai.html#generative">Generative</a></li>
+          <li><a href="/ai.html#insights">Insights</a></li>
+          <li><a href="/ai.html#recommendation">Recommendation</a></li>
+          <li><a href="/ai.html#prediction">Prediction</a></li>
+          <li><a href="/ai.html#data-analytics">Data Analytics</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3>Agents</h3>
+        <ul>
+          <li><a href="/agents.html#whatsapp">WhatsApp</a></li>
+          <li><a href="/agents.html#email">Email</a></li>
+          <li><a href="/agents.html#google-review">Google Review</a></li>
+          <li><a href="/agents.html#blogs-agent">Blogs Agent</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3>Company</h3>
+        <ul>
+          <li><a href="/blogs/">Blogs</a></li>
+          <li><a href="/get-started.html">Get Started</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p class="footer-legal">&copy; <?= date('Y') ?> CodimAI. All rights reserved.</p>
+    </div>
+
+  </div>
+</footer>
