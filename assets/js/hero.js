@@ -75,9 +75,10 @@
     canvas.height = Math.round(H * dpr);
     ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
 
+    /* Globe center: 72% keeps the sphere adjacent to the text block at wide viewports */
     cx = W > 820 ? W * 0.72 : W * 0.5;
     cy = H * 0.5;
-    radius = Math.min(W, H) * (W > 820 ? 0.42 : 0.46);
+    radius = Math.min(W, H) * (W > 820 ? 0.38 : 0.44);
   }
 
   function frame() {
