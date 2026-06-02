@@ -13,7 +13,7 @@
           <button class="nav-btn-ghost" aria-haspopup="true" aria-expanded="false">AI</button>
           <ul class="nav-dropdown__menu" role="menu">
             <li role="none"><a href="/ai.html#agentic-ai"    role="menuitem">Agentic AI</a></li>
-            <li role="none"><a href="/ai.html#generative"    role="menuitem">Generative</a></li>
+            <li role="none"><a href="/ai/generative.html"    role="menuitem">Generative</a></li>
             <li role="none"><a href="/ai.html#insights"      role="menuitem">Insights</a></li>
             <li role="none"><a href="/ai.html#recommendation"role="menuitem">Recommendation</a></li>
             <li role="none"><a href="/ai.html#prediction"    role="menuitem">Prediction</a></li>
@@ -50,7 +50,7 @@
   <button class="nav-btn-ghost" aria-expanded="false">AI</button>
   <ul class="nav-mobile-submenu">
     <li><a href="/ai.html#agentic-ai">Agentic AI</a></li>
-    <li><a href="/ai.html#generative">Generative</a></li>
+    <li><a href="/ai/generative.html">Generative</a></li>
     <li><a href="/ai.html#insights">Insights</a></li>
     <li><a href="/ai.html#recommendation">Recommendation</a></li>
     <li><a href="/ai.html#prediction">Prediction</a></li>

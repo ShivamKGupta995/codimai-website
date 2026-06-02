@@ -1232,6 +1232,60 @@ html {
 
 .cap-card--plain .cap-card__arrow { display: none; }
 
+/* ---- Grid + card (section-level reusable) ---------------- */
+
+.grid {
+  display: grid;
+  gap: clamp(1rem, 1.8vw, 1.5rem);
+}
+.grid--3 { grid-template-columns: repeat(3, 1fr); }
+.grid--2 { grid-template-columns: repeat(2, 1fr); }
+
+.card {
+  background: var(--cd-surface);
+  border: 1px solid var(--cd-border);
+  border-radius: var(--cd-radius);
+  padding: clamp(1.75rem, 2.5vw, 2.25rem);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  transition: border-color 0.2s ease;
+}
+.card:hover { border-color: var(--cd-border-strong); }
+
+.card__num {
+  font-family: var(--cd-font-mono);
+  font-size: 0.6875rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--cd-muted);
+  margin-bottom: 0.125rem;
+}
+
+.card__title {
+  font-family: var(--cd-font-display);
+  font-weight: 400;
+  font-size: clamp(1.25rem, 1.6vw, 1.5rem);
+  color: var(--cd-ink);
+  line-height: 1.2;
+  margin-bottom: 0.25rem;
+}
+
+.card__body {
+  font-size: clamp(0.875rem, 1vw, 0.9375rem);
+  color: var(--cd-body);
+  line-height: 1.65;
+  margin: 0;
+}
+
+@media (max-width: 900px) {
+  .grid--3 { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 560px) {
+  .grid--3,
+  .grid--2 { grid-template-columns: 1fr; }
+}
+
 /* ---- Process list ---------------------------------------- */
 
 .process-list {
