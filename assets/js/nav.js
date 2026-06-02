@@ -21,14 +21,21 @@
     const menu    = dropdown.querySelector('.nav-dropdown__menu');
     if (!trigger || !menu) return;
 
+    let closeTimer = null;
+
     function open() {
+      if (closeTimer) { clearTimeout(closeTimer); closeTimer = null; }
       dropdown.classList.add('is-open');
       trigger.setAttribute('aria-expanded', 'true');
     }
 
     function close() {
-      dropdown.classList.remove('is-open');
-      trigger.setAttribute('aria-expanded', 'false');
+      /* 180ms delay — cursor moving from button toward menu won't close it */
+      closeTimer = setTimeout(function () {
+        dropdown.classList.remove('is-open');
+        trigger.setAttribute('aria-expanded', 'false');
+        closeTimer = null;
+      }, 180);
     }
 
     /* Hover */
