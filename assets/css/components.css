@@ -1271,6 +1271,15 @@ html {
   margin-bottom: 0.25rem;
 }
 
+.card__icon {
+  width: 36px;
+  height: 36px;
+  color: var(--cd-ink);
+  opacity: 0.55;
+  margin-bottom: 0.75rem;
+  flex-shrink: 0;
+}
+
 .card__body {
   font-size: clamp(0.875rem, 1vw, 0.9375rem);
   color: var(--cd-body);
