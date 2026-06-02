@@ -1324,6 +1324,20 @@ html {
   font-size: clamp(0.8125rem, 0.9vw, 0.875rem);
   line-height: 1.55;
 }
+.section--dense .process-list {
+  margin-top: 1.5rem;
+}
+.section--dense .process-item {
+  padding: 1.25rem 0;
+}
+.section--dense .process-item__title {
+  font-size: 1.125rem;
+  margin-bottom: 0.25rem;
+}
+.section--dense .process-item__body {
+  font-size: 0.875rem;
+  line-height: 1.55;
+}
 
 /* ---- Process list ---------------------------------------- */
 
