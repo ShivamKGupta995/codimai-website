@@ -10,6 +10,7 @@
 
   <title>Page Not Found | CodimAI</title>
   <meta name="description" content="The page you're looking for doesn't exist or has moved. Return to CodimAI's home page.">
+  <meta name="robots" content="noindex, follow">
   <link rel="canonical" href="https://codimai.com/404.html">
 
   <!-- Open Graph -->
@@ -18,13 +19,13 @@
   <meta property="og:title"       content="Page Not Found | CodimAI">
   <meta property="og:description" content="The page you're looking for doesn't exist or has moved.">
   <meta property="og:url"         content="https://codimai.com/404.html">
-  <meta property="og:image"       content="/assets/img/og-default.jpg">
+  <meta property="og:image"       content="https://codimai.com/assets/img/og-default.png">
 
   <!-- Twitter Card -->
   <meta name="twitter:card"        content="summary_large_image">
   <meta name="twitter:title"       content="Page Not Found | CodimAI">
   <meta name="twitter:description" content="The page you're looking for doesn't exist or has moved.">
-  <meta name="twitter:image"       content="/assets/img/og-default.jpg">
+  <meta name="twitter:image"       content="https://codimai.com/assets/img/og-default.png">
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -52,6 +53,8 @@
   </script>
 </head>
 <body>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
 
   <!-- Particle constellation canvas — rendered by JS below -->
   <canvas id="bg-canvas" aria-hidden="true"></canvas>
@@ -183,7 +186,7 @@
 
       </div><!-- /.error-display -->
 
-      <p class="error-message reveal" style="--delay:0.65s">Page not found.</p>
+      <h2 class="error-message reveal" style="--delay:0.65s">Page not found.</h2>
 
       <p class="error-body reveal" style="--delay:0.8s">
         We looked everywhere — this page doesn't exist or has moved.
@@ -197,7 +200,7 @@
   <!-- ======================================================
        Footer
        ====================================================== -->
-  <footer class="site-footer cd-block-dark" role="contentinfo">
+  <footer class="site-footer" role="contentinfo">
     <div class="container site-footer__inner">
 
       <div class="footer-top">

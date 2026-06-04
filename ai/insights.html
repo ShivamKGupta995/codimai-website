@@ -3,38 +3,146 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Favicon -->
   <link rel="icon" type="image/png" href="../assets/img/favicon.png">
-  <title>AI Insights &amp; Analytics — CodimAI</title>
-  <meta name="description" content="CodimAI's insight systems surface trends and anomalies across your operational data — delivered as clear, actionable reports.">
-  <link rel="canonical" href="https://codimai.com/ai/insights">
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="AI Insights &amp; Analytics — CodimAI">
-  <meta property="og:description" content="CodimAI's insight systems surface trends and anomalies across your operational data — delivered as clear, actionable reports.">
+  <link rel="apple-touch-icon" href="../assets/img/favicon.png">
+
+  <title>AI Insights — Patterns in Your Data | CodimAI</title>
+  <meta name="description" content="CodimAI's insight systems surface trends and anomalies across your operational data and explain them in plain language — so decisions start from evidence.">
+  <link rel="canonical" href="https://codimai.com/ai/insights.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type"        content="website">
+  <meta property="og:site_name"   content="CodimAI">
+  <meta property="og:url"         content="https://codimai.com/ai/insights.html">
+  <meta property="og:title"       content="AI Insights — Patterns in Your Data | CodimAI">
+  <meta property="og:description" content="CodimAI's insight systems surface trends and anomalies across your operational data and explain them in plain language — so decisions start from evidence.">
+  <meta property="og:image"       content="https://codimai.com/assets/img/og-default.png">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card"        content="summary_large_image">
+  <meta name="twitter:title"       content="AI Insights — Patterns in Your Data | CodimAI">
+  <meta name="twitter:description" content="CodimAI's insight systems surface trends and anomalies across your operational data and explain them in plain language — so decisions start from evidence.">
+  <meta name="twitter:image"       content="https://codimai.com/assets/img/og-default.png">
+
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Gilda+Display&family=Inter:wght@400;500&family=JetBrains+Mono&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
   <link rel="stylesheet" href="../assets/css/tokens.css">
   <link rel="stylesheet" href="../assets/css/base.css">
   <link rel="stylesheet" href="../assets/css/components.css">
+
+  <!-- JSON-LD: WebPage + BreadcrumbList + FAQPage -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "name": "AI Insights — Patterns in Your Data | CodimAI",
+      "description": "CodimAI's insight systems surface trends and anomalies across your operational data and explain them in plain language — so decisions start from evidence.",
+      "url": "https://codimai.com/ai/insights.html",
+      "datePublished": "2026-06-04",
+      "publisher": {
+        "@type": "Organization",
+        "name": "CodimAI",
+        "url": "https://codimai.com/"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://codimai.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "AI",
+          "item": "https://codimai.com/ai/agentic-ai.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Insights",
+          "item": "https://codimai.com/ai/insights.html"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is AI-driven insight analysis?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "AI-driven insight analysis uses machine learning to read across operational data, detect meaningful trends and anomalies, and explain them in plain language. Unlike a static dashboard, it surfaces what changed and why, so teams start from evidence rather than hunting through charts."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How is this different from a BI dashboard?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A dashboard shows metrics and waits for you to interpret them. CodimAI Insights does the interpretation — it ranks what matters, explains the likely drivers, and delivers findings as readable prose, reducing the time from data to decision."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What data sources can it connect to?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Insights connects to common data warehouses, product and operational databases, and flat files such as CSV or spreadsheet exports. Connections are read-only and scoped to the sources you explicitly approve."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is our data kept private and secure?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Access is read-only, encrypted in transit, and limited to the data you authorise. We design every engagement around your security and compliance requirements from day one."
+          }
+        }
+      ]
+    }
+  ]
+}
+  </script>
 </head>
 <body>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
   <header class="site-header" role="banner">
     <div class="container site-header__inner">
+
       <a href="../index.html" class="nav-logo" aria-label="CodimAI — home"><span class="nav-logo__mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span><img src="../assets/img/logo-word.png" alt="" class="nav-logo__word" width="223" height="44"></a>
+
       <nav aria-label="Primary navigation">
         <ul class="nav-links" role="list">
+
           <li><a href="../index.html">Home</a></li>
+
           <li class="nav-dropdown">
             <button class="nav-btn-ghost" aria-haspopup="true" aria-expanded="false" aria-current="page">AI</button>
             <ul class="nav-dropdown__menu" role="menu">
               <li role="none"><a href="agentic-ai.html" role="menuitem">Agentic AI</a></li>
               <li role="none"><a href="generative.html" role="menuitem">Generative</a></li>
-              <li role="none"><a href="insights.html" role="menuitem">Insights</a></li>
+              <li role="none"><a href="insights.html" role="menuitem" aria-current="page">Insights</a></li>
               <li role="none"><a href="recommendation.html" role="menuitem">Recommendation</a></li>
               <li role="none"><a href="prediction.html" role="menuitem">Prediction</a></li>
               <li role="none"><a href="data-analytics.html" role="menuitem">Data Analytics</a></li>
             </ul>
           </li>
+
           <li class="nav-dropdown">
             <button class="nav-btn-ghost" aria-haspopup="true" aria-expanded="false">Agents</button>
             <ul class="nav-dropdown__menu" role="menu">
@@ -44,13 +152,24 @@
               <li role="none"><a href="../agents/blogs-agent.html" role="menuitem">Blogs Agent</a></li>
             </ul>
           </li>
-          <li><a href="../blogs/index.html">Blogs</a></li>
+
+          <li><a href="../blogs/">Blogs</a></li>
+
         </ul>
       </nav>
+
       <a href="../get-started.html" class="cd-btn-primary nav-cta">Get Started</a>
-      <button class="nav-hamburger" aria-expanded="false" aria-controls="nav-mobile-overlay" aria-label="Open menu"><span></span><span></span><span></span></button>
+
+      <button class="nav-hamburger" aria-expanded="false" aria-controls="nav-mobile-overlay" aria-label="Open menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
     </div>
   </header>
+
+  <!-- Mobile overlay -->
   <div id="nav-mobile-overlay" class="nav-mobile-overlay" role="navigation" aria-label="Mobile navigation">
     <a href="../index.html">Home</a>
     <button class="nav-btn-ghost" aria-expanded="false">AI</button>
@@ -69,67 +188,197 @@
       <li><a href="../agents/google-review.html">Google Review</a></li>
       <li><a href="../agents/blogs-agent.html">Blogs Agent</a></li>
     </ul>
-    <a href="../blogs/index.html">Blogs</a>
-    <a href="../get-started.html" class="cd-btn-primary" style="margin-top:1rem;justify-content:center;">Get Started</a>
+    <a href="../blogs/">Blogs</a>
+    <a href="../get-started.html" class="cd-btn-primary nav-mobile-cta">Get Started</a>
   </div>
+
   <main id="main-content">
-    <section class="hero hero--page" aria-labelledby="page-heading">
+
+    <!-- Hero -->
+    <section class="hero hero--page" aria-labelledby="hero-heading">
       <div class="container hero__inner">
         <div class="hero__content">
-          <p class="hero__eyebrow reveal" style="--delay:0.05s">INSIGHTS · PATTERNS · ANALYTICS</p>
-          <h1 id="page-heading" class="hero__title cd-display reveal" style="--delay:0.15s">Patterns your analysts would take weeks to find</h1>
-          <p class="hero__lede reveal" style="--delay:0.3s">CodimAI's insight systems surface trends and anomalies across your operational data — delivered as clear, actionable reports.</p>
+          <p class="hero__eyebrow reveal" style="--delay:0.05s">Insights · Patterns · Plain Language</p>
+          <h1 id="hero-heading" class="hero__title cd-display reveal" style="--delay:0.15s">Patterns your analysts<br>would take weeks to find</h1>
+          <p class="hero__lede reveal" style="--delay:0.3s">CodimAI's insight systems read across your operational data, surface what changed and why, and deliver it as clear, prioritised findings — not another dashboard to ignore.</p>
           <div class="hero__actions reveal" style="--delay:0.45s">
             <a href="../get-started.html" class="cd-btn-primary">Book a free audit</a>
-            <a href="../index.html" class="cd-btn-secondary">Back to home</a>
+            <a href="#capabilities" class="cd-btn-secondary">See how it works</a>
           </div>
         </div>
       </div>
     </section>
-  </main>
+
+    <!-- Statement -->
+    <section class="mission" aria-labelledby="statement-heading">
+      <h2 id="statement-heading" class="visually-hidden">In one line</h2>
+      <div class="container">
+        <p class="mission__text reveal">
+          A dashboard shows you numbers.
+          <span class="mission__tail">An insight tells you what to do about them.</span>
+        </p>
+      </div>
+    </section>
+
+    <!-- What it does -->
+    <section id="capabilities" class="section section--dense" aria-labelledby="cap-heading">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="section__eyebrow">// What it does</p>
+          <h2 id="cap-heading" class="section__heading">From raw data to a daily briefing.</h2>
+          <p class="section__lead">Insights connects to the data you already have and turns it into language a busy team can act on.</p>
+        </header>
+        <ul class="grid grid--3" role="list">
+          <li class="card reveal" style="--delay:0.05s">
+            <span class="card__num">01</span>
+            <h3 class="card__title">Trend detection</h3>
+            <p class="card__body">Spot shifts in revenue, churn, usage, or cost the moment they emerge — before they show up in a monthly report.</p>
+          </li>
+          <li class="card reveal" style="--delay:0.10s">
+            <span class="card__num">02</span>
+            <h3 class="card__title">Anomaly alerts</h3>
+            <p class="card__body">Get notified when a metric breaks its own pattern, with the likely drivers ranked and explained.</p>
+          </li>
+          <li class="card reveal" style="--delay:0.15s">
+            <span class="card__num">03</span>
+            <h3 class="card__title">Plain-language reports</h3>
+            <p class="card__body">Every finding is written in clear prose with the supporting numbers attached — readable by anyone, not just analysts.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- How it works -->
+    <section class="section section--soft section--dense" aria-labelledby="how-heading">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="section__eyebrow">// How it works</p>
+          <h2 id="how-heading" class="section__heading">Evidence, not guesswork.</h2>
+          <p class="section__lead">We connect to your sources, learn what normal looks like, and report only what matters.</p>
+        </header>
+        <ol class="process-list" role="list">
+          <li class="process-item reveal" style="--delay:0.05s">
+            <span class="process-item__num">01</span>
+            <h3 class="process-item__title">Connect your data</h3>
+            <p class="process-item__body">We integrate with your warehouse, product database, or spreadsheets — read-only, secure, and scoped to what you approve.</p>
+          </li>
+          <li class="process-item reveal" style="--delay:0.10s">
+            <span class="process-item__num">02</span>
+            <h3 class="process-item__title">Learn the baseline</h3>
+            <p class="process-item__body">The system models your normal ranges and seasonality so it can tell a real signal from ordinary noise.</p>
+          </li>
+          <li class="process-item reveal" style="--delay:0.15s">
+            <span class="process-item__num">03</span>
+            <h3 class="process-item__title">Deliver the briefing</h3>
+            <p class="process-item__body">You receive a regular, ranked summary of what changed and why — in your inbox, Slack, or wherever your team works.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="section" aria-labelledby="faq-heading">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="section__eyebrow">// FAQ</p>
+          <h2 id="faq-heading" class="section__heading">Common questions</h2>
+        </header>
+        <dl class="faq">
+          <details class="faq-item reveal">
+            <summary>What is AI-driven insight analysis?</summary>
+            <p class="faq-item__body">AI-driven insight analysis uses machine learning to read across operational data, detect meaningful trends and anomalies, and explain them in plain language. Unlike a static dashboard, it surfaces what changed and why, so teams start from evidence rather than hunting through charts.</p>
+          </details>
+          <details class="faq-item reveal">
+            <summary>How is this different from a BI dashboard?</summary>
+            <p class="faq-item__body">A dashboard shows metrics and waits for you to interpret them. CodimAI Insights does the interpretation — it ranks what matters, explains the likely drivers, and delivers findings as readable prose, reducing the time from data to decision.</p>
+          </details>
+          <details class="faq-item reveal">
+            <summary>What data sources can it connect to?</summary>
+            <p class="faq-item__body">Insights connects to common data warehouses, product and operational databases, and flat files such as CSV or spreadsheet exports. Connections are read-only and scoped to the sources you explicitly approve.</p>
+          </details>
+          <details class="faq-item reveal">
+            <summary>Is our data kept private and secure?</summary>
+            <p class="faq-item__body">Yes. Access is read-only, encrypted in transit, and limited to the data you authorise. We design every engagement around your security and compliance requirements from day one.</p>
+          </details>
+        </dl>
+      </div>
+    </section>
+
   <div class="closing-screen cd-block-dark">
+
     <section class="site-cta" aria-labelledby="cta-heading">
       <div class="container">
         <p class="section__eyebrow reveal">Get Started</p>
-        <h2 id="cta-heading" class="site-cta__heading reveal" style="--delay:0.1s">Ready to build with AI?</h2>
-        <p class="site-cta__body reveal" style="--delay:0.2s">See how CodimAI can work inside your stack — from a single agent to a full intelligence layer.</p>
-        <a href="../get-started.html" class="cd-btn-primary reveal" style="--delay:0.3s">Talk to us</a>
+        <h2 id="cta-heading" class="site-cta__heading reveal" style="--delay:0.1s">
+          See what your data is hiding
+        </h2>
+        <p class="site-cta__body reveal" style="--delay:0.2s">
+          Start with a free audit — we'll identify the highest-value insights waiting in the data you already collect.
+        </p>
+        <a href="../get-started.html" class="cd-btn-primary reveal" style="--delay:0.3s">Book your audit</a>
       </div>
     </section>
+
     <footer class="site-footer" role="contentinfo">
       <div class="container site-footer__inner">
+
         <div class="footer-top">
+
           <div class="footer-brand">
             <a href="../index.html" class="nav-logo nav-logo--on-dark" aria-label="CodimAI — home"><span class="nav-logo__mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span><img src="../assets/img/logo-word.png" alt="" class="nav-logo__word" width="223" height="44"></a>
             <p>Frontier AI solutions for the next generation of intelligent business.</p>
           </div>
-          <div class="footer-col"><h3>AI</h3><ul>
-            <li><a href="agentic-ai.html">Agentic AI</a></li>
-            <li><a href="generative.html">Generative</a></li>
-            <li><a href="insights.html">Insights</a></li>
-            <li><a href="recommendation.html">Recommendation</a></li>
-            <li><a href="prediction.html">Prediction</a></li>
-            <li><a href="data-analytics.html">Data Analytics</a></li>
-          </ul></div>
-          <div class="footer-col"><h3>Agents</h3><ul>
-            <li><a href="../agents/whatsapp.html">WhatsApp</a></li>
-            <li><a href="../agents/email.html">Email</a></li>
-            <li><a href="../agents/google-review.html">Google Review</a></li>
-            <li><a href="../agents/blogs-agent.html">Blogs Agent</a></li>
-          </ul></div>
-          <div class="footer-col"><h3>Company</h3><ul>
-            <li><a href="../blogs/index.html">Blogs</a></li>
-            <li><a href="../get-started.html">Get Started</a></li>
-          </ul></div>
+
+          <div class="footer-col">
+            <h3>AI</h3>
+            <ul>
+              <li><a href="../ai/agentic-ai.html">Agentic AI</a></li>
+              <li><a href="../ai/generative.html">Generative</a></li>
+              <li><a href="../ai/insights.html">Insights</a></li>
+              <li><a href="../ai/recommendation.html">Recommendation</a></li>
+              <li><a href="../ai/prediction.html">Prediction</a></li>
+              <li><a href="../ai/data-analytics.html">Data Analytics</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h3>Agents</h3>
+            <ul>
+              <li><a href="../agents/whatsapp.html">WhatsApp</a></li>
+              <li><a href="../agents/email.html">Email</a></li>
+              <li><a href="../agents/google-review.html">Google Review</a></li>
+              <li><a href="../agents/blogs-agent.html">Blogs Agent</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h3>Company</h3>
+            <ul>
+              <li><a href="../blogs/">Blogs</a></li>
+              <li><a href="../get-started.html">Get Started</a></li>
+            </ul>
+          </div>
+
         </div>
+
         <div class="footer-bottom">
           <p class="footer-legal">&copy; <span id="footer-year">2025</span> CodimAI. All rights reserved.</p>
         </div>
+
       </div>
     </footer>
-  </div>
-  <script>var el=document.getElementById('footer-year');if(el)el.textContent=new Date().getFullYear();</script>
+
+  </div><!-- /.closing-screen -->
+
+  </main>
+
+  <script>
+    var el = document.getElementById('footer-year');
+    if (el) el.textContent = new Date().getFullYear();
+  </script>
+
   <script src="../assets/js/nav.js" defer></script>
   <script src="../assets/js/reveal.js" defer></script>
+
 </body>
 </html>
