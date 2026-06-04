@@ -1,0 +1,122 @@
+/* ============================================================
+   CodimAI Brand Tokens — light, warm, editorial
+   Grounded in the real worldlabs.ai (white/gray palette,
+   Gilda Display + Roobert/grotesk, imagery-led).
+   Paste into your global stylesheet, or map into tailwind.config.
+   ============================================================ */
+
+:root {
+  /* --- Backgrounds (warm neutrals; nearly monochrome UI) --- */
+  --cd-canvas:        #F7F5F0; /* page background, warm white */
+  --cd-surface:       #FFFFFF; /* cards, raised panels */
+  --cd-soft:          #EFEDE6; /* alternating soft sections */
+  --cd-ink-block:     #1A1A18; /* dark feature blocks / footer */
+
+  /* --- Text (warm near-black, never pure #000) --- */
+  --cd-ink:           #1A1A18; /* headings, display, primary */
+  --cd-body:          #3A3A36; /* body copy */
+  --cd-muted:         #86847C; /* captions, labels, meta/dates */
+  --cd-on-dark:       #F7F5F0; /* text on the dark ink block */
+  --cd-on-dark-soft:  #C9C6BD; /* body text on the dark ink block */
+
+  /* --- Lines / borders --- */
+  --cd-border:        rgba(26,26,24,0.14); /* hairline dividers, card edges */
+  --cd-border-strong: rgba(26,26,24,0.28); /* hover / emphasis */
+
+  /* --- Radius (gentle, not pill) --- */
+  --cd-radius-sm:     8px;
+  --cd-radius:        12px;
+
+  /* --- Type --- */
+  --cd-font-display:  "Gilda Display", "Playfair Display", Georgia, serif;
+  --cd-font-body:     "Inter", "Hanken Grotesk", system-ui, sans-serif;
+  --cd-font-mono:     "JetBrains Mono", ui-monospace, monospace;
+
+  /* --- Optional status colors (use rarely; keep muted) --- */
+  --cd-success:       #2E7D5B;
+  --cd-warning:       #B5781F;
+  --cd-error:         #B23A36;
+}
+
+/* Google Fonts (add to <head>):
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Gilda+Display&family=Inter:wght@400;500&family=JetBrains+Mono&display=swap" rel="stylesheet">
+*/
+
+/* --- Display headline --- */
+.cd-display {
+  font-family: var(--cd-font-display);
+  font-weight: 400;
+  color: var(--cd-ink);
+  line-height: 1.08;
+  letter-spacing: -0.01em;
+}
+
+/* --- Body --- */
+body {
+  background: var(--cd-canvas);
+  color: var(--cd-body);
+  font-family: var(--cd-font-body);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* --- Primary button (quiet, near-black) --- */
+.cd-btn-primary {
+  height: 48px;
+  display: inline-flex; align-items: center; padding: 0 22px;
+  background: var(--cd-ink);
+  color: var(--cd-on-dark);
+  font-family: var(--cd-font-body); font-weight: 500; font-size: 15px;
+  border: none; border-radius: var(--cd-radius-sm); cursor: pointer;
+  transition: opacity .2s ease;
+}
+.cd-btn-primary:hover { opacity: .86; }
+
+/* --- Secondary / link-style button --- */
+.cd-btn-secondary {
+  height: 48px;
+  display: inline-flex; align-items: center; padding: 0 22px;
+  background: transparent;
+  color: var(--cd-ink);
+  border: 1px solid var(--cd-border-strong);
+  border-radius: var(--cd-radius-sm); cursor: pointer;
+}
+
+/* --- Card --- */
+.cd-card {
+  background: var(--cd-surface);
+  border: 1px solid var(--cd-border);
+  border-radius: var(--cd-radius);
+  padding: 28px;
+}
+
+/* --- Dark feature block --- */
+.cd-block-dark {
+  background: var(--cd-ink-block);
+  color: var(--cd-on-dark-soft);
+}
+.cd-block-dark .cd-display { color: var(--cd-on-dark); }
+
+/* ============================================================
+   Tailwind theme snippet (tailwind.config.js -> theme.extend)
+   ------------------------------------------------------------
+   colors: {
+     canvas:  '#F7F5F0',
+     surface: '#FFFFFF',
+     soft:    '#EFEDE6',
+     ink:     { DEFAULT: '#1A1A18', body: '#3A3A36', muted: '#86847C' },
+     ondark:  { DEFAULT: '#F7F5F0', soft: '#C9C6BD' },
+   },
+   borderColor: {
+     DEFAULT: 'rgba(26,26,24,0.14)',
+     strong:  'rgba(26,26,24,0.28)',
+   },
+   borderRadius: { sm: '8px', DEFAULT: '12px' },
+   fontFamily: {
+     display: ['"Gilda Display"', 'Georgia', 'serif'],
+     body:    ['Inter', 'sans-serif'],
+     mono:    ['"JetBrains Mono"', 'monospace'],
+   },
+   ============================================================ */
