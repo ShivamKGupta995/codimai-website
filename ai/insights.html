@@ -38,89 +38,108 @@
 
   <!-- JSON-LD: WebPage + BreadcrumbList + FAQPage -->
   <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "WebPage",
-      "name": "AI Insights — Patterns in Your Data | CodimAI",
-      "description": "CodimAI's insight systems surface trends and anomalies across your operational data and explain them in plain language — so decisions start from evidence.",
-      "url": "https://codimai.com/ai/insights.html",
-      "datePublished": "2026-06-04",
-      "publisher": {
-        "@type": "Organization",
-        "name": "CodimAI",
-        "url": "https://codimai.com/"
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "name": "AI Insights — Patterns in Your Data | CodimAI",
+        "description": "CodimAI's insight systems surface trends and anomalies across your operational data and explain them in plain language — so decisions start from evidence.",
+        "url": "https://codimai.com/ai/insights.html",
+        "datePublished": "2026-06-04",
+        "publisher": {
+          "@type": "Organization",
+          "name": "CodimAI",
+          "url": "https://codimai.com/"
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://codimai.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "AI",
+            "item": "https://codimai.com/ai/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Insights",
+            "item": "https://codimai.com/ai/insights.html"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is AI-driven insight analysis?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "AI-driven insight analysis uses machine learning to read across operational data, detect meaningful trends and anomalies, and explain them in plain language. Unlike a static dashboard, it surfaces what changed and why, so teams start from evidence rather than hunting through charts."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How is this different from a BI dashboard?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A dashboard shows metrics and waits for you to interpret them. CodimAI Insights does the interpretation — it ranks what matters, explains the likely drivers, and delivers findings as readable prose, reducing the time from data to decision."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What data sources can it connect to?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Insights connects to common data warehouses, product and operational databases, and flat files such as CSV or spreadsheet exports. Connections are read-only and scoped to the sources you explicitly approve."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How are the insights delivered?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Findings arrive as a regular, ranked briefing wherever your team already works — email, Slack, or an embedded panel. Each insight is written in plain language with the supporting numbers attached, so anyone can act on it without opening a BI tool."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How quickly can it be set up?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A focused insight engine typically goes live within four to eight weeks, depending on the number of data sources and how clean they are. The free audit confirms scope and timeline before any work begins."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is our data kept private and secure?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Access is read-only, encrypted in transit, and limited to the data you authorise. We design every engagement around your security and compliance requirements from day one."
+            }
+          }
+        ]
       }
-    },
-    {
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://codimai.com/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "AI",
-          "item": "https://codimai.com/ai/agentic-ai.html"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "Insights",
-          "item": "https://codimai.com/ai/insights.html"
-        }
-      ]
-    },
-    {
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "What is AI-driven insight analysis?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "AI-driven insight analysis uses machine learning to read across operational data, detect meaningful trends and anomalies, and explain them in plain language. Unlike a static dashboard, it surfaces what changed and why, so teams start from evidence rather than hunting through charts."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "How is this different from a BI dashboard?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "A dashboard shows metrics and waits for you to interpret them. CodimAI Insights does the interpretation — it ranks what matters, explains the likely drivers, and delivers findings as readable prose, reducing the time from data to decision."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What data sources can it connect to?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Insights connects to common data warehouses, product and operational databases, and flat files such as CSV or spreadsheet exports. Connections are read-only and scoped to the sources you explicitly approve."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Is our data kept private and secure?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes. Access is read-only, encrypted in transit, and limited to the data you authorise. We design every engagement around your security and compliance requirements from day one."
-          }
-        }
-      ]
-    }
-  ]
-}
+    ]
+  }
   </script>
 </head>
 <body>
 
   <a href="#main-content" class="skip-link">Skip to main content</a>
 
+  <!-- ======================================================
+       Header
+       ====================================================== -->
   <header class="site-header" role="banner">
     <div class="container site-header__inner">
 
@@ -134,22 +153,22 @@
           <li class="nav-dropdown">
             <button class="nav-btn-ghost" aria-haspopup="true" aria-expanded="false" aria-current="page">AI</button>
             <ul class="nav-dropdown__menu" role="menu">
-              <li role="none"><a href="agentic-ai.html" role="menuitem">Agentic AI</a></li>
-              <li role="none"><a href="generative.html" role="menuitem">Generative</a></li>
-              <li role="none"><a href="insights.html" role="menuitem" aria-current="page">Insights</a></li>
-              <li role="none"><a href="recommendation.html" role="menuitem">Recommendation</a></li>
-              <li role="none"><a href="prediction.html" role="menuitem">Prediction</a></li>
-              <li role="none"><a href="data-analytics.html" role="menuitem">Data Analytics</a></li>
+              <li role="none"><a href="agentic-ai.html"        role="menuitem">Agentic AI</a></li>
+              <li role="none"><a href="generative.html"        role="menuitem">Generative</a></li>
+              <li role="none"><a href="insights.html"          role="menuitem" aria-current="page">Insights</a></li>
+              <li role="none"><a href="recommendation.html"    role="menuitem">Recommendation</a></li>
+              <li role="none"><a href="prediction.html"        role="menuitem">Prediction</a></li>
+              <li role="none"><a href="data-analytics.html"    role="menuitem">Data Analytics</a></li>
             </ul>
           </li>
 
           <li class="nav-dropdown">
             <button class="nav-btn-ghost" aria-haspopup="true" aria-expanded="false">Agents</button>
             <ul class="nav-dropdown__menu" role="menu">
-              <li role="none"><a href="../agents/whatsapp.html" role="menuitem">WhatsApp</a></li>
-              <li role="none"><a href="../agents/email.html" role="menuitem">Email</a></li>
+              <li role="none"><a href="../agents/whatsapp.html"      role="menuitem">WhatsApp</a></li>
+              <li role="none"><a href="../agents/email.html"         role="menuitem">Email</a></li>
               <li role="none"><a href="../agents/google-review.html" role="menuitem">Google Review</a></li>
-              <li role="none"><a href="../agents/blogs-agent.html" role="menuitem">Blogs Agent</a></li>
+              <li role="none"><a href="../agents/blogs-agent.html"   role="menuitem">Blogs Agent</a></li>
             </ul>
           </li>
 
@@ -192,183 +211,675 @@
     <a href="../get-started.html" class="cd-btn-primary nav-mobile-cta">Get Started</a>
   </div>
 
+  <!-- ======================================================
+       Main
+       ====================================================== -->
   <main id="main-content">
 
-    <!-- Hero -->
+    <!-- ====================================================
+         Hero — two-column: text left, canvas animation right
+         ==================================================== -->
     <section class="hero hero--page" aria-labelledby="hero-heading">
       <div class="container hero__inner">
+
         <div class="hero__content">
-          <p class="hero__eyebrow reveal" style="--delay:0.05s">Insights · Patterns · Plain Language</p>
-          <h1 id="hero-heading" class="hero__title cd-display reveal" style="--delay:0.15s">Patterns your analysts<br>would take weeks to find</h1>
-          <p class="hero__lede reveal" style="--delay:0.3s">CodimAI's insight systems read across your operational data, surface what changed and why, and deliver it as clear, prioritised findings — not another dashboard to ignore.</p>
+          <p class="hero__eyebrow reveal" style="--delay:0.05s">INSIGHTS · PATTERNS · PLAIN LANGUAGE</p>
+          <h1 id="hero-heading" class="hero__title cd-display reveal" style="--delay:0.15s">
+            Patterns your analysts<br>would take <em>weeks</em> to find
+          </h1>
+          <p class="hero__lede reveal" style="--delay:0.3s">
+            CodimAI's insight systems read across your operational data, surface what changed
+            and why, and deliver it as clear, prioritised findings — not another dashboard to ignore.
+          </p>
           <div class="hero__actions reveal" style="--delay:0.45s">
             <a href="../get-started.html" class="cd-btn-primary">Book a free audit</a>
-            <a href="#capabilities" class="cd-btn-secondary">See how it works</a>
+            <a href="#use-cases" class="cd-btn-secondary">See use cases</a>
           </div>
         </div>
+
+        <div class="hero--anim reveal" style="--delay:0.4s" aria-hidden="true">
+          <canvas id="insights-canvas" class="hero__anim-canvas"></canvas>
+        </div>
+
       </div>
     </section>
 
-    <!-- Statement -->
+    <!-- ====================================================
+         Statement
+         ==================================================== -->
     <section class="mission" aria-labelledby="statement-heading">
-      <h2 id="statement-heading" class="visually-hidden">In one line</h2>
+      <h2 id="statement-heading" class="visually-hidden">Our approach</h2>
       <div class="container">
         <p class="mission__text reveal">
           A dashboard shows you numbers.
-          <span class="mission__tail">An insight tells you what to do about them.</span>
+          <span class="mission__tail">An insight tells you what changed, why it changed, and what to do about it.</span>
         </p>
       </div>
     </section>
 
-    <!-- What it does -->
-    <section id="capabilities" class="section section--dense" aria-labelledby="cap-heading">
+    <!-- ====================================================
+         Use Cases — editorial cap-list
+         ==================================================== -->
+    <section id="use-cases" class="capabilities" aria-labelledby="use-cases-heading">
       <div class="container">
-        <header class="section__head reveal">
-          <p class="section__eyebrow">// What it does</p>
-          <h2 id="cap-heading" class="section__heading">From raw data to a daily briefing.</h2>
-          <p class="section__lead">Insights connects to the data you already have and turns it into language a busy team can act on.</p>
-        </header>
-        <ul class="grid grid--3" role="list">
-          <li class="card reveal" style="--delay:0.05s">
-            <span class="card__num">01</span>
-            <h3 class="card__title">Trend detection</h3>
-            <p class="card__body">Spot shifts in revenue, churn, usage, or cost the moment they emerge — before they show up in a monthly report.</p>
+
+        <div class="capabilities__header reveal">
+          <div>
+            <p class="section__eyebrow">// Use Cases</p>
+            <h2 id="use-cases-heading" class="capabilities__sub">Where Insights Applies</h2>
+            <p class="capabilities__lede">
+              Each use case turns a stream of metrics into a finding someone can act on.
+              Insights reads the same data that powers your <a href="data-analytics.html" style="color:var(--cd-ink);text-decoration:underline;text-underline-offset:3px;">analytics layer</a> — and tells you what it means.
+            </p>
+          </div>
+        </div>
+
+        <ul class="cap-list" role="list">
+
+          <li class="cap-row reveal" style="--delay:0.05s">
+            <div class="cap-row__link" tabindex="0">
+              <span class="cap-row__num">01</span>
+              <span class="cap-row__name">Trend Detection</span>
+              <p class="cap-row__desc">Spot shifts in revenue, churn, usage, or cost the moment they emerge — before they ever surface in a monthly report.</p>
+              <svg class="cap-row__arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
+            </div>
           </li>
-          <li class="card reveal" style="--delay:0.10s">
-            <span class="card__num">02</span>
-            <h3 class="card__title">Anomaly alerts</h3>
-            <p class="card__body">Get notified when a metric breaks its own pattern, with the likely drivers ranked and explained.</p>
+
+          <li class="cap-row reveal" style="--delay:0.10s">
+            <div class="cap-row__link" tabindex="0">
+              <span class="cap-row__num">02</span>
+              <span class="cap-row__name">Anomaly Detection</span>
+              <p class="cap-row__desc">Get alerted the moment a metric breaks its own pattern, with the deviation quantified and the likely cause attached.</p>
+              <svg class="cap-row__arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
+            </div>
           </li>
-          <li class="card reveal" style="--delay:0.15s">
-            <span class="card__num">03</span>
-            <h3 class="card__title">Plain-language reports</h3>
-            <p class="card__body">Every finding is written in clear prose with the supporting numbers attached — readable by anyone, not just analysts.</p>
+
+          <li class="cap-row reveal" style="--delay:0.15s">
+            <div class="cap-row__link" tabindex="0">
+              <span class="cap-row__num">03</span>
+              <span class="cap-row__name">Root-Cause Explanation</span>
+              <p class="cap-row__desc">Move past "what" to "why". The system ranks the drivers behind each change so teams debate solutions, not the numbers.</p>
+              <svg class="cap-row__arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
+            </div>
           </li>
+
+          <li class="cap-row reveal" style="--delay:0.20s">
+            <div class="cap-row__link" tabindex="0">
+              <span class="cap-row__num">04</span>
+              <span class="cap-row__name">Automated Briefings</span>
+              <p class="cap-row__desc">A regular, ranked digest of what matters — written in plain language and delivered to the inbox or channel your team already uses.</p>
+              <svg class="cap-row__arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
+            </div>
+          </li>
+
+          <li class="cap-row reveal" style="--delay:0.25s">
+            <div class="cap-row__link" tabindex="0">
+              <span class="cap-row__num">05</span>
+              <span class="cap-row__name">KPI Monitoring &amp; Alerting</span>
+              <p class="cap-row__desc">Keep the metrics that define the business under continuous watch, with thresholds that learn your normal instead of firing on noise.</p>
+              <svg class="cap-row__arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
+            </div>
+          </li>
+
         </ul>
       </div>
     </section>
 
-    <!-- How it works -->
-    <section class="section section--soft section--dense" aria-labelledby="how-heading">
+    <!-- ====================================================
+         Business Benefits — two-column editorial
+         ==================================================== -->
+    <section id="benefits" class="section" aria-labelledby="benefits-heading">
+      <div class="container why-codimai__inner">
+
+        <div class="reveal">
+          <p class="section__eyebrow">// Business Benefits</p>
+          <h2 id="benefits-heading" class="why-codimai__heading">
+            What changes when<br>data explains itself.
+          </h2>
+          <p class="section__lead" style="margin-top:1.25rem;">
+            When findings arrive already interpreted, teams spend their time deciding instead of
+            digging. The shift is structural — faster decisions, earlier warnings, and far less
+            analyst toil.
+          </p>
+        </div>
+
+        <ol class="why-list">
+
+          <li class="why-row reveal" style="--delay:0.05s">
+            <span class="why-row__num">01</span>
+            <div>
+              <h3 class="why-row__title">Faster Time-to-Decision</h3>
+              <p class="why-row__body">When the insight is written, not buried, teams act in minutes instead of waiting on the next analyst to free up. Evidence arrives ready to use.</p>
+            </div>
+          </li>
+
+          <li class="why-row reveal" style="--delay:0.10s">
+            <span class="why-row__num">02</span>
+            <div>
+              <h3 class="why-row__title">Problems Caught Early</h3>
+              <p class="why-row__body">Anomalies are flagged the day they appear, not the week the report lands — turning what would have been a fire into a quiet fix.</p>
+            </div>
+          </li>
+
+          <li class="why-row reveal" style="--delay:0.15s">
+            <span class="why-row__num">03</span>
+            <div>
+              <h3 class="why-row__title">Less Analyst Toil</h3>
+              <p class="why-row__body">Routine monitoring and first-pass interpretation are automated, freeing your analysts for the deep questions only a human should own.</p>
+            </div>
+          </li>
+
+          <li class="why-row reveal" style="--delay:0.20s">
+            <span class="why-row__num">04</span>
+            <div>
+              <h3 class="why-row__title">An Evidence-First Culture</h3>
+              <p class="why-row__body">When everyone sees the same explained findings, debate moves from whose number is right to what the organisation should do next.</p>
+            </div>
+          </li>
+
+        </ol>
+
+      </div>
+    </section>
+
+    <!-- ====================================================
+         CodimAI Approach — compact process list
+         ==================================================== -->
+    <section id="approach" class="section section--soft section--dense" aria-labelledby="approach-heading">
       <div class="container">
+
         <header class="section__head reveal">
-          <p class="section__eyebrow">// How it works</p>
-          <h2 id="how-heading" class="section__heading">Evidence, not guesswork.</h2>
-          <p class="section__lead">We connect to your sources, learn what normal looks like, and report only what matters.</p>
+          <p class="section__eyebrow">// The Approach</p>
+          <h2 id="approach-heading" class="section__heading">How We Build Your Insight Engine</h2>
+          <p class="section__lead">
+            CodimAI connects to the data you already have, learns what normal looks like, and reports
+            only what matters — in language a busy team can act on. The findings can be written up
+            with <a href="generative.html" style="color:var(--cd-ink);text-decoration:underline;text-underline-offset:3px;">generative AI</a> or routed into action by an <a href="agentic-ai.html" style="color:var(--cd-ink);text-decoration:underline;text-underline-offset:3px;">agent</a>.
+          </p>
         </header>
-        <ol class="process-list" role="list">
+
+        <ol class="process-list">
+
           <li class="process-item reveal" style="--delay:0.05s">
             <span class="process-item__num">01</span>
-            <h3 class="process-item__title">Connect your data</h3>
-            <p class="process-item__body">We integrate with your warehouse, product database, or spreadsheets — read-only, secure, and scoped to what you approve.</p>
+            <div>
+              <h3 class="process-item__title">Data Connection</h3>
+              <p class="process-item__body">We integrate with your warehouse, product database, or spreadsheets — read-only, encrypted, and scoped strictly to the sources you approve.</p>
+            </div>
           </li>
+
           <li class="process-item reveal" style="--delay:0.10s">
             <span class="process-item__num">02</span>
-            <h3 class="process-item__title">Learn the baseline</h3>
-            <p class="process-item__body">The system models your normal ranges and seasonality so it can tell a real signal from ordinary noise.</p>
+            <div>
+              <h3 class="process-item__title">Baseline Modelling</h3>
+              <p class="process-item__body">The system learns your normal ranges and seasonality so it can tell a genuine signal from ordinary noise — and stop crying wolf.</p>
+            </div>
           </li>
+
           <li class="process-item reveal" style="--delay:0.15s">
             <span class="process-item__num">03</span>
-            <h3 class="process-item__title">Deliver the briefing</h3>
-            <p class="process-item__body">You receive a regular, ranked summary of what changed and why — in your inbox, Slack, or wherever your team works.</p>
+            <div>
+              <h3 class="process-item__title">Signal &amp; Anomaly Logic</h3>
+              <p class="process-item__body">We define what counts as meaningful for your business and how drivers are ranked, so the engine surfaces what matters and ignores the rest.</p>
+            </div>
           </li>
+
+          <li class="process-item reveal" style="--delay:0.20s">
+            <span class="process-item__num">04</span>
+            <div>
+              <h3 class="process-item__title">Narrative Generation</h3>
+              <p class="process-item__body">Each finding is turned into plain-language prose with the supporting numbers attached — readable by anyone, not just analysts.</p>
+            </div>
+          </li>
+
+          <li class="process-item reveal" style="--delay:0.25s">
+            <span class="process-item__num">05</span>
+            <div>
+              <h3 class="process-item__title">Delivery &amp; Tuning</h3>
+              <p class="process-item__body">Briefings land in your inbox, Slack, or app on a schedule you set. We tune ranking and thresholds continuously as your data and priorities evolve.</p>
+            </div>
+          </li>
+
         </ol>
       </div>
     </section>
 
-    <!-- FAQ -->
+    <!-- ====================================================
+         Process — Step 01
+         ==================================================== -->
+    <section id="process" class="process-step-section" aria-labelledby="step-1-title">
+      <div class="process-step__bg-num" aria-hidden="true">01</div>
+      <div class="process-step__wrap">
+
+        <div class="process-step__dots" aria-label="Step 1 of 5">
+          <span class="process-step__dot is-active"></span>
+          <span class="process-step__dot"></span>
+          <span class="process-step__dot"></span>
+          <span class="process-step__dot"></span>
+          <span class="process-step__dot"></span>
+        </div>
+
+        <span class="process-step__eyebrow">// The Process — 01 of 05</span>
+
+        <div class="process-step__icon" aria-hidden="true">
+          <svg viewBox="0 0 72 72" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <circle class="draw" cx="31" cy="31" r="18" stroke-dasharray="114" stroke-dashoffset="114"/>
+            <line   class="draw" x1="44" y1="44" x2="60" y2="60" stroke-dasharray="23" stroke-dashoffset="23"/>
+            <line   class="draw" x1="23" y1="31" x2="39" y2="31" stroke-dasharray="16" stroke-dashoffset="16" style="transition-delay:0.6s"/>
+            <line   class="draw" x1="31" y1="23" x2="31" y2="39" stroke-dasharray="16" stroke-dashoffset="16" style="transition-delay:0.75s"/>
+          </svg>
+        </div>
+
+        <h2 id="step-1-title" class="process-step__title">Business Audit</h2>
+        <p class="process-step__body">
+          We analyse the questions your team keeps asking the data and the decisions that stall
+          waiting for an answer. The highest-value insights are surfaced before a single source
+          is connected.
+        </p>
+
+        <p class="process-step__next">
+          Next — ROI Audit
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg>
+        </p>
+
+      </div>
+      <div class="process-step__progress" aria-hidden="true">
+        <div class="process-step__progress-fill" style="--fill:20%"></div>
+      </div>
+    </section>
+
+    <!-- ====================================================
+         Process — Step 02
+         ==================================================== -->
+    <section class="process-step-section" aria-labelledby="step-2-title">
+      <div class="process-step__bg-num" aria-hidden="true">02</div>
+      <div class="process-step__wrap">
+
+        <div class="process-step__dots" aria-label="Step 2 of 5">
+          <span class="process-step__dot is-done"></span>
+          <span class="process-step__dot is-active"></span>
+          <span class="process-step__dot"></span>
+          <span class="process-step__dot"></span>
+          <span class="process-step__dot"></span>
+        </div>
+
+        <span class="process-step__eyebrow">// The Process — 02 of 05</span>
+
+        <div class="process-step__icon" aria-hidden="true">
+          <svg viewBox="0 0 72 72" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <line class="draw" x1="10" y1="62" x2="62" y2="62" stroke-dasharray="52" stroke-dashoffset="52"/>
+            <line class="draw" x1="10" y1="10" x2="10" y2="62" stroke-dasharray="52" stroke-dashoffset="52" style="transition-delay:0.1s"/>
+            <line class="draw" x1="18" y1="42" x2="18" y2="62" stroke-width="4" stroke-dasharray="20" stroke-dashoffset="20" style="transition-delay:0.25s"/>
+            <line class="draw" x1="32" y1="28" x2="32" y2="62" stroke-width="4" stroke-dasharray="34" stroke-dashoffset="34" style="transition-delay:0.4s"/>
+            <line class="draw" x1="46" y1="34" x2="46" y2="62" stroke-width="4" stroke-dasharray="28" stroke-dashoffset="28" style="transition-delay:0.55s"/>
+            <line class="draw" x1="60" y1="18" x2="60" y2="62" stroke-width="4" stroke-dasharray="44" stroke-dashoffset="44" style="transition-delay:0.7s"/>
+          </svg>
+        </div>
+
+        <h2 id="step-2-title" class="process-step__title">ROI Audit</h2>
+        <p class="process-step__body">
+          Before development begins, we estimate the value of seeing each change sooner — fewer
+          missed problems, faster decisions, hours of analyst time returned. You receive a written
+          financial case so the investment is justified before any build.
+        </p>
+
+        <p class="process-step__next">
+          Next — Consultation &amp; Strategy
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg>
+        </p>
+
+      </div>
+      <div class="process-step__progress" aria-hidden="true">
+        <div class="process-step__progress-fill" style="--fill:40%"></div>
+      </div>
+    </section>
+
+    <!-- ====================================================
+         Process — Step 03
+         ==================================================== -->
+    <section class="process-step-section" aria-labelledby="step-3-title">
+      <div class="process-step__bg-num" aria-hidden="true">03</div>
+      <div class="process-step__wrap">
+
+        <div class="process-step__dots" aria-label="Step 3 of 5">
+          <span class="process-step__dot is-done"></span>
+          <span class="process-step__dot is-done"></span>
+          <span class="process-step__dot is-active"></span>
+          <span class="process-step__dot"></span>
+          <span class="process-step__dot"></span>
+        </div>
+
+        <span class="process-step__eyebrow">// The Process — 03 of 05</span>
+
+        <div class="process-step__icon" aria-hidden="true">
+          <svg viewBox="0 0 72 72" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <circle class="draw" cx="36" cy="14" r="8"  stroke-dasharray="51" stroke-dashoffset="51"/>
+            <line   class="draw" x1="36" y1="22" x2="36" y2="32" stroke-dasharray="10" stroke-dashoffset="10" style="transition-delay:0.3s"/>
+            <line   class="draw" x1="36" y1="32" x2="18" y2="44" stroke-dasharray="22" stroke-dashoffset="22" style="transition-delay:0.4s"/>
+            <line   class="draw" x1="36" y1="32" x2="54" y2="44" stroke-dasharray="22" stroke-dashoffset="22" style="transition-delay:0.4s"/>
+            <circle class="draw" cx="18" cy="56" r="8"  stroke-dasharray="51" stroke-dashoffset="51" style="transition-delay:0.55s"/>
+            <circle class="draw" cx="54" cy="56" r="8"  stroke-dasharray="51" stroke-dashoffset="51" style="transition-delay:0.55s"/>
+          </svg>
+        </div>
+
+        <h2 id="step-3-title" class="process-step__title">Consultation &amp; Strategy</h2>
+        <p class="process-step__body">
+          Our experts design an insight roadmap aligned with your goals — covering the sources to
+          connect, the metrics to watch, the drivers to explain, and a phased rollout that fits
+          your team's capacity.
+        </p>
+
+        <p class="process-step__next">
+          Next — Development &amp; Deployment
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg>
+        </p>
+
+      </div>
+      <div class="process-step__progress" aria-hidden="true">
+        <div class="process-step__progress-fill" style="--fill:60%"></div>
+      </div>
+    </section>
+
+    <!-- ====================================================
+         Process — Step 04
+         ==================================================== -->
+    <section class="process-step-section" aria-labelledby="step-4-title">
+      <div class="process-step__bg-num" aria-hidden="true">04</div>
+      <div class="process-step__wrap">
+
+        <div class="process-step__dots" aria-label="Step 4 of 5">
+          <span class="process-step__dot is-done"></span>
+          <span class="process-step__dot is-done"></span>
+          <span class="process-step__dot is-done"></span>
+          <span class="process-step__dot is-active"></span>
+          <span class="process-step__dot"></span>
+        </div>
+
+        <span class="process-step__eyebrow">// The Process — 04 of 05</span>
+
+        <div class="process-step__icon" aria-hidden="true">
+          <svg viewBox="0 0 72 72" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <polyline class="draw" points="24,18 10,36 24,54" stroke-dasharray="48" stroke-dashoffset="48"/>
+            <polyline class="draw" points="48,18 62,36 48,54" stroke-dasharray="48" stroke-dashoffset="48" style="transition-delay:0.2s"/>
+            <line     class="draw" x1="30" y1="54" x2="42" y2="18" stroke-dasharray="38" stroke-dashoffset="38" style="transition-delay:0.4s"/>
+          </svg>
+        </div>
+
+        <h2 id="step-4-title" class="process-step__title">Development &amp; Deployment</h2>
+        <p class="process-step__body">
+          We build, integrate, test, and deploy the insight engine into your existing systems.
+          Delivery is iterative — you review real findings on real data at each milestone, not a
+          finished product at the very end.
+        </p>
+
+        <p class="process-step__next">
+          Next — ROI Tracking &amp; Optimisation
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg>
+        </p>
+
+      </div>
+      <div class="process-step__progress" aria-hidden="true">
+        <div class="process-step__progress-fill" style="--fill:80%"></div>
+      </div>
+    </section>
+
+    <!-- ====================================================
+         Process — Step 05
+         ==================================================== -->
+    <section class="process-step-section" aria-labelledby="step-5-title">
+      <div class="process-step__bg-num" aria-hidden="true">05</div>
+      <div class="process-step__wrap">
+
+        <div class="process-step__dots" aria-label="Step 5 of 5">
+          <span class="process-step__dot is-done"></span>
+          <span class="process-step__dot is-done"></span>
+          <span class="process-step__dot is-done"></span>
+          <span class="process-step__dot is-done"></span>
+          <span class="process-step__dot is-active"></span>
+        </div>
+
+        <span class="process-step__eyebrow">// The Process — 05 of 05</span>
+
+        <div class="process-step__icon" aria-hidden="true">
+          <svg viewBox="0 0 72 72" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <line     class="draw" x1="10" y1="62" x2="62" y2="62" stroke-dasharray="52" stroke-dashoffset="52"/>
+            <line     class="draw" x1="10" y1="10" x2="10" y2="62" stroke-dasharray="52" stroke-dashoffset="52" style="transition-delay:0.1s"/>
+            <polyline class="draw" points="12,52 22,38 34,44 48,26 62,14" stroke-dasharray="76" stroke-dashoffset="76" style="transition-delay:0.3s" stroke-width="2"/>
+            <polyline class="draw" points="54,10 62,14 58,22" stroke-dasharray="22" stroke-dashoffset="22" style="transition-delay:0.85s"/>
+          </svg>
+        </div>
+
+        <h2 id="step-5-title" class="process-step__title">ROI Tracking &amp; Optimisation</h2>
+        <p class="process-step__body">
+          We continuously measure the value the insight engine delivers against the original ROI
+          model and tune what it surfaces to keep it sharp. Insight compounds as the system learns
+          your business — we make sure yours does.
+        </p>
+
+        <p class="process-step__next" style="visibility:hidden" aria-hidden="true">
+          — Complete
+        </p>
+
+      </div>
+      <div class="process-step__progress" aria-hidden="true">
+        <div class="process-step__progress-fill" style="--fill:100%"></div>
+      </div>
+    </section>
+
+    <!-- ====================================================
+         Why CodimAI
+         ==================================================== -->
+    <section id="why-codimai" class="section section--soft" aria-labelledby="why-heading">
+      <div class="container why-codimai__inner">
+
+        <div class="why-codimai__lead reveal">
+          <p class="section__eyebrow">// Why CodimAI</p>
+          <h2 id="why-heading" class="why-codimai__heading">
+            A partner that explains,<br>not just alerts.
+          </h2>
+          <p class="section__lead">
+            Most monitoring tools fire an alert and leave the thinking to you. CodimAI delivers the
+            finding already interpreted. The difference is an engagement model that starts with ROI
+            estimation and ends with ROI tracking.
+          </p>
+          <a href="../get-started.html" class="cd-btn-primary" style="margin-top:2rem;display:inline-flex;">Book a free audit</a>
+        </div>
+
+        <ol class="why-list">
+
+          <li class="why-row reveal" style="--delay:0.05s">
+            <span class="why-row__num">01</span>
+            <div>
+              <h3 class="why-row__title">ROI-First Approach</h3>
+              <p class="why-row__body">Every engine is scoped against a financial case. If the value of faster insight doesn't justify the work, we say so before development begins.</p>
+            </div>
+          </li>
+
+          <li class="why-row reveal" style="--delay:0.10s">
+            <span class="why-row__num">02</span>
+            <div>
+              <h3 class="why-row__title">Explained, Not Just Flagged</h3>
+              <p class="why-row__body">Every finding comes with its likely drivers ranked and written in plain language — so teams start from understanding, not a raw alert.</p>
+            </div>
+          </li>
+
+          <li class="why-row reveal" style="--delay:0.15s">
+            <span class="why-row__num">03</span>
+            <div>
+              <h3 class="why-row__title">Custom Models</h3>
+              <p class="why-row__body">No generic thresholds. We model your specific baselines and seasonality, so the system learns what normal means for your business.</p>
+            </div>
+          </li>
+
+          <li class="why-row reveal" style="--delay:0.20s">
+            <span class="why-row__num">04</span>
+            <div>
+              <h3 class="why-row__title">Secure by Design</h3>
+              <p class="why-row__body">Access is read-only, encrypted in transit, and scoped to the data you authorise — built around your security and compliance from day one.</p>
+            </div>
+          </li>
+
+          <li class="why-row reveal" style="--delay:0.25s">
+            <span class="why-row__num">05</span>
+            <div>
+              <h3 class="why-row__title">End-to-End Delivery</h3>
+              <p class="why-row__body">From data connection to delivered briefing, one team. No hand-offs between strategy and engineering — one accountable partner for the whole engagement.</p>
+            </div>
+          </li>
+
+          <li class="why-row reveal" style="--delay:0.30s">
+            <span class="why-row__num">06</span>
+            <div>
+              <h3 class="why-row__title">Long-Term Support &amp; Optimisation</h3>
+              <p class="why-row__body">We stay engaged post-launch to refine ranking, add sources, and track value over time. Your priorities shift — the engine keeps up.</p>
+            </div>
+          </li>
+
+        </ol>
+
+      </div>
+    </section>
+
+    <!-- ====================================================
+         FAQ
+         ==================================================== -->
     <section id="faq" class="section" aria-labelledby="faq-heading">
       <div class="container">
+
         <header class="section__head reveal">
           <p class="section__eyebrow">// FAQ</p>
           <h2 id="faq-heading" class="section__heading">Common questions</h2>
         </header>
+
         <dl class="faq">
+
           <details class="faq-item reveal">
             <summary>What is AI-driven insight analysis?</summary>
-            <p class="faq-item__body">AI-driven insight analysis uses machine learning to read across operational data, detect meaningful trends and anomalies, and explain them in plain language. Unlike a static dashboard, it surfaces what changed and why, so teams start from evidence rather than hunting through charts.</p>
+            <p class="faq-item__body">
+              AI-driven insight analysis uses machine learning to read across operational data, detect
+              meaningful trends and anomalies, and explain them in plain language. Unlike a static
+              dashboard, it surfaces what changed and why, so teams start from evidence rather than
+              hunting through charts.
+            </p>
           </details>
+
           <details class="faq-item reveal">
             <summary>How is this different from a BI dashboard?</summary>
-            <p class="faq-item__body">A dashboard shows metrics and waits for you to interpret them. CodimAI Insights does the interpretation — it ranks what matters, explains the likely drivers, and delivers findings as readable prose, reducing the time from data to decision.</p>
+            <p class="faq-item__body">
+              A dashboard shows metrics and waits for you to interpret them. CodimAI Insights does the
+              interpretation — it ranks what matters, explains the likely drivers, and delivers findings
+              as readable prose, reducing the time from data to decision.
+            </p>
           </details>
+
           <details class="faq-item reveal">
             <summary>What data sources can it connect to?</summary>
-            <p class="faq-item__body">Insights connects to common data warehouses, product and operational databases, and flat files such as CSV or spreadsheet exports. Connections are read-only and scoped to the sources you explicitly approve.</p>
+            <p class="faq-item__body">
+              Insights connects to common data warehouses, product and operational databases, and flat
+              files such as CSV or spreadsheet exports. Connections are read-only and scoped to the sources
+              you explicitly approve.
+            </p>
           </details>
+
+          <details class="faq-item reveal">
+            <summary>How are the insights delivered?</summary>
+            <p class="faq-item__body">
+              Findings arrive as a regular, ranked briefing wherever your team already works — email, Slack,
+              or an embedded panel. Each insight is written in plain language with the supporting numbers
+              attached, so anyone can act on it without opening a BI tool.
+            </p>
+          </details>
+
+          <details class="faq-item reveal">
+            <summary>How quickly can it be set up?</summary>
+            <p class="faq-item__body">
+              A focused insight engine typically goes live within four to eight weeks, depending on the
+              number of data sources and how clean they are. The free audit confirms scope and timeline
+              before any work begins.
+            </p>
+          </details>
+
           <details class="faq-item reveal">
             <summary>Is our data kept private and secure?</summary>
-            <p class="faq-item__body">Yes. Access is read-only, encrypted in transit, and limited to the data you authorise. We design every engagement around your security and compliance requirements from day one.</p>
+            <p class="faq-item__body">
+              Yes. Access is read-only, encrypted in transit, and limited to the data you authorise. We
+              design every engagement around your security and compliance requirements from day one.
+            </p>
           </details>
+
         </dl>
       </div>
     </section>
 
-  <div class="closing-screen cd-block-dark">
+    <!-- ====================================================
+         Closing CTA + Footer
+         ==================================================== -->
+    <div class="closing-screen cd-block-dark">
 
-    <section class="site-cta" aria-labelledby="cta-heading">
-      <div class="container">
-        <p class="section__eyebrow reveal">Get Started</p>
-        <h2 id="cta-heading" class="site-cta__heading reveal" style="--delay:0.1s">
-          See what your data is hiding
-        </h2>
-        <p class="site-cta__body reveal" style="--delay:0.2s">
-          Start with a free audit — we'll identify the highest-value insights waiting in the data you already collect.
-        </p>
-        <a href="../get-started.html" class="cd-btn-primary reveal" style="--delay:0.3s">Book your audit</a>
-      </div>
-    </section>
+      <section class="site-cta" aria-labelledby="cta-heading">
+        <div class="container">
+          <p class="section__eyebrow reveal">// Get Started</p>
+          <h2 id="cta-heading" class="site-cta__heading reveal" style="--delay:0.1s">
+            See what your data is hiding
+          </h2>
+          <p class="site-cta__body reveal" style="--delay:0.2s">
+            Start with a free audit — we'll identify the highest-value insights waiting
+            in the data you already collect.
+          </p>
+          <a href="../get-started.html" class="cd-btn-primary reveal" style="--delay:0.3s">Request your audit</a>
+        </div>
+      </section>
 
-    <footer class="site-footer" role="contentinfo">
-      <div class="container site-footer__inner">
+      <footer class="site-footer" role="contentinfo">
+        <div class="container site-footer__inner">
 
-        <div class="footer-top">
+          <div class="footer-top">
 
-          <div class="footer-brand">
-            <a href="../index.html" class="nav-logo nav-logo--on-dark" aria-label="CodimAI — home"><span class="nav-logo__mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span><img src="../assets/img/logo-word.png" alt="" class="nav-logo__word" width="223" height="44"></a>
-            <p>Frontier AI solutions for the next generation of intelligent business.</p>
+            <div class="footer-brand">
+              <a href="../index.html" class="nav-logo nav-logo--on-dark" aria-label="CodimAI — home"><span class="nav-logo__mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span><img src="../assets/img/logo-word.png" alt="" class="nav-logo__word" width="223" height="44"></a>
+              <p>Frontier AI solutions for the next generation of intelligent business.</p>
+            </div>
+
+            <div class="footer-col">
+              <h3>AI</h3>
+              <ul>
+                <li><a href="agentic-ai.html">Agentic AI</a></li>
+                <li><a href="generative.html">Generative</a></li>
+                <li><a href="insights.html">Insights</a></li>
+                <li><a href="recommendation.html">Recommendation</a></li>
+                <li><a href="prediction.html">Prediction</a></li>
+                <li><a href="data-analytics.html">Data Analytics</a></li>
+              </ul>
+            </div>
+
+            <div class="footer-col">
+              <h3>Agents</h3>
+              <ul>
+                <li><a href="../agents/whatsapp.html">WhatsApp</a></li>
+                <li><a href="../agents/email.html">Email</a></li>
+                <li><a href="../agents/google-review.html">Google Review</a></li>
+                <li><a href="../agents/blogs-agent.html">Blogs Agent</a></li>
+              </ul>
+            </div>
+
+            <div class="footer-col">
+              <h3>Company</h3>
+              <ul>
+                <li><a href="../blogs/">Blogs</a></li>
+                <li><a href="../get-started.html">Get Started</a></li>
+              </ul>
+            </div>
+
           </div>
 
-          <div class="footer-col">
-            <h3>AI</h3>
-            <ul>
-              <li><a href="../ai/agentic-ai.html">Agentic AI</a></li>
-              <li><a href="../ai/generative.html">Generative</a></li>
-              <li><a href="../ai/insights.html">Insights</a></li>
-              <li><a href="../ai/recommendation.html">Recommendation</a></li>
-              <li><a href="../ai/prediction.html">Prediction</a></li>
-              <li><a href="../ai/data-analytics.html">Data Analytics</a></li>
-            </ul>
-          </div>
-
-          <div class="footer-col">
-            <h3>Agents</h3>
-            <ul>
-              <li><a href="../agents/whatsapp.html">WhatsApp</a></li>
-              <li><a href="../agents/email.html">Email</a></li>
-              <li><a href="../agents/google-review.html">Google Review</a></li>
-              <li><a href="../agents/blogs-agent.html">Blogs Agent</a></li>
-            </ul>
-          </div>
-
-          <div class="footer-col">
-            <h3>Company</h3>
-            <ul>
-              <li><a href="../blogs/">Blogs</a></li>
-              <li><a href="../get-started.html">Get Started</a></li>
-            </ul>
+          <div class="footer-bottom">
+            <p class="footer-legal">&copy; <span id="footer-year">2025</span> CodimAI. All rights reserved.</p>
           </div>
 
         </div>
+      </footer>
 
-        <div class="footer-bottom">
-          <p class="footer-legal">&copy; <span id="footer-year">2025</span> CodimAI. All rights reserved.</p>
-        </div>
-
-      </div>
-    </footer>
-
-  </div><!-- /.closing-screen -->
+    </div><!-- /.closing-screen -->
 
   </main>
 
@@ -379,6 +890,8 @@
 
   <script src="../assets/js/nav.js" defer></script>
   <script src="../assets/js/reveal.js" defer></script>
+  <script src="../assets/js/process-scroll.js" defer></script>
+  <script src="../assets/js/insights-hero.js" defer></script>
 
 </body>
 </html>
