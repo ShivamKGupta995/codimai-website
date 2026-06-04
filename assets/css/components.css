@@ -2048,3 +2048,408 @@ html {
   color: var(--cd-ink);
   max-width: none;
 }
+
+/* ==========================================================
+   WhatsApp agent — live phone preview
+   Two-column showcase: copy | animated phone.
+   On-brand monochrome chat (no neon green); tokens only.
+   ========================================================== */
+
+.wa-preview {
+  min-height: 100vh;
+  min-height: 100svh;
+  scroll-snap-align: start;
+  display: flex;
+  align-items: center;
+  padding-block: clamp(3rem, 8vh, 6rem);
+}
+
+.wa-preview__inner {
+  display: grid;
+  grid-template-columns: 1fr 360px;
+  gap: clamp(2rem, 5vw, 3.5rem);
+  align-items: center;
+  width: 100%;
+}
+
+.wa-preview__copy { max-width: 560px; }
+.wa-preview__copy .section__lead { margin-top: 0.75rem; }
+.wa-preview__copy .cd-btn-primary { margin-top: 1.75rem; }
+
+/* ---- Phone device frame ---------------------------------- */
+
+.wa-phone {
+  width: 100%;
+  max-width: 340px;
+  margin: 0 auto;
+  background: var(--cd-ink-block);
+  border-radius: 38px;
+  padding: 12px;
+  box-shadow: 0 1px 0 var(--cd-border-strong);
+}
+
+.wa-phone__notch {
+  width: 42%;
+  height: 6px;
+  margin: 2px auto 10px;
+  background: rgba(247,245,240,0.22);
+  border-radius: 99px;
+}
+
+.wa-phone__screen {
+  background: var(--wa-wallpaper);
+  border-radius: 26px;
+  overflow: hidden;
+}
+
+/* WhatsApp green header */
+.wa-phone__bar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 11px 12px;
+  background: var(--wa-header);
+}
+.wa-phone__bar::before {
+  content: "";
+  width: 9px;
+  height: 9px;
+  flex-shrink: 0;
+  border-left: 2px solid var(--wa-header-text);
+  border-bottom: 2px solid var(--wa-header-text);
+  transform: rotate(45deg);
+  margin-right: -2px;
+  opacity: 0.95;
+}
+
+.wa-phone__avatar {
+  width: 34px;
+  height: 34px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.22);
+  display: grid;
+  place-items: center;
+  font-family: var(--cd-font-display);
+  font-size: 15px;
+  color: var(--wa-header-text);
+}
+
+.wa-phone__name {
+  font-family: var(--cd-font-body);
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--wa-header-text);
+  line-height: 1.25;
+}
+
+.wa-phone__sub {
+  font-family: var(--cd-font-body);
+  font-size: 11px;
+  color: var(--wa-header-sub);
+}
+
+/* ---- Chat thread (beige doodle wallpaper) ---------------- */
+
+.wa-phone__thread {
+  height: 440px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 16px 12px;
+  scroll-behavior: smooth;
+  background-color: var(--wa-wallpaper);
+  /* faint doodle-like texture, no external asset */
+  background-image:
+    radial-gradient(circle at 12% 18%, rgba(0,0,0,0.022) 0 2px, transparent 3px),
+    radial-gradient(circle at 78% 32%, rgba(0,0,0,0.020) 0 2px, transparent 3px),
+    radial-gradient(circle at 38% 64%, rgba(0,0,0,0.018) 0 2px, transparent 3px),
+    radial-gradient(circle at 88% 82%, rgba(0,0,0,0.020) 0 2px, transparent 3px);
+  background-size: 160px 160px;
+}
+
+.wa-msg {
+  max-width: 82%;
+  padding: 6px 9px 5px;
+  border-radius: 8px;
+  font-family: var(--cd-font-body);
+  font-size: 13.5px;
+  line-height: 1.4;
+  color: var(--wa-bubble-text);
+  position: relative;
+  word-wrap: break-word;
+  box-shadow: 0 1px 0.5px rgba(11,20,26,0.13);
+}
+
+/* Incoming — white, tail on the left */
+.wa-msg--in {
+  align-self: flex-start;
+  background: var(--wa-bubble-in);
+  border-top-left-radius: 0;
+}
+.wa-msg--in::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -7px;
+  width: 0;
+  height: 0;
+  border-top: 8px solid var(--wa-bubble-in);
+  border-left: 8px solid transparent;
+}
+
+/* Outgoing — light green, tail on the right */
+.wa-msg--out {
+  align-self: flex-end;
+  background: var(--wa-bubble-out);
+  border-top-right-radius: 0;
+}
+.wa-msg--out::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -7px;
+  width: 0;
+  height: 0;
+  border-top: 8px solid var(--wa-bubble-out);
+  border-right: 8px solid transparent;
+}
+
+.wa-msg__time {
+  display: inline-block;
+  margin-left: 8px;
+  font-size: 10px;
+  color: var(--wa-meta);
+  vertical-align: bottom;
+  float: right;
+  position: relative;
+  top: 4px;
+}
+/* blue double-tick on sent messages */
+.wa-msg--out .wa-msg__time::after {
+  content: " \2713\2713";
+  color: var(--wa-tick);
+  letter-spacing: -2px;
+}
+
+/* ---- Typing indicator ------------------------------------ */
+
+.wa-typing {
+  align-self: flex-start;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 10px 12px;
+  background: var(--wa-bubble-in);
+  border-radius: 8px;
+  border-top-left-radius: 0;
+  box-shadow: 0 1px 0.5px rgba(11,20,26,0.13);
+}
+.wa-typing span {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--wa-meta);
+  opacity: 0.5;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .wa-typing span { animation: wa-blink 1.2s infinite ease-in-out; }
+  .wa-typing span:nth-child(2) { animation-delay: 0.18s; }
+  .wa-typing span:nth-child(3) { animation-delay: 0.36s; }
+}
+@keyframes wa-blink {
+  0%, 60%, 100% { opacity: 0.3; transform: translateY(0); }
+  30%           { opacity: 0.9; transform: translateY(-2px); }
+}
+
+/* ---- Quick-reply buttons --------------------------------- */
+
+/* Quick replies — WhatsApp white pills with blue action text */
+.wa-quick {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  max-width: 100%;
+}
+.wa-quick__btn {
+  width: 100%;
+  min-height: 38px;
+  padding: 9px 12px;
+  background: var(--wa-bubble-in);
+  border: none;
+  border-radius: 7px;
+  font-family: var(--cd-font-body);
+  font-size: 13.5px;
+  font-weight: 500;
+  color: var(--wa-link);
+  cursor: default;
+  box-shadow: 0 1px 0.5px rgba(11,20,26,0.13);
+}
+
+/* ---- In-chat catalog card -------------------------------- */
+
+.wa-catalog,
+.wa-formcard { border-top-right-radius: 0; }
+/* white card → white tail (overrides the green --out tail) */
+.wa-catalog::before,
+.wa-formcard::before { border-top-color: var(--wa-bubble-in); }
+
+.wa-catalog {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 6px;
+  background: var(--wa-bubble-in);
+  color: var(--wa-bubble-text);
+  border-radius: 8px;
+}
+.wa-catalog__img {
+  aspect-ratio: 16 / 9;
+  border-radius: 6px;
+  background:
+    repeating-linear-gradient(135deg,
+      rgba(0,0,0,0.05) 0 10px,
+      rgba(0,0,0,0.02) 10px 20px);
+}
+.wa-catalog__name {
+  font-family: var(--cd-font-body);
+  font-weight: 600;
+  font-size: 13.5px;
+  color: var(--wa-bubble-text);
+  padding: 0 2px;
+}
+.wa-catalog__price {
+  font-family: var(--cd-font-body);
+  font-size: 12.5px;
+  color: var(--wa-meta);
+  padding: 0 2px 2px;
+}
+
+/* ---- In-chat form card ----------------------------------- */
+
+.wa-formcard {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 9px 10px;
+  background: var(--wa-bubble-in);
+  color: var(--wa-bubble-text);
+  border-radius: 8px;
+}
+.wa-formcard__title {
+  font-family: var(--cd-font-body);
+  font-weight: 600;
+  font-size: 12.5px;
+  color: var(--wa-bubble-text);
+  margin-bottom: 2px;
+}
+.wa-formcard__row {
+  font-size: 12px;
+  color: var(--wa-meta);
+  padding: 7px 9px;
+  border: 1px solid rgba(0,0,0,0.10);
+  border-radius: 6px;
+  background: var(--wa-wallpaper);
+}
+
+/* ---- Responsive ------------------------------------------ */
+
+@media (max-width: 1023px) {
+  .wa-preview__inner { grid-template-columns: 1fr; gap: 2.25rem; }
+  .wa-preview__copy { max-width: none; }
+  .wa-phone { margin-top: 0.5rem; }
+}
+@media (max-width: 639px) {
+  .wa-phone { max-width: 300px; }
+  .wa-phone__thread { height: 400px; }
+}
+
+/* ==========================================================
+   How-it-works — stepped timeline cards
+   Numbered badge + line icon + connecting hairline.
+   ========================================================== */
+
+.how-steps {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: clamp(1rem, 2vw, 1.75rem);
+  position: relative;
+  margin: 4rem 0 0;
+  padding: 0;
+}
+
+/* Connecting hairline behind the badges (badge centres at card top) */
+.how-steps::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 16.66%;
+  right: 16.66%;
+  height: 1px;
+  background: var(--cd-border-strong);
+}
+
+.how-step {
+  position: relative;
+  background: var(--cd-surface);
+  border: 1px solid var(--cd-border);
+  border-radius: var(--cd-radius);
+  padding: 2.75rem 1.75rem 1.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+  transition: border-color 0.2s ease;
+}
+.how-step:hover { border-color: var(--cd-border-strong); }
+
+.how-step__badge {
+  position: absolute;
+  top: -21px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: var(--cd-ink-block);
+  color: var(--cd-on-dark);
+  font-family: var(--cd-font-mono);
+  font-size: 13px;
+  letter-spacing: 0.04em;
+  display: grid;
+  place-items: center;
+}
+
+.how-step__icon {
+  width: 30px;
+  height: 30px;
+  color: var(--cd-ink);
+  opacity: 0.5;
+  margin-top: 0.25rem;
+}
+.how-step__icon svg { width: 100%; height: 100%; display: block; }
+
+.how-step__title {
+  font-family: var(--cd-font-display);
+  font-weight: 400;
+  font-size: 1.25rem;
+  color: var(--cd-ink);
+  line-height: 1.2;
+  margin: 0;
+}
+
+.how-step__body {
+  font-size: 0.9375rem;
+  color: var(--cd-body);
+  line-height: 1.6;
+  margin: 0;
+}
+
+@media (max-width: 860px) {
+  .how-steps { grid-template-columns: 1fr; gap: 2.5rem; margin-top: 3rem; }
+  .how-steps::before { display: none; }
+  .how-step { padding-top: 2.5rem; }
+  .how-step__badge { left: 1.75rem; transform: none; }
+}

@@ -36,6 +36,19 @@
   --cd-success:       #2E7D5B;
   --cd-warning:       #B5781F;
   --cd-error:         #B23A36;
+
+  /* --- WhatsApp device mock (authentic third-party UI depiction;
+         used ONLY inside the .wa-phone preview, not CodimAI chrome) --- */
+  --wa-header:        #008069; /* WhatsApp green header */
+  --wa-header-text:   #FFFFFF;
+  --wa-header-sub:    rgba(255,255,255,0.78);
+  --wa-wallpaper:     #EFEAE2; /* classic beige chat background */
+  --wa-bubble-in:     #FFFFFF; /* incoming bubble */
+  --wa-bubble-out:    #D9FDD3; /* outgoing light-green bubble */
+  --wa-bubble-text:   #111B21; /* near-black chat text */
+  --wa-meta:          #667781; /* timestamps / muted */
+  --wa-tick:          #53BDEB; /* read-receipt blue */
+  --wa-link:          #027EB5; /* WhatsApp action blue */
 }
 
 /* --- Display headline --- */
