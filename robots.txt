@@ -1,0 +1,32 @@
+# robots.txt — CodimAI
+# All crawlers welcome, including AI / answer-engine bots (GEO).
+
+User-agent: *
+Allow: /
+
+# AI answer engines — explicitly allowed (Generative Engine Optimization)
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+Sitemap: https://codimai.com/sitemap.xml

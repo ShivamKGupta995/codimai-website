@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <url>
+    <loc>https://codimai.com/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- AI capabilities -->
+  <url><loc>https://codimai.com/ai/agentic-ai.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://codimai.com/ai/generative.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://codimai.com/ai/insights.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://codimai.com/ai/recommendation.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://codimai.com/ai/prediction.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://codimai.com/ai/data-analytics.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+
+  <!-- Agents -->
+  <url><loc>https://codimai.com/agents/whatsapp.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://codimai.com/agents/email.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://codimai.com/agents/google-review.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://codimai.com/agents/blogs-agent.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+
+  <!-- Conversion -->
+  <url><loc>https://codimai.com/get-started.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+
+  <!-- Blog -->
+  <url><loc>https://codimai.com/blogs/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://codimai.com/blogs/what-makes-an-agent-agentic/</loc><lastmod>2025-03-18</lastmod><changefreq>yearly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://codimai.com/blogs/reading-your-data/</loc><lastmod>2025-04-05</lastmod><changefreq>yearly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://codimai.com/blogs/reviews-to-revenue/</loc><lastmod>2025-04-22</lastmod><changefreq>yearly</changefreq><priority>0.6</priority></url>
+
+</urlset>
