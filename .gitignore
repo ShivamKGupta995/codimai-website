@@ -7,3 +7,6 @@ node_modules/
 vendor/
 .env
 .env.*
+.claude/
+CLAUDE.md
+.HOW_TO_START.md
