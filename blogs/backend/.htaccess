@@ -1,0 +1,13 @@
+Options -Indexes
+
+# Block direct access to sensitive files
+<FilesMatch "\.(env|local|production|example)$">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
+# Deny access to includes directory
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteRule ^includes/ - [F,L]
+</IfModule>

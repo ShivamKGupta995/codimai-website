@@ -34,10 +34,9 @@
   <link rel="stylesheet" href="../assets/css/tokens.css">
   <link rel="stylesheet" href="../assets/css/base.css">
   <link rel="stylesheet" href="../assets/css/components.css">
-  <!-- This page scrolls normally — no full-screen snap sections -->
   <style>html { scroll-snap-type: none; }</style>
 
-  <!-- JSON-LD: BlogPosting list -->
+  <!-- JSON-LD: Blog -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -67,9 +66,7 @@
 
       <nav aria-label="Primary navigation">
         <ul class="nav-links" role="list">
-
           <li><a href="../index.html">Home</a></li>
-
           <li class="nav-dropdown">
             <button class="nav-btn-ghost" aria-haspopup="true" aria-expanded="false">AI</button>
             <ul class="nav-dropdown__menu" role="menu">
@@ -81,7 +78,6 @@
               <li role="none"><a href="../ai/data-analytics.html"      role="menuitem">Data Analytics</a></li>
             </ul>
           </li>
-
           <li class="nav-dropdown">
             <button class="nav-btn-ghost" aria-haspopup="true" aria-expanded="false">Agents</button>
             <ul class="nav-dropdown__menu" role="menu">
@@ -91,20 +87,15 @@
               <li role="none"><a href="../agents/blogs-agent.html"     role="menuitem">Blogs Agent</a></li>
             </ul>
           </li>
-
-          <li><a href="./">Blogs</a></li>
-
+          <li><a href="./" aria-current="page">Blogs</a></li>
         </ul>
       </nav>
 
       <a href="../get-started.html" class="cd-btn-primary nav-cta">Get Started</a>
 
       <button class="nav-hamburger" aria-expanded="false" aria-controls="nav-mobile-overlay" aria-label="Open menu">
-        <span></span>
-        <span></span>
-        <span></span>
+        <span></span><span></span><span></span>
       </button>
-
     </div>
   </header>
 
@@ -143,61 +134,57 @@
         <h1 id="blog-index-heading" class="blog-index-hero__title cd-display reveal" style="--delay:0.1s">
           Thinking out loud.
         </h1>
-        <p class="blog-index-hero__lede reveal" style="--delay:0.2s">
+        <p class="blog-index-hero__lede reveal" style="--delay:0.15s">
           Research, perspectives, and engineering notes from the CodimAI team.
         </p>
+
+        <!-- Search -->
+        <div class="blog-search-wrap reveal" style="--delay:0.2s">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+          </svg>
+          <input
+            type="search"
+            class="blog-search"
+            id="blogSearch"
+            placeholder="Search articles…"
+            aria-label="Search blog articles"
+            autocomplete="off"
+          />
+        </div>
       </div>
     </section>
+
+    <!-- Category filters -->
+    <div class="blog-filters-wrap" role="navigation" aria-label="Blog categories">
+      <div class="container">
+        <div class="blog-filters" id="categoryFilters">
+          <button class="filter-pill active" data-cat="all">All Posts</button>
+          <button class="filter-pill" data-cat="Agentic AI">Agentic AI</button>
+          <button class="filter-pill" data-cat="Generative AI">Generative AI</button>
+          <button class="filter-pill" data-cat="Insights">Insights</button>
+          <button class="filter-pill" data-cat="Agents">Agents</button>
+          <button class="filter-pill" data-cat="Prediction">Prediction</button>
+          <button class="filter-pill" data-cat="Recommendation">Recommendation</button>
+          <button class="filter-pill" data-cat="Data Analytics">Data Analytics</button>
+        </div>
+      </div>
+    </div>
 
     <!-- Post listing -->
     <section class="blog-index-listing" aria-label="All posts">
       <div class="container">
 
-        <div class="blog-index__grid">
-
-          <a href="what-makes-an-agent-agentic/" class="blog-card reveal" style="--delay:0.05s">
-            <p class="blog-card__meta">
-              <time datetime="2025-03-18">18 Mar 2025</time>
-              <span aria-hidden="true">·</span>
-              <span>Agentic AI</span>
-            </p>
-            <h2 class="blog-card__title">What makes an AI agent actually agentic?</h2>
-            <p class="blog-card__body">Planning, tool use, and self-verification — the three properties that separate a chat interface from a system that ships.</p>
-            <span class="blog-card__cta">
-              Read
-              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg>
-            </span>
-          </a>
-
-          <a href="reading-your-data/" class="blog-card reveal" style="--delay:0.10s">
-            <p class="blog-card__meta">
-              <time datetime="2025-04-05">5 Apr 2025</time>
-              <span aria-hidden="true">·</span>
-              <span>Insights</span>
-            </p>
-            <h2 class="blog-card__title">Reading your data so you don't have to.</h2>
-            <p class="blog-card__body">How natural-language analytics turns a dashboard no-one checks into a daily briefing that surfaces what matters.</p>
-            <span class="blog-card__cta">
-              Read
-              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg>
-            </span>
-          </a>
-
-          <a href="reviews-to-revenue/" class="blog-card reveal" style="--delay:0.15s">
-            <p class="blog-card__meta">
-              <time datetime="2025-04-22">22 Apr 2025</time>
-              <span aria-hidden="true">·</span>
-              <span>Agents</span>
-            </p>
-            <h2 class="blog-card__title">From reviews to revenue: why response timing matters.</h2>
-            <p class="blog-card__body">A reply to a 3-star review isn't just good manners — it's a 48-hour window that search and sentiment both watch.</p>
-            <span class="blog-card__cta">
-              Read
-              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg>
-            </span>
-          </a>
-
+        <div class="blog-listing-head">
+          <h2 id="sectionTitle">Latest Articles</h2>
+          <span class="blog-result-count" id="resultCount" aria-live="polite"></span>
         </div>
+
+        <div class="blog-index__grid" id="blogGrid" role="list">
+          <!-- Rendered by JS -->
+        </div>
+
+        <nav class="blog-pagination" id="pagination" aria-label="Blog pagination"></nav>
 
       </div>
     </section>
@@ -226,7 +213,6 @@
       <div class="container site-footer__inner">
 
         <div class="footer-top">
-
           <div class="footer-brand">
             <a href="../index.html" class="nav-logo nav-logo--on-dark" aria-label="CodimAI — home"><span class="nav-logo__mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span><img src="../assets/img/logo-word.png" alt="" class="nav-logo__word" width="223" height="44"></a>
             <p>Frontier AI solutions for the next generation of intelligent business.</p>
@@ -261,7 +247,6 @@
               <li><a href="../get-started.html">Get Started</a></li>
             </ul>
           </div>
-
         </div>
 
         <div class="footer-bottom">
@@ -280,6 +265,272 @@
 
   <script src="../assets/js/nav.js" defer></script>
   <script src="../assets/js/reveal.js" defer></script>
+
+  <!-- Blog listing logic -->
+  <script>
+  /* ── Config ─────────────────────────────────────────────── */
+  const API_BASE     = 'backend/api';
+  const POSTS_PER_PAGE = 9;
+
+  /* ── Sample / fallback posts ───────────────────────────── */
+  const SAMPLE_POSTS = [
+    {
+      id: 1,
+      slug: 'what-makes-an-agent-agentic',
+      title: 'What makes an AI agent actually agentic?',
+      excerpt: 'Planning, tool use, and self-verification — the three properties that separate a chat interface from a system that ships work end-to-end.',
+      category: 'Agentic AI',
+      author_name: 'The CodimAI Team',
+      published_at: '2025-03-18',
+      read_time: 4,
+      thumbnail_url: null,
+    },
+    {
+      id: 2,
+      slug: 'reading-your-data',
+      title: 'Reading your data so you don\'t have to.',
+      excerpt: 'How natural-language analytics turns a dashboard no-one checks into a daily briefing that surfaces what matters.',
+      category: 'Insights',
+      author_name: 'The CodimAI Team',
+      published_at: '2025-04-05',
+      read_time: 5,
+      thumbnail_url: null,
+    },
+    {
+      id: 3,
+      slug: 'reviews-to-revenue',
+      title: 'From reviews to revenue: why response timing matters.',
+      excerpt: 'A reply to a 3-star review isn\'t just good manners — it\'s a 48-hour window that search and sentiment both watch.',
+      category: 'Agents',
+      author_name: 'The CodimAI Team',
+      published_at: '2025-04-22',
+      read_time: 6,
+      thumbnail_url: null,
+    },
+    {
+      id: 4,
+      slug: 'generative-ai-beyond-content',
+      title: 'Generative AI beyond content: what it means for operations.',
+      excerpt: 'Most teams still think of generative AI as a writing tool. The real opportunity is in the workflows it can redesign entirely.',
+      category: 'Generative AI',
+      author_name: 'The CodimAI Team',
+      published_at: '2025-05-10',
+      read_time: 7,
+      thumbnail_url: null,
+    },
+    {
+      id: 5,
+      slug: 'prediction-models-in-production',
+      title: 'Prediction models in production: what actually matters.',
+      excerpt: 'Accuracy on a test set is the beginning of the conversation, not the end. Here\'s what separates a model in a notebook from one that earns trust.',
+      category: 'Prediction',
+      author_name: 'The CodimAI Team',
+      published_at: '2025-05-28',
+      read_time: 8,
+      thumbnail_url: null,
+    },
+    {
+      id: 6,
+      slug: 'recommendation-systems-done-right',
+      title: 'Recommendation systems done right: less algorithm, more context.',
+      excerpt: 'The failure mode of most recommendation systems isn\'t the model — it\'s the absence of context that would make the recommendation obvious to a person.',
+      category: 'Recommendation',
+      author_name: 'The CodimAI Team',
+      published_at: '2025-06-01',
+      read_time: 6,
+      thumbnail_url: null,
+    },
+  ];
+
+  /* ── State ─────────────────────────────────────────────── */
+  let allPosts     = [];
+  let filtered     = [];
+  let currentPage  = 1;
+  let activeFilter = 'all';
+  let searchTimer  = null;
+
+  /* Category icon SVGs (inline, brand-neutral) */
+  const CAT_ICONS = {
+    'Agentic AI':     `<svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><line x1="9" y1="2" x2="9" y2="4"/><line x1="15" y1="2" x2="15" y2="4"/><line x1="9" y1="20" x2="9" y2="22"/><line x1="15" y1="20" x2="15" y2="22"/><line x1="20" y1="9" x2="22" y2="9"/><line x1="20" y1="14" x2="22" y2="14"/><line x1="2" y1="9" x2="4" y2="9"/><line x1="2" y1="14" x2="4" y2="14"/></svg>`,
+    'Generative AI':  `<svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>`,
+    'Insights':       `<svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>`,
+    'Agents':         `<svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>`,
+    'Prediction':     `<svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>`,
+    'Recommendation': `<svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg>`,
+    'Data Analytics': `<svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>`,
+    'default':        `<svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>`,
+  };
+
+  /* ── Boot ──────────────────────────────────────────────── */
+  document.addEventListener('DOMContentLoaded', async () => {
+    await loadPosts();
+    initFilters();
+    initSearch();
+  });
+
+  /* ── Load posts ────────────────────────────────────────── */
+  async function loadPosts() {
+    renderSkeletons();
+    try {
+      const res  = await fetch(`${API_BASE}/posts.php?status=published&limit=100`);
+      if (!res.ok) throw new Error('API unavailable');
+      const data = await res.json();
+      allPosts   = data.posts && data.posts.length ? data.posts : SAMPLE_POSTS;
+    } catch {
+      allPosts = SAMPLE_POSTS;
+    }
+    filtered = [...allPosts];
+    renderGrid();
+  }
+
+  /* ── Filters ───────────────────────────────────────────── */
+  function initFilters() {
+    document.querySelectorAll('.filter-pill').forEach(pill => {
+      pill.addEventListener('click', () => {
+        document.querySelectorAll('.filter-pill').forEach(p => p.classList.remove('active'));
+        pill.classList.add('active');
+        activeFilter = pill.dataset.cat;
+        currentPage  = 1;
+        applyFilters();
+      });
+    });
+  }
+
+  /* ── Search ────────────────────────────────────────────── */
+  function initSearch() {
+    document.getElementById('blogSearch').addEventListener('input', e => {
+      clearTimeout(searchTimer);
+      searchTimer = setTimeout(() => {
+        currentPage = 1;
+        applyFilters(e.target.value.trim());
+      }, 280);
+    });
+  }
+
+  function applyFilters(query = '') {
+    filtered = allPosts.filter(p => {
+      const catMatch  = activeFilter === 'all' || p.category === activeFilter;
+      const q         = query.toLowerCase();
+      const textMatch = !q || p.title.toLowerCase().includes(q) || (p.excerpt || '').toLowerCase().includes(q);
+      return catMatch && textMatch;
+    });
+    renderGrid();
+  }
+
+  /* ── Render ────────────────────────────────────────────── */
+  function renderGrid() {
+    const grid  = document.getElementById('blogGrid');
+    const count = document.getElementById('resultCount');
+    const title = document.getElementById('sectionTitle');
+
+    const start = (currentPage - 1) * POSTS_PER_PAGE;
+    const page  = filtered.slice(start, start + POSTS_PER_PAGE);
+
+    count.textContent = `${filtered.length} article${filtered.length !== 1 ? 's' : ''}`;
+    title.textContent = activeFilter === 'all' ? 'Latest Articles' : activeFilter;
+
+    if (!filtered.length) {
+      grid.innerHTML = `
+        <div class="blog-empty">
+          ${CAT_ICONS['default']}
+          <h3>No articles found</h3>
+          <p>Try a different search term or browse all posts.</p>
+          <button class="cd-btn-secondary" onclick="resetFilters()">View all articles</button>
+        </div>`;
+      document.getElementById('pagination').innerHTML = '';
+      return;
+    }
+
+    grid.innerHTML = page.map(p => renderCard(p)).join('');
+    renderPagination();
+  }
+
+  function resetFilters() {
+    document.getElementById('blogSearch').value = '';
+    document.querySelectorAll('.filter-pill').forEach((p, i) => p.classList.toggle('active', i === 0));
+    activeFilter = 'all';
+    currentPage  = 1;
+    filtered     = [...allPosts];
+    renderGrid();
+  }
+
+  function renderCard(p) {
+    const postUrl  = `post.php?slug=${encodeURIComponent(p.slug)}`;
+    const dateStr  = formatDate(p.published_at);
+    const icon     = CAT_ICONS[p.category] || CAT_ICONS['default'];
+    const thumbHtml = p.thumbnail_url
+      ? `<img src="${escHtml(p.thumbnail_url)}" alt="${escHtml(p.title)}" class="blog-card__thumb" loading="lazy" width="640" height="360"/>`
+      : `<div class="blog-card__placeholder">${icon}</div>`;
+
+    return `
+      <article class="blog-card" role="listitem">
+        <a href="${postUrl}" class="blog-card__thumb-wrap" tabindex="-1" aria-hidden="true">
+          ${thumbHtml}
+          <span class="blog-card__cat">${escHtml(p.category || 'Article')}</span>
+        </a>
+        <div class="blog-card__body">
+          <h2 class="blog-card__title">
+            <a href="${postUrl}">${escHtml(p.title)}</a>
+          </h2>
+          ${p.excerpt ? `<p class="blog-card__excerpt">${escHtml(p.excerpt)}</p>` : ''}
+          <div class="blog-card__footer">
+            <time class="blog-card__date" datetime="${p.published_at}">${dateStr}</time>
+            <span class="blog-card__read-cta">
+              Read
+              <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg>
+            </span>
+          </div>
+        </div>
+      </article>`;
+  }
+
+  function renderSkeletons() {
+    document.getElementById('blogGrid').innerHTML = Array(6).fill(0).map(() => `
+      <div class="blog-card-skeleton" aria-hidden="true">
+        <div class="skeleton skeleton-thumb"></div>
+        <div class="skeleton-body">
+          <div class="skeleton skeleton-line" style="width:45%;margin-bottom:16px;height:11px;"></div>
+          <div class="skeleton skeleton-line" style="width:90%"></div>
+          <div class="skeleton skeleton-line" style="width:75%;margin-bottom:20px;"></div>
+          <div class="skeleton skeleton-line" style="width:85%;height:12px;"></div>
+          <div class="skeleton skeleton-line" style="width:65%;height:12px;margin-bottom:24px;"></div>
+          <div class="skeleton skeleton-line" style="width:40%;height:10px;"></div>
+        </div>
+      </div>`).join('');
+  }
+
+  /* ── Pagination ────────────────────────────────────────── */
+  function renderPagination() {
+    const total = Math.ceil(filtered.length / POSTS_PER_PAGE);
+    const wrap  = document.getElementById('pagination');
+    if (total <= 1) { wrap.innerHTML = ''; return; }
+
+    let html = `<button class="page-btn page-arrow" onclick="goPage(${currentPage - 1})" ${currentPage === 1 ? 'disabled' : ''} aria-label="Previous page">‹</button>`;
+    for (let i = 1; i <= total; i++) {
+      html += `<button class="page-btn${i === currentPage ? ' active' : ''}" onclick="goPage(${i})" aria-label="Page ${i}" ${i === currentPage ? 'aria-current="page"' : ''}>${i}</button>`;
+    }
+    html += `<button class="page-btn page-arrow" onclick="goPage(${currentPage + 1})" ${currentPage === total ? 'disabled' : ''} aria-label="Next page">›</button>`;
+    wrap.innerHTML = html;
+  }
+
+  function goPage(n) {
+    currentPage = n;
+    renderGrid();
+    document.querySelector('.blog-index-listing').scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+
+  /* ── Helpers ───────────────────────────────────────────── */
+  function formatDate(str) {
+    if (!str) return '';
+    return new Date(str).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' });
+  }
+
+  function escHtml(str) {
+    return String(str)
+      .replace(/&/g,'&amp;').replace(/</g,'&lt;')
+      .replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+  }
+  </script>
 
 </body>
 </html>

@@ -158,13 +158,18 @@
       body: new FormData(form)
     })
       .then(function (res) {
-        if (res.ok) { showSuccess(); return; }
-        throw new Error('Bad response');
+        return res.json().then(function (data) {
+          if (res.ok && data.success) { showSuccess(); return; }
+          var msg = data.error || 'Something went wrong. Please email ' + fallbackTo + '.';
+          submitBtn.disabled = false;
+          submitBtn.textContent = 'Request your free audit';
+          showStatus('err', msg);
+        });
       })
       .catch(function () {
         submitBtn.disabled = false;
         submitBtn.textContent = 'Request your free audit';
-        showStatus('err', 'Something went wrong. Please email ' + fallbackTo + ' and we’ll take it from there.');
+        showStatus('err', 'Could not reach the server. Please email ' + fallbackTo + ' directly.');
       });
   });
 }());

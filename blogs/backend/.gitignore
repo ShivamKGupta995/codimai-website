@@ -1,0 +1,4 @@
+.env.local
+.env.production
+uploads/*
+!uploads/.htaccess
