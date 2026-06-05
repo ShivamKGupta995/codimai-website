@@ -335,49 +335,53 @@
           </a>
         </header>
 
-        <div class="blog-preview__grid">
+        <!-- Static fallback: latest posts (no-JS / SEO). Enhanced live by home-blog.js. -->
+        <div class="blog-preview__grid" id="blogPreviewGrid" role="list">
 
-          <a href="blogs/what-makes-an-agent-agentic/" class="blog-card reveal" style="--delay:0.05s">
-            <p class="blog-card__meta">
-              <time datetime="2025-03-18">18 Mar 2025</time>
-              <span aria-hidden="true">·</span>
-              <span>Agentic AI</span>
-            </p>
-            <h3 class="blog-card__title">What makes an AI agent actually agentic?</h3>
-            <p class="blog-card__body">Planning, tool use, and self-verification — the three properties that separate a chat interface from a system that ships.</p>
-            <span class="blog-card__cta">
-              Read
-              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg>
-            </span>
-          </a>
+          <article class="blog-card reveal" role="listitem" style="--delay:0.05s">
+            <a href="blogs/what-makes-an-agent-agentic/" class="blog-card__thumb-wrap" tabindex="-1" aria-hidden="true">
+              <div class="blog-card__placeholder"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><line x1="9" y1="2" x2="9" y2="4"/><line x1="15" y1="2" x2="15" y2="4"/><line x1="9" y1="20" x2="9" y2="22"/><line x1="15" y1="20" x2="15" y2="22"/><line x1="20" y1="9" x2="22" y2="9"/><line x1="20" y1="14" x2="22" y2="14"/><line x1="2" y1="9" x2="4" y2="9"/><line x1="2" y1="14" x2="4" y2="14"/></svg></div>
+              <span class="blog-card__cat">Agentic AI</span>
+            </a>
+            <div class="blog-card__body">
+              <h3 class="blog-card__title"><a href="blogs/what-makes-an-agent-agentic/">What makes an AI agent actually agentic?</a></h3>
+              <p class="blog-card__excerpt">Planning, tool use, and self-verification — the three properties that separate a chat interface from a system that ships.</p>
+              <div class="blog-card__footer">
+                <time class="blog-card__date" datetime="2025-03-18">18 Mar 2025</time>
+                <span class="blog-card__read-cta">Read <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg></span>
+              </div>
+            </div>
+          </article>
 
-          <a href="blogs/reading-your-data/" class="blog-card reveal" style="--delay:0.10s">
-            <p class="blog-card__meta">
-              <time datetime="2025-04-05">5 Apr 2025</time>
-              <span aria-hidden="true">·</span>
-              <span>Insights</span>
-            </p>
-            <h3 class="blog-card__title">Reading your data so you don't have to.</h3>
-            <p class="blog-card__body">How natural-language analytics turns a dashboard no-one checks into a daily briefing that surfaces what matters.</p>
-            <span class="blog-card__cta">
-              Read
-              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg>
-            </span>
-          </a>
+          <article class="blog-card reveal" role="listitem" style="--delay:0.10s">
+            <a href="blogs/reading-your-data/" class="blog-card__thumb-wrap" tabindex="-1" aria-hidden="true">
+              <div class="blog-card__placeholder"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg></div>
+              <span class="blog-card__cat">Insights</span>
+            </a>
+            <div class="blog-card__body">
+              <h3 class="blog-card__title"><a href="blogs/reading-your-data/">Reading your data so you don't have to.</a></h3>
+              <p class="blog-card__excerpt">How natural-language analytics turns a dashboard no-one checks into a daily briefing that surfaces what matters.</p>
+              <div class="blog-card__footer">
+                <time class="blog-card__date" datetime="2025-04-05">5 Apr 2025</time>
+                <span class="blog-card__read-cta">Read <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg></span>
+              </div>
+            </div>
+          </article>
 
-          <a href="blogs/reviews-to-revenue/" class="blog-card reveal" style="--delay:0.15s">
-            <p class="blog-card__meta">
-              <time datetime="2025-04-22">22 Apr 2025</time>
-              <span aria-hidden="true">·</span>
-              <span>Agents</span>
-            </p>
-            <h3 class="blog-card__title">From reviews to revenue: why response timing matters.</h3>
-            <p class="blog-card__body">A reply to a 3-star review isn't just good manners — it's a 48-hour window that search and sentiment both watch.</p>
-            <span class="blog-card__cta">
-              Read
-              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg>
-            </span>
-          </a>
+          <article class="blog-card reveal" role="listitem" style="--delay:0.15s">
+            <a href="blogs/reviews-to-revenue/" class="blog-card__thumb-wrap" tabindex="-1" aria-hidden="true">
+              <div class="blog-card__placeholder"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></div>
+              <span class="blog-card__cat">Agents</span>
+            </a>
+            <div class="blog-card__body">
+              <h3 class="blog-card__title"><a href="blogs/reviews-to-revenue/">From reviews to revenue: why response timing matters.</a></h3>
+              <p class="blog-card__excerpt">A reply to a 3-star review isn't just good manners — it's a 48-hour window that search and sentiment both watch.</p>
+              <div class="blog-card__footer">
+                <time class="blog-card__date" datetime="2025-04-22">22 Apr 2025</time>
+                <span class="blog-card__read-cta">Read <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg></span>
+              </div>
+            </div>
+          </article>
 
         </div>
 
@@ -465,6 +469,7 @@
   <script src="assets/js/nav.js" defer></script>
   <script src="assets/js/reveal.js" defer></script>
   <script src="assets/js/hero.js" defer></script>
+  <script src="assets/js/home-blog.js" defer></script>
 
 </body>
 </html>
