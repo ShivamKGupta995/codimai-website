@@ -15,6 +15,20 @@ html {
   -webkit-text-size-adjust: 100%;
 }
 
+/* Viewport-height-keyed root scale (desktop only).
+   The full-screen snap sections are tuned to look "full" when the viewport
+   is short (the way a 125% browser zoom renders a 1080p screen). At 100%
+   zoom the viewport is ~960-1016px tall, so the rem-based type/spacing left
+   too much empty space (underflow). Scaling the root font with viewport
+   height keeps the content/viewport ratio constant: sections fill one screen
+   at 100% zoom, while short viewports (laptops, or 125% zoom) stay at 16px so
+   nothing overflows. Width guard keeps mobile/tablet at the base size. */
+@media (min-width: 1024px) {
+  html {
+    font-size: clamp(16px, calc(16px + 0.02 * (100vh - 760px)), 20px);
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
 }
