@@ -12,7 +12,7 @@
   var INK          = '#1A1A18';
   var MUTED        = '#86847C';
   var BORDER       = 'rgba(26,26,24,0.13)';
-  var BORDER_ENG   = 'rgba(26,26,24,0.38)'; // engine node — slightly stronger border
+  var BORDER_ENG   = 'rgba(26,26,24,0.38)'; // engine node  slightly stronger border
 
   // ── Content-pipeline nodes ────────────────────────────────
   // Input (left) → AI Content Engine (centre) → Output (right)
@@ -22,7 +22,7 @@
     { id: 0, label: 'Brief',        mono: 'input',   fx: 0.10, fy: 0.26, tier: 'in'  },
     { id: 1, label: 'Product Data', mono: 'data',    fx: 0.10, fy: 0.50, tier: 'in'  },
     { id: 2, label: 'Brand Guide',  mono: 'style',   fx: 0.10, fy: 0.74, tier: 'in'  },
-    // Engine (centre — larger)
+    // Engine (centre  larger)
     { id: 3, label: 'AI Content',   mono: 'engine',  fx: 0.50, fy: 0.50, tier: 'eng' },
     // Outputs
     { id: 4, label: 'Blog Post',    mono: 'content', fx: 0.90, fy: 0.22, tier: 'out' },
@@ -31,7 +31,7 @@
     { id: 7, label: 'Docs',         mono: 'kb',      fx: 0.90, fy: 0.78, tier: 'out' },
   ];
 
-  // ── Directed edges — left-to-right only ──────────────────
+  // ── Directed edges  left-to-right only ──────────────────
   var EDGES = [
     // Inputs → Engine
     { a: 0, b: 3, c: -0.14 },
@@ -44,7 +44,7 @@
     { a: 3, b: 7, c:  0.14 },
   ];
 
-  // ── Zone backdrops — drawn before edges ──────────────────
+  // ── Zone backdrops  drawn before edges ──────────────────
   var ZONES = [
     { label: 'INPUT',    fx: 0.10, fw: 0.18, color: 'rgba(26,26,24,0.028)' },
     { label: 'GENERATE', fx: 0.50, fw: 0.22, color: 'rgba(26,26,24,0.022)' },
@@ -54,7 +54,7 @@
   var activation = NODES.map(function () { return 0; });
   var pulses = [];
 
-  // ── Sizing — ALL W-relative, no hard-clamped px ───────────
+  // ── Sizing  ALL W-relative, no hard-clamped px ───────────
   function nodeRadius(tier) {
     var base = Math.max(14, W * 0.046);
     if (tier === 'eng') return base * 1.55;
@@ -101,7 +101,7 @@
     setTimeout(function () { spawnPulse(i); }, i * 280 + Math.random() * 180);
   });
 
-  // ── rrect — arcTo-based (no ctx.roundRect for compatibility) ─
+  // ── rrect  arcTo-based (no ctx.roundRect for compatibility) ─
   function rrect(x, y, w, h, r) {
     ctx.beginPath();
     ctx.moveTo(x + r, y);
@@ -163,7 +163,7 @@
     var r   = nodeRadius(n.tier);
     var act = activation[n.id];
 
-    // Activation ring — expands & fades on pulse arrival
+    // Activation ring  expands & fades on pulse arrival
     if (act > 0) {
       ctx.beginPath();
       ctx.arc(p.x, p.y, r + 12 * act, 0, Math.PI * 2);
@@ -188,7 +188,7 @@
     ctx.lineWidth = 1;
     ctx.stroke();
 
-    // Primary label — scales with node radius, no hard cap
+    // Primary label  scales with node radius, no hard cap
     var fs = Math.max(9, r * 0.42);
     ctx.fillStyle = INK;
     ctx.font = '500 ' + fs + 'px "Inter", system-ui, sans-serif';

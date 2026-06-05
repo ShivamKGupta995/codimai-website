@@ -1,8 +1,8 @@
-<?php /* Shared nav header — mirrors partials/header.html */ ?>
+<?php /* Shared nav header  mirrors partials/header.html */ ?>
 <header class="site-header" role="banner">
   <div class="container site-header__inner">
 
-    <a href="/" class="nav-logo" aria-label="CodimAI — home"><span class="nav-logo__mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span><img src="/assets/img/logo-word.png" alt="" class="nav-logo__word" width="223" height="44"></a>
+    <a href="/" class="nav-logo" aria-label="CodimAI  home"><span class="nav-logo__mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span><img src="/assets/img/logo-word.png" alt="" class="nav-logo__word" width="223" height="44"></a>
 
     <nav aria-label="Primary navigation">
       <ul class="nav-links" role="list">

@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width,initial-scale=1"/>
-  <title>CodimAI Blog — Seed</title>
+  <title>CodimAI Blog  Seed</title>
   <meta name="robots" content="noindex, nofollow"/>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -183,22 +183,22 @@ if ($success) {
             'category'    => 'agentic-ai',
             'published_at'=> '2025-03-18 09:00:00',
             'read_time'   => 4,
-            'excerpt'     => 'Planning, tool use, and self-verification — the three properties that separate a chat interface from a system that ships work end-to-end.',
+            'excerpt'     => 'Planning, tool use, and self-verification  the three properties that separate a chat interface from a system that ships work end-to-end.',
             'tags'        => 'Agentic AI, Planning, Tool Use, Automation',
-            'content'     => '<p>Almost every product now claims to have an "AI agent." Most of them are a text box wired to a language model. That is useful — but it is not agentic. An agent is defined less by the model behind it and more by what it can do without you holding its hand at every step.</p>
+            'content'     => '<p>Almost every product now claims to have an "AI agent." Most of them are a text box wired to a language model. That is useful  but it is not agentic. An agent is defined less by the model behind it and more by what it can do without you holding its hand at every step.</p>
 
 <p>When we evaluate whether a system is genuinely agentic, we look for three properties. All three have to be present. Drop any one and you are back to a clever autocomplete.</p>
 
 <h2>1. It plans</h2>
 <p>A chat interface answers the question in front of it. An agent decomposes a goal into steps, sequences them, and adapts the plan when a step fails. The difference shows up the moment a task needs more than one move.</p>
-<p>Ask a chatbot to "reconcile last month\'s invoices," and it will explain how. Ask an agent, and it will list the invoices, fetch each record, compare line items, flag the mismatches, and tell you what it could not resolve — because it treated your sentence as an objective, not a prompt.</p>
+<p>Ask a chatbot to "reconcile last month\'s invoices," and it will explain how. Ask an agent, and it will list the invoices, fetch each record, compare line items, flag the mismatches, and tell you what it could not resolve  because it treated your sentence as an objective, not a prompt.</p>
 
 <h2>2. It uses tools</h2>
 <p>Language alone cannot read your database, call your API, or send an email. Agentic systems act on the world through tools, and choosing the right tool at the right moment is most of the skill.</p>
 <ul>
-  <li><strong>Retrieval</strong> — pulling the specific record or document a step needs.</li>
-  <li><strong>Action</strong> — writing to systems, triggering workflows, and producing artifacts.</li>
-  <li><strong>Computation</strong> — handing maths, code, and structured logic to something deterministic.</li>
+  <li><strong>Retrieval</strong>  pulling the specific record or document a step needs.</li>
+  <li><strong>Action</strong>  writing to systems, triggering workflows, and producing artifacts.</li>
+  <li><strong>Computation</strong>  handing maths, code, and structured logic to something deterministic.</li>
 </ul>
 
 <h2>3. It verifies its own work</h2>
@@ -216,20 +216,20 @@ if ($success) {
             'read_time'   => 5,
             'excerpt'     => 'How natural-language analytics turns a dashboard no-one checks into a daily briefing that surfaces what matters.',
             'tags'        => 'Insights, Analytics, Natural Language, Data',
-            'content'     => '<p>Most dashboards fail not because of bad data, but because of bad timing. The insight is there — buried in a chart that someone opens once a week, skims for thirty seconds, and closes.</p>
+            'content'     => '<p>Most dashboards fail not because of bad data, but because of bad timing. The insight is there  buried in a chart that someone opens once a week, skims for thirty seconds, and closes.</p>
 
 <p>The real problem is attention. Data teams can surface almost anything, but they cannot force a decision-maker to look at the right thing at the right moment.</p>
 
 <h2>The attention problem</h2>
-<p>A dashboard is passive. It waits to be opened. A natural-language briefing is active — it arrives when something worth knowing has happened, framed in the language of the person who needs to act on it.</p>
+<p>A dashboard is passive. It waits to be opened. A natural-language briefing is active  it arrives when something worth knowing has happened, framed in the language of the person who needs to act on it.</p>
 <p>This is not a small distinction. It changes who consumes insights (everyone, not just analysts), how quickly they act, and how much organisational energy goes into maintaining a system no-one uses.</p>
 
 <h2>What changes with AI-driven analytics</h2>
 <p>When an AI reads your data continuously, three things become possible that were not practical before:</p>
 <ul>
-  <li><strong>Anomaly detection at scale</strong> — surface the outlier in a table with a million rows without a human writing the query.</li>
-  <li><strong>Narrative generation</strong> — turn numbers into a sentence that explains the why, not just the what.</li>
-  <li><strong>Proactive delivery</strong> — push the right insight to the right person before they think to ask for it.</li>
+  <li><strong>Anomaly detection at scale</strong>  surface the outlier in a table with a million rows without a human writing the query.</li>
+  <li><strong>Narrative generation</strong>  turn numbers into a sentence that explains the why, not just the what.</li>
+  <li><strong>Proactive delivery</strong>  push the right insight to the right person before they think to ask for it.</li>
 </ul>
 
 <h2>What this looks like in practice</h2>
@@ -241,21 +241,21 @@ if ($success) {
             'category'    => 'agents',
             'published_at'=> '2025-04-22 09:00:00',
             'read_time'   => 6,
-            'excerpt'     => 'A reply to a 3-star review isn\'t just good manners — it\'s a 48-hour window that search and sentiment both watch.',
+            'excerpt'     => 'A reply to a 3-star review isn\'t just good manners  it\'s a 48-hour window that search and sentiment both watch.',
             'tags'        => 'Google Reviews, Reputation, Agents, Local SEO',
-            'content'     => '<p>Most businesses treat Google reviews as a scoreboard — something to monitor, occasionally respond to, and largely accept as fate. That framing misses almost everything that matters.</p>
+            'content'     => '<p>Most businesses treat Google reviews as a scoreboard  something to monitor, occasionally respond to, and largely accept as fate. That framing misses almost everything that matters.</p>
 
-<p>A review is a conversation that happens in public. The business\'s response, or absence of one, is visible to everyone who reads it — not just the original reviewer. And the timing of that response affects two things that directly drive revenue: search ranking and first-impression sentiment.</p>
+<p>A review is a conversation that happens in public. The business\'s response, or absence of one, is visible to everyone who reads it  not just the original reviewer. And the timing of that response affects two things that directly drive revenue: search ranking and first-impression sentiment.</p>
 
 <h2>The 48-hour window</h2>
 <p>Google\'s local ranking algorithm treats recency of activity as a freshness signal. A response within 48 hours tells the algorithm that the business is active and engaged. A response after a week, or no response at all, tells it the opposite.</p>
 <p>This is separate from review score. A 3.8-average business that responds to every review within a day will frequently outrank a 4.2-average competitor that ignores them.</p>
 
 <h2>What sentiment analysis adds</h2>
-<p>Not all reviews are equal. A 3-star review that mentions a specific, fixable problem is a different signal than a 3-star review expressing vague dissatisfaction. The first is actionable — and a fast, specific response demonstrably shifts the reviewer\'s public rating in a substantial percentage of cases.</p>
+<p>Not all reviews are equal. A 3-star review that mentions a specific, fixable problem is a different signal than a 3-star review expressing vague dissatisfaction. The first is actionable  and a fast, specific response demonstrably shifts the reviewer\'s public rating in a substantial percentage of cases.</p>
 
 <h2>Why automation changes the economics</h2>
-<p>A human reading and responding to every review is expensive at volume. An AI agent that classifies sentiment, identifies the core complaint, drafts a context-aware response, and flags the handful of reviews that need a human touch — that changes the unit economics completely.</p>
+<p>A human reading and responding to every review is expensive at volume. An AI agent that classifies sentiment, identifies the core complaint, drafts a context-aware response, and flags the handful of reviews that need a human touch  that changes the unit economics completely.</p>
 <p>The bottleneck is no longer capacity. It is judgment. And that is a much better problem to have.</p>',
         ],
         [
@@ -268,10 +268,10 @@ if ($success) {
             'tags'        => 'Generative AI, Operations, Workflow, Enterprise',
             'content'     => '<p>When generative AI entered mainstream use, most organisations reached for it as a content accelerator. Blog posts written faster. Marketing copy in seconds. Customer support responses drafted automatically. All of this is real, and all of it is the surface.</p>
 
-<p>The deeper shift — the one that changes organisational structure rather than just individual productivity — is generative AI applied to operations.</p>
+<p>The deeper shift  the one that changes organisational structure rather than just individual productivity  is generative AI applied to operations.</p>
 
 <h2>The content frame is too narrow</h2>
-<p>Content generation is a solved problem in the sense that every tool does it, and the marginal return from one tool versus another is diminishing. The more consequential question is: what processes in your organisation require generating structured outputs from unstructured inputs — and how many of those are still done entirely by hand?</p>
+<p>Content generation is a solved problem in the sense that every tool does it, and the marginal return from one tool versus another is diminishing. The more consequential question is: what processes in your organisation require generating structured outputs from unstructured inputs  and how many of those are still done entirely by hand?</p>
 
 <h2>Three operational categories worth examining</h2>
 <p><strong>Document processing:</strong> contracts, invoices, compliance reports, RFPs. Every one of these involves extracting structure from language. Generative AI can read, summarise, flag anomalies, and draft responses.</p>
@@ -289,13 +289,13 @@ if ($success) {
             'read_time'   => 8,
             'excerpt'     => 'Accuracy on a test set is the beginning of the conversation, not the end. Here\'s what separates a model in a notebook from one that earns trust.',
             'tags'        => 'Prediction, MLOps, Production, Machine Learning',
-            'content'     => '<p>A prediction model that works in a notebook and a prediction model that earns operational trust are, in practice, different things entirely. The gap between them is not technical sophistication — it is a set of properties that have nothing to do with the model itself.</p>
+            'content'     => '<p>A prediction model that works in a notebook and a prediction model that earns operational trust are, in practice, different things entirely. The gap between them is not technical sophistication  it is a set of properties that have nothing to do with the model itself.</p>
 
 <h2>Accuracy is table stakes</h2>
 <p>Every model that makes it to a production discussion has already cleared the accuracy bar. The question at that point is not whether it predicts well on historical data. It is whether it will keep predicting well as conditions change, whether stakeholders will trust it enough to act on it, and whether it can explain its reasoning when asked.</p>
 
 <h2>The three properties that actually determine success</h2>
-<p><strong>Explainability:</strong> "The model says churn probability is 78%" is not actionable. "The model says churn probability is 78%, primarily because login frequency dropped 60% over the last 14 days and last support ticket was unresolved" — that is actionable. The prediction and the evidence for it need to travel together.</p>
+<p><strong>Explainability:</strong> "The model says churn probability is 78%" is not actionable. "The model says churn probability is 78%, primarily because login frequency dropped 60% over the last 14 days and last support ticket was unresolved"  that is actionable. The prediction and the evidence for it need to travel together.</p>
 <p><strong>Calibration:</strong> A model that says "78% probability" should be right roughly 78% of the time across a large sample. Models that are systematically overconfident or underconfident cause downstream decisions to miscalibrate. This is often more damaging than raw accuracy degradation.</p>
 <p><strong>Monitoring:</strong> Production data drifts. The distribution your model was trained on is not the distribution it will see in six months. A model without a monitoring layer is a countdown timer.</p>
 
@@ -308,21 +308,21 @@ if ($success) {
             'category'    => 'recommendation',
             'published_at'=> '2025-06-01 09:00:00',
             'read_time'   => 6,
-            'excerpt'     => 'The failure mode of most recommendation systems isn\'t the model — it\'s the absence of context that would make the recommendation obvious to a person.',
+            'excerpt'     => 'The failure mode of most recommendation systems isn\'t the model  it\'s the absence of context that would make the recommendation obvious to a person.',
             'tags'        => 'Recommendation, Personalisation, Context, AI',
             'content'     => '<p>Most recommendation systems fail the same way. Not because the algorithm is wrong, but because the algorithm is working on the wrong inputs.</p>
 
-<p>The popular framing — "users who bought X also bought Y" — is a correlation engine. It finds patterns in historical behaviour. What it does not have is context: what the user is trying to accomplish right now, what constraints they are operating under, and what would constitute a genuinely useful suggestion versus an obvious one.</p>
+<p>The popular framing  "users who bought X also bought Y"  is a correlation engine. It finds patterns in historical behaviour. What it does not have is context: what the user is trying to accomplish right now, what constraints they are operating under, and what would constitute a genuinely useful suggestion versus an obvious one.</p>
 
 <h2>The difference between pattern and context</h2>
 <p>A pattern-based system recommends hiking boots to someone who bought a rain jacket, because the correlation is statistically strong. A context-aware system knows that the same person is planning a beach holiday and recommends sandals instead.</p>
 <p>This is not a subtle distinction. It is the difference between a recommendation that feels like surveillance and one that feels like good advice.</p>
 
 <h2>What context actually requires</h2>
-<p>Context cannot be inferred from purchase history alone. It requires signals from multiple sources: current session behaviour, stated preferences, external data like calendar or location, and sometimes direct input from the user. Integrating these signals is the hard part — not the model.</p>
+<p>Context cannot be inferred from purchase history alone. It requires signals from multiple sources: current session behaviour, stated preferences, external data like calendar or location, and sometimes direct input from the user. Integrating these signals is the hard part  not the model.</p>
 
 <h2>The feedback loop problem</h2>
-<p>Every recommendation system that optimises for clicks will eventually recommend the same things to everyone, because clicks concentrate on a small number of popular items. The metric drives the system toward homogeneity. The alternative is to measure whether the recommendation was useful after the fact — a harder measurement that requires a longer feedback loop and a different conception of success.</p>',
+<p>Every recommendation system that optimises for clicks will eventually recommend the same things to everyone, because clicks concentrate on a small number of popular items. The metric drives the system toward homogeneity. The alternative is to measure whether the recommendation was useful after the fact  a harder measurement that requires a longer feedback loop and a different conception of success.</p>',
         ],
         [
             'slug'        => 'data-analytics-without-analysts',
@@ -330,7 +330,7 @@ if ($success) {
             'category'    => 'data-analytics',
             'published_at'=> '2025-06-04 09:00:00',
             'read_time'   => 5,
-            'excerpt'     => 'The analytics bottleneck isn\'t a data problem or a tooling problem. It\'s a translation problem — between a business question and a query.',
+            'excerpt'     => 'The analytics bottleneck isn\'t a data problem or a tooling problem. It\'s a translation problem  between a business question and a query.',
             'tags'        => 'Data Analytics, Self-Serve, AI, Business Intelligence',
             'content'     => '<p>In most organisations, there are far more questions than there are people who can answer them with data. The ratio keeps getting worse as data volumes grow and the number of stakeholders with data-adjacent decisions multiplies.</p>
 
@@ -340,7 +340,7 @@ if ($success) {
 <p>The bottleneck is not technical. It is translation. A business user has a question: "Which customers are most likely to upgrade in the next 90 days?" An analyst translates that into a schema, a query, a result set, and a presentation. Each step takes time and introduces the possibility of misalignment between what was asked and what was answered.</p>
 
 <h2>Where AI changes the equation</h2>
-<p>Natural language interfaces for data remove most of the translation work. The business user asks the question in plain language. The system translates it to a query, executes it, and returns a result in language — not a table of numbers that requires further interpretation.</p>
+<p>Natural language interfaces for data remove most of the translation work. The business user asks the question in plain language. The system translates it to a query, executes it, and returns a result in language  not a table of numbers that requires further interpretation.</p>
 <p>The analyst\'s role shifts from translation to something more valuable: defining what questions are worth asking, validating that the answers make sense, and identifying the implications that the system cannot see.</p>
 
 <h2>What this requires technically</h2>
@@ -354,15 +354,15 @@ if ($success) {
             'read_time'   => 7,
             'excerpt'     => 'Before you deploy an agent, you need to answer three questions that most teams skip: scope, supervision, and failure mode.',
             'tags'        => 'Agentic AI, Enterprise, Deployment, Risk',
-            'content'     => '<p>Every enterprise AI project eventually reaches the same conversation: should we deploy this as a copilot that assists a human, or as an agent that acts autonomously? The answer depends less on capability than on trust — and trust is built through a process, not a launch.</p>
+            'content'     => '<p>Every enterprise AI project eventually reaches the same conversation: should we deploy this as a copilot that assists a human, or as an agent that acts autonomously? The answer depends less on capability than on trust  and trust is built through a process, not a launch.</p>
 
 <h2>Scope: what can the agent touch?</h2>
 <p>The first question is not "what can the agent do?" It is "what should the agent be allowed to do?" Every agentic deployment needs an explicit scope boundary: the systems it can read, the systems it can write to, the actions it can take without approval, and the actions that always require a human in the loop.</p>
-<p>Starting narrow and expanding deliberately is not timidity — it is how you accumulate the evidence base that justifies expanding scope.</p>
+<p>Starting narrow and expanding deliberately is not timidity  it is how you accumulate the evidence base that justifies expanding scope.</p>
 
 <h2>Supervision: who watches the agent?</h2>
 <p>An agent that acts autonomously still needs oversight. This means audit logs that are legible to non-technical stakeholders, exception reporting when the agent encounters something outside its training distribution, and a clear escalation path when the agent is uncertain.</p>
-<p>The goal is not to watch every action — that defeats the purpose of automation. The goal is to be able to reconstruct what happened and why, and to catch systematic errors before they compound.</p>
+<p>The goal is not to watch every action  that defeats the purpose of automation. The goal is to be able to reconstruct what happened and why, and to catch systematic errors before they compound.</p>
 
 <h2>Failure mode: what happens when it\'s wrong?</h2>
 <p>Every agent will be wrong sometimes. The question is whether its failure modes are recoverable. An agent that drafts a recommendation and waits for approval fails gracefully. An agent that sends an email or modifies a database record without review fails in a way that may be irreversible.</p>
@@ -398,7 +398,7 @@ if ($success) {
         $seeded++;
     }
 
-    $steps[] = ['ok', 'Posts seeded', "$seeded posts inserted (INSERT IGNORE — safe to re-run)" . ($skipped ? ", $skipped skipped" : '')];
+    $steps[] = ['ok', 'Posts seeded', "$seeded posts inserted (INSERT IGNORE  safe to re-run)" . ($skipped ? ", $skipped skipped" : '')];
 }
 
 /* ── Step 6: Upload dir ─────────────────────────────────── */
@@ -409,12 +409,12 @@ if ($success) {
     if (!file_exists($ht)) file_put_contents($ht, "Options -Indexes\n");
     $steps[] = is_writable($dir)
         ? ['ok',   'Uploads dir', 'Writable at /blogs/backend/uploads/']
-        : ['skip', 'Uploads dir', 'Not writable — chmod 755'];
+        : ['skip', 'Uploads dir', 'Not writable  chmod 755'];
 }
 ?>
 
 <div class="card">
-  <div class="logo"><span class="logo-dot"></span> CodimAI Blog — Seed</div>
+  <div class="logo"><span class="logo-dot"></span> CodimAI Blog  Seed</div>
   <h1><?= $success ? 'Database ready.' : 'Seed failed.' ?></h1>
   <p><?= $success
     ? 'All test data has been inserted. You can now open the blog listing or log into the admin panel.'

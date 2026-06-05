@@ -79,5 +79,5 @@ A: Under five minutes. Connect your inbox via OAuth, choose which labels the age
 - Sentences that depend on the previous one ("This means…", "As mentioned above…")
 - Wall-of-text paragraphs over 5 sentences
 - Marketing copy without specifics (no names, no numbers, no verbs)
-- Content hidden behind interactions (tabs, carousels, accordions that load on click) — crawlers and AI retrieval often miss it
+- Content hidden behind interactions (tabs, carousels, accordions that load on click)  crawlers and AI retrieval often miss it
 - Important info only in images without alt text

@@ -1,16 +1,16 @@
 ---
 name: codimai-seo-geo-audit
-description: Audit CodimAI website pages for SEO (search-engine optimization) and GEO (generative-engine optimization — being citable by AI answer engines like ChatGPT, Perplexity, Claude, Google AI Overviews). Use whenever the task is to check, score, or improve a page's discoverability, meta tags, structured data, internal linking, crawlability, or AI-citability — e.g. "audit the SEO on the Agents page", "is this page GEO-ready", "why isn't this ranking", "check my meta tags and schema". Runs a deterministic file-based audit (titles, descriptions, canonicals, OG/Twitter, JSON-LD, headings, alt text, sitemap/robots) and reports a scored checklist with concrete fixes. For writing the actual copy use codimai-content; for visual/layout use codimai-design.
+description: Audit CodimAI website pages for SEO (search-engine optimization) and GEO (generative-engine optimization  being citable by AI answer engines like ChatGPT, Perplexity, Claude, Google AI Overviews). Use whenever the task is to check, score, or improve a page's discoverability, meta tags, structured data, internal linking, crawlability, or AI-citability  e.g. "audit the SEO on the Agents page", "is this page GEO-ready", "why isn't this ranking", "check my meta tags and schema". Runs a deterministic file-based audit (titles, descriptions, canonicals, OG/Twitter, JSON-LD, headings, alt text, sitemap/robots) and reports a scored checklist with concrete fixes. For writing the actual copy use codimai-content; for visual/layout use codimai-design.
 ---
 
-# CodimAI — SEO + GEO Audit
+# CodimAI  SEO + GEO Audit
 
-This skill checks a static HTML page (or the whole site) against the SEO and GEO contract in `CLAUDE.md §6`, then reports a scored, actionable checklist. It is **diagnostic** — it tells you what to fix and why; use `codimai-content` to write the fix and `codimai-page-builder` to apply it.
+This skill checks a static HTML page (or the whole site) against the SEO and GEO contract in `CLAUDE.md §6`, then reports a scored, actionable checklist. It is **diagnostic**  it tells you what to fix and why; use `codimai-content` to write the fix and `codimai-page-builder` to apply it.
 
 Two concerns, one pass:
 
-- **SEO** — being found and ranked by search engines (Google/Bing). Driven by crawlable semantic HTML, unique meta, canonical hygiene, structured data, internal links, and performance.
-- **GEO** — being *cited* by generative answer engines (ChatGPT, Perplexity, Claude, Google AI Overviews). Driven by clean extractable facts, definitional sentences, FAQ/HowTo schema, and explicitly allowing AI crawlers.
+- **SEO**  being found and ranked by search engines (Google/Bing). Driven by crawlable semantic HTML, unique meta, canonical hygiene, structured data, internal links, and performance.
+- **GEO**  being *cited* by generative answer engines (ChatGPT, Perplexity, Claude, Google AI Overviews). Driven by clean extractable facts, definitional sentences, FAQ/HowTo schema, and explicitly allowing AI crawlers.
 
 ## How to run an audit
 
@@ -22,7 +22,7 @@ Two concerns, one pass:
    python3 .claude/skills/codimai-seo-geo-audit/scripts/audit.py .
    ```
    It prints a per-file table of PASS / WARN / FAIL plus a site-level section (sitemap.xml, robots.txt, OG image existence) and a 0–100 score per page.
-3. **Read the findings**, then for each FAIL/WARN explain the *why* and the concrete fix. Don't just dump the script output — interpret it.
+3. **Read the findings**, then for each FAIL/WARN explain the *why* and the concrete fix. Don't just dump the script output  interpret it.
 4. **Re-run after fixes** to confirm the score moved. A page is "done" only when SEO and GEO checklists below are all green.
 
 The script never edits files. It only reads and reports.
@@ -44,7 +44,7 @@ The script never edits files. It only reads and reports.
 | internal links | page links to at least one other site page; no broken internal hrefs | crawl depth + link equity |
 | JSON-LD | at least one valid `application/ld+json` block that parses | rich results eligibility |
 
-## GEO checklist (AI-citability — what makes the difference)
+## GEO checklist (AI-citability  what makes the difference)
 
 | Check | Rule | Why |
 |-------|------|-----|
@@ -63,9 +63,9 @@ GEO is mostly **content shape**, so most fixes route to `codimai-content`. The s
 Report like this, never raw dumps:
 
 ```
-ai/insights.html — 92/100
+ai/insights.html  92/100
   SEO  ✓ title (47)  ✓ desc (138)  ✓ canonical  ✓ h1×1  ✓ OG  ✓ JSON-LD(WebPage,FAQPage)
-  GEO  ✓ AI crawlers  ✓ FAQPage  ⚠ definition — hero is poetic, add a plain "Insights AI is…" line
+  GEO  ✓ AI crawlers  ✓ FAQPage  ⚠ definition  hero is poetic, add a plain "Insights AI is…" line
   FIX  Add one definitional sentence to the mission paragraph (see codimai-content).
 ```
 
@@ -73,5 +73,5 @@ Lead with the score, then only the items that aren't green, each with a one-line
 
 ## Reference
 
-- `CLAUDE.md §6` — the canonical SEO requirements for this repo.
-- `references/geo-playbook.md` — deeper GEO tactics and example before/after rewrites.
+- `CLAUDE.md §6`  the canonical SEO requirements for this repo.
+- `references/geo-playbook.md`  deeper GEO tactics and example before/after rewrites.

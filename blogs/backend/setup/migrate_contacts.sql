@@ -1,4 +1,4 @@
--- CodimAI — Contacts table migration
+-- CodimAI  Contacts table migration
 -- Run this once on any existing database to bring the schema up to date.
 -- Safe to run multiple times (uses IF NOT EXISTS / MODIFY).
 

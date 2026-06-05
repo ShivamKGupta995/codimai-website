@@ -1,5 +1,5 @@
 /* ============================================================
-   Scroll-reveal — single shared implementation (DRY).
+   Scroll-reveal  single shared implementation (DRY).
    Any element with .reveal fades/rises in once on entry.
    Optional per-element stagger via inline style="--delay:0.2s".
    Respects prefers-reduced-motion (shows everything immediately).

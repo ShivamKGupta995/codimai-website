@@ -133,7 +133,7 @@ $canonical = $siteUrl . '/blogs/post.php?slug=' . urlencode($slug);
   <header class="site-header" role="banner">
     <div class="container site-header__inner">
 
-      <a href="../index.html" class="nav-logo" aria-label="CodimAI — home"><span class="nav-logo__mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span><img src="../assets/img/logo-word.png" alt="" class="nav-logo__word" width="223" height="44"></a>
+      <a href="../index.html" class="nav-logo" aria-label="CodimAI  home"><span class="nav-logo__mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span><img src="../assets/img/logo-word.png" alt="" class="nav-logo__word" width="223" height="44"></a>
 
       <nav aria-label="Primary navigation">
         <ul class="nav-links" role="list">
@@ -247,7 +247,7 @@ $canonical = $siteUrl . '/blogs/post.php?slug=' . urlencode($slug);
           <div class="post-layout">
 
             <div class="post-body" id="post-body">
-              <?= $post['content'] /* HTML from Quill — trusted admin content */ ?>
+              <?= $post['content'] /* HTML from Quill  trusted admin content */ ?>
             </div>
 
             <aside class="post-toc-aside" id="post-toc-aside" aria-label="Table of contents" hidden>
@@ -304,7 +304,7 @@ $canonical = $siteUrl . '/blogs/post.php?slug=' . urlencode($slug);
   <footer class="site-footer" role="contentinfo">
     <div class="container site-footer__inner">
       <div class="site-footer__brand">
-        <a href="../index.html" class="nav-logo" aria-label="CodimAI — home"><span class="nav-logo__mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span><img src="../assets/img/logo-word.png" alt="CodimAI" class="nav-logo__word" width="160" height="32"></a>
+        <a href="../index.html" class="nav-logo" aria-label="CodimAI  home"><span class="nav-logo__mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span><img src="../assets/img/logo-word.png" alt="CodimAI" class="nav-logo__word" width="160" height="32"></a>
         <p class="site-footer__tagline">Frontier AI built for the real world.</p>
       </div>
       <nav class="site-footer__nav" aria-label="Footer navigation">

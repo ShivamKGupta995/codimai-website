@@ -23,7 +23,7 @@ $cats = getDb()->query('SELECT * FROM categories ORDER BY sort_order, name')->fe
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width,initial-scale=1"/>
-  <title><?= $isEdit ? 'Edit Post' : 'New Post' ?> — CodimAI Blog Admin</title>
+  <title><?= $isEdit ? 'Edit Post' : 'New Post' ?>  CodimAI Blog Admin</title>
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet"/>
   <link href="https://cdn.quilljs.com/1.3.7/quill.snow.css" rel="stylesheet"/>
@@ -263,7 +263,7 @@ const quill = new Quill('#quillEditor', {
                 showToast(data.error || 'Upload failed', 'error');
               }
             } catch {
-              showToast('Upload failed — check server connection', 'error');
+              showToast('Upload failed  check server connection', 'error');
             }
           };
         },
@@ -318,7 +318,7 @@ async function handleThumbUpload(input) {
     document.getElementById('thumbnailUrl').value = '';
     document.getElementById('thumbDrop').classList.add('has-image');
     document.getElementById('thumbPreview').innerHTML = `<img src="${url}" alt="Thumbnail"/>`;
-    showToast('Preview only — backend not connected', 'error');
+    showToast('Preview only  backend not connected', 'error');
   }
 }
 

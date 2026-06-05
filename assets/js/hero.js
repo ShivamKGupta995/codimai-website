@@ -1,5 +1,5 @@
 /* ============================================================
-   Hero signature rendering — "from pixels to worlds".
+   Hero signature rendering  "from pixels to worlds".
    A 3D point cloud that settles from scattered pixels into a
    rotating spatial world, drawn in warm brand ink on the cream
    canvas. Monochrome by design: color stays with imagery, the
@@ -38,7 +38,7 @@
     palette.push('rgba(' + INK + ',' + a.toFixed(3) + ')');
   }
 
-  /* Flat typed arrays — no objects, no GC churn */
+  /* Flat typed arrays  no objects, no GC churn */
   var hx, hy, hz, px, py, pz, sx, sy, sr, sb;
   var dpr, W, H, cx, cy, radius, t = 0, raf = null;
   var mouse = { x: 0, y: 0, tx: 0, ty: 0 };

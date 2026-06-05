@@ -1,6 +1,6 @@
 <?php
 /**
- * Blog data access layer — swap the source here without touching templates.
+ * Blog data access layer  swap the source here without touching templates.
  * Currently reads from flat JSON files in blogs/posts/.
  */
 

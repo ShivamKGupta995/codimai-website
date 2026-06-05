@@ -1,4 +1,4 @@
-# Dev plan — Agentic AI page
+# Dev plan  Agentic AI page
 
 > File-by-file, step-by-step plan for building this page. Each step is small enough to verify in isolation.
 
@@ -19,29 +19,29 @@
 | 3 | `index.html` | **MODIFY** | Update 4 `ai.html#agentic-ai` links → `agentic-ai.html` (nav, mobile nav, cap-card, footer) |
 | 4 | `404.html` | **MODIFY** | Update 3 `ai.html#agentic-ai` links → `agentic-ai.html` (nav, mobile nav, footer) |
 
-No `page-agentic-ai.css` needed — all styles go into `components.css` as reusable modifiers.
+No `page-agentic-ai.css` needed  all styles go into `components.css` as reusable modifiers.
 
 ---
 
 ## 2. Build steps (in order)
 
-### Step 2.1 — Branch
+### Step 2.1  Branch
 
 ```bash
 git checkout -b page/agentic-ai
 ```
 
-### Step 2.2 — New CSS components (components.css)
+### Step 2.2  New CSS components (components.css)
 
 Append **three new blocks** at the end of `components.css`, in this order:
 
-#### Block A — `.cap-card--plain` modifier
+#### Block A  `.cap-card--plain` modifier
 ```css
 /* Suppress arrow on plain differentiator cards */
 .cap-card--plain .cap-card__arrow { display: none; }
 ```
 
-#### Block B — `.process-list` / `.process-item`
+#### Block B  `.process-list` / `.process-item`
 ```css
 .process-list {
   list-style: none;
@@ -94,7 +94,7 @@ Append **three new blocks** at the end of `components.css`, in this order:
 }
 ```
 
-#### Block C — `.faq` / `.faq-item`
+#### Block C  `.faq` / `.faq-item`
 ```css
 .faq {
   max-width: 760px;
@@ -134,7 +134,7 @@ Append **three new blocks** at the end of `components.css`, in this order:
 
 ---
 
-### Step 2.3 — Create `agentic-ai.html` scaffold
+### Step 2.3  Create `agentic-ai.html` scaffold
 
 Create the file with:
 - `<!DOCTYPE html>` + `<html lang="en">`
@@ -147,38 +147,38 @@ Create the file with:
 
 ---
 
-### Step 2.4 — `<head>` (SEO + fonts + schema)
+### Step 2.4  `<head>` (SEO + fonts + schema)
 
 ```html
-<title>Agentic AI Solutions for Business — CodimAI</title>
-<meta name="description" content="CodimAI builds custom agentic AI systems grounded in a proven five-step process — starting with a free Business &amp; ROI Audit before a line of code is written.">
+<title>Agentic AI Solutions for Business  CodimAI</title>
+<meta name="description" content="CodimAI builds custom agentic AI systems grounded in a proven five-step process  starting with a free Business &amp; ROI Audit before a line of code is written.">
 <link rel="canonical" href="https://codimai.com/agentic-ai">
 
 <!-- Open Graph -->
 <meta property="og:type"        content="website">
 <meta property="og:url"         content="https://codimai.com/agentic-ai">
-<meta property="og:title"       content="Agentic AI Solutions for Business — CodimAI">
-<meta property="og:description" content="CodimAI builds custom agentic AI systems grounded in a proven five-step process — starting with a free Business &amp; ROI Audit before a line of code is written.">
+<meta property="og:title"       content="Agentic AI Solutions for Business  CodimAI">
+<meta property="og:description" content="CodimAI builds custom agentic AI systems grounded in a proven five-step process  starting with a free Business &amp; ROI Audit before a line of code is written.">
 <meta property="og:image"       content="https://codimai.com/assets/img/og-agentic-ai.webp">
 
 <!-- Twitter Card -->
 <meta name="twitter:card"        content="summary_large_image">
-<meta name="twitter:title"       content="Agentic AI Solutions for Business — CodimAI">
-<meta name="twitter:description" content="CodimAI builds custom agentic AI systems grounded in a proven five-step process — starting with a free Business &amp; ROI Audit before a line of code is written.">
+<meta name="twitter:title"       content="Agentic AI Solutions for Business  CodimAI">
+<meta name="twitter:description" content="CodimAI builds custom agentic AI systems grounded in a proven five-step process  starting with a free Business &amp; ROI Audit before a line of code is written.">
 <meta name="twitter:image"       content="https://codimai.com/assets/img/og-agentic-ai.webp">
 ```
 
 **JSON-LD blocks (three, inline in `<head>`):**
 
-1. `WebPage` — name, description, url, datePublished
-2. `BreadcrumbList` — Home → AI → Agentic AI
-3. `FAQPage` — 6 Q&A items from content.md
+1. `WebPage`  name, description, url, datePublished
+2. `BreadcrumbList`  Home → AI → Agentic AI
+3. `FAQPage`  6 Q&A items from content.md
 
 ---
 
-### Step 2.5 — Hero section
+### Step 2.5  Hero section
 
-Use the same markup pattern as `index.html` hero. No canvas — replace with a `<div class="hero__img-wrap">` containing an `<img>` (hero-agentic-ai.webp or placeholder `<div>`).
+Use the same markup pattern as `index.html` hero. No canvas  replace with a `<div class="hero__img-wrap">` containing an `<img>` (hero-agentic-ai.webp or placeholder `<div>`).
 
 ```
 Eyebrow:  AGENTIC · AUTONOMOUS · ROI-FIRST
@@ -190,7 +190,7 @@ CTA 2:    <a href="#process" class="cd-btn-secondary">See how it works</a>
 
 ---
 
-### Step 2.6 — Statement section
+### Step 2.6  Statement section
 
 ```html
 <section class="mission" aria-labelledby="statement-heading">
@@ -198,7 +198,7 @@ CTA 2:    <a href="#process" class="cd-btn-secondary">See how it works</a>
   <div class="container">
     <p class="mission__text reveal">
       Every CodimAI engagement starts with a business question.
-      <span class="mission__tail">We answer it — with evidence — before we build anything.</span>
+      <span class="mission__tail">We answer it  with evidence  before we build anything.</span>
     </p>
   </div>
 </section>
@@ -206,7 +206,7 @@ CTA 2:    <a href="#process" class="cd-btn-secondary">See how it works</a>
 
 ---
 
-### Step 2.7 — The CodimAI Process section (id="process")
+### Step 2.7  The CodimAI Process section (id="process")
 
 ```html
 <section id="process" class="section" aria-labelledby="process-heading">
@@ -232,7 +232,7 @@ CTA 2:    <a href="#process" class="cd-btn-secondary">See how it works</a>
 
 ---
 
-### Step 2.8 — Why CodimAI section (soft background)
+### Step 2.8  Why CodimAI section (soft background)
 
 ```html
 <section id="why-codimai" class="section section--soft" aria-labelledby="why-heading">
@@ -251,7 +251,7 @@ CTA 2:    <a href="#process" class="cd-btn-secondary">See how it works</a>
 
 ---
 
-### Step 2.9 — FAQ section
+### Step 2.9  FAQ section
 
 ```html
 <section id="faq" class="section" aria-labelledby="faq-heading">
@@ -273,7 +273,7 @@ CTA 2:    <a href="#process" class="cd-btn-secondary">See how it works</a>
 
 ---
 
-### Step 2.10 — Closing dark CTA
+### Step 2.10  Closing dark CTA
 
 Reuse the `.closing-screen` + `.site-cta` pattern from `index.html` verbatim, updating copy:
 
@@ -286,7 +286,7 @@ Button:   <a href="get-started.html" class="cd-btn-primary">Book your audit</a>
 
 ---
 
-### Step 2.11 — JS (script tags)
+### Step 2.11  JS (script tags)
 
 At bottom of `<body>`, with `defer`:
 ```html
@@ -298,20 +298,20 @@ No page-specific JS needed.
 
 ---
 
-### Step 2.12 — Update nav links in `index.html` (4 occurrences)
+### Step 2.12  Update nav links in `index.html` (4 occurrences)
 
 Change `ai.html#agentic-ai` → `agentic-ai.html` at these exact locations:
 
 | Line (approx) | Context | Change |
 |---|---|---|
-| 83 | Desktop nav dropdown — "Agentic AI" `<a>` | `href="agentic-ai.html"` |
-| 123 | Mobile overlay submenu — "Agentic AI" `<a>` | `href="agentic-ai.html"` |
-| 210 | Home capabilities card — `.cap-card` link | `href="agentic-ai.html"` |
-| 420 | Footer — "Agentic AI" link | `href="agentic-ai.html"` |
+| 83 | Desktop nav dropdown  "Agentic AI" `<a>` | `href="agentic-ai.html"` |
+| 123 | Mobile overlay submenu  "Agentic AI" `<a>` | `href="agentic-ai.html"` |
+| 210 | Home capabilities card  `.cap-card` link | `href="agentic-ai.html"` |
+| 420 | Footer  "Agentic AI" link | `href="agentic-ai.html"` |
 
 ---
 
-### Step 2.13 — Update nav links in `404.html` (3 occurrences)
+### Step 2.13  Update nav links in `404.html` (3 occurrences)
 
 Change `ai.html#agentic-ai` → `agentic-ai.html`:
 
@@ -325,7 +325,7 @@ Change `ai.html#agentic-ai` → `agentic-ai.html`:
 
 ## 3. Self-check (run before declaring Stage 4 done)
 
-- [ ] `agentic-ai.html` validates (W3C or browser devtools — no unclosed tags)
+- [ ] `agentic-ai.html` validates (W3C or browser devtools  no unclosed tags)
 - [ ] Single `<h1>` on the page
 - [ ] Heading hierarchy: H1 → H2 → H3 (no skips)
 - [ ] No hex values outside `tokens.css`
@@ -369,7 +369,7 @@ feat(pages): add standalone agentic-ai page
 
 ## 6. Out of scope for this PR
 
-- `ai.html` and its remaining sections (Generative, Insights, Recommendation, Prediction, Data Analytics) — separate page builds
-- Hero image / OG image assets (`hero-agentic-ai.webp`, `og-agentic-ai.webp`) — placeholder `<div>` used until assets are provided
-- `sitemap.xml` — no sitemap exists yet in the repo; will be created when the full site IA is built
-- Backend form handling on `get-started.html` — separate PR
+- `ai.html` and its remaining sections (Generative, Insights, Recommendation, Prediction, Data Analytics)  separate page builds
+- Hero image / OG image assets (`hero-agentic-ai.webp`, `og-agentic-ai.webp`)  placeholder `<div>` used until assets are provided
+- `sitemap.xml`  no sitemap exists yet in the repo; will be created when the full site IA is built
+- Backend form handling on `get-started.html`  separate PR

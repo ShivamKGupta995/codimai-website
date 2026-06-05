@@ -12,14 +12,14 @@
   // catalog card → in-chat form → confirmation. Loops.
   var SCRIPT = [
     { type: 'in',   text: 'Hi! Do you deliver to the old town today?', time: '09:41' },
-    { type: 'out',  text: 'Yes — we deliver there until 9pm. Want to place an order?', time: '09:41' },
+    { type: 'out',  text: 'Yes  we deliver there until 9pm. Want to place an order?', time: '09:41' },
     { type: 'quick', options: ['Browse menu', 'Track an order', 'Talk to a human'] },
     { type: 'in',   text: 'Browse menu', time: '09:42' },
-    { type: 'catalog', name: 'Margherita — Large', price: '$14.00', img: 'product' },
+    { type: 'catalog', name: 'Margherita  Large', price: '$14.00', img: 'product' },
     { type: 'out',  text: 'A favourite. Add it to your order?', time: '09:42' },
     { type: 'in',   text: 'Order now', time: '09:43' },
     { type: 'form', title: 'Quick checkout', rows: ['Name', 'Delivery address', 'Pay on delivery'] },
-    { type: 'out',  text: 'All set — your order is confirmed. Arriving in ~30 min.', time: '09:44' }
+    { type: 'out',  text: 'All set  your order is confirmed. Arriving in ~30 min.', time: '09:44' }
   ];
 
   var TYPING_MS = 850;   // typing indicator shown before each agent bubble

@@ -31,7 +31,7 @@
     { initials: 'JL', name: 'Julia L.', company: 'FinanceHub' }
   ];
 
-  var SUBJECT   = 'Following up, Arjun — quick question';
+  var SUBJECT   = 'Following up, Arjun  quick question';
   var BODY1     = 'Hi Arjun, reaching out to TechCorp';
   var BODY2     = 'about your Q3 pipeline goals...';
 

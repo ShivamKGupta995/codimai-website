@@ -1,11 +1,11 @@
 ---
 name: codimai-design
-description: Apply CodimAI's design and layout system — section composition, hero patterns, grid + card patterns, navigation, footer, the seven approved UI moments, interaction states, motion, and responsive rules. Use this whenever you are deciding how a CodimAI page or component is laid out, structured, or animated — distinct from codimai-brand (which is colors, fonts, tokens) and codimai-content (which is words). Trigger for any "build this page", "design this section", "lay out this component", or "how should this card behave on hover" request. Read codimai-brand alongside for tokens; this skill never duplicates color or font values.
+description: Apply CodimAI's design and layout system  section composition, hero patterns, grid + card patterns, navigation, footer, the seven approved UI moments, interaction states, motion, and responsive rules. Use this whenever you are deciding how a CodimAI page or component is laid out, structured, or animated  distinct from codimai-brand (which is colors, fonts, tokens) and codimai-content (which is words). Trigger for any "build this page", "design this section", "lay out this component", or "how should this card behave on hover" request. Read codimai-brand alongside for tokens; this skill never duplicates color or font values.
 ---
 
-# CodimAI — Design System
+# CodimAI  Design System
 
-This is the layout and composition authority. Brand tokens live in `codimai-brand` and are referenced via CSS variables (`var(--cd-*)`) — never duplicated here. Content rules live in `codimai-content`. This skill answers: *where does it go, how does it behave, when does it move.*
+This is the layout and composition authority. Brand tokens live in `codimai-brand` and are referenced via CSS variables (`var(--cd-*)`)  never duplicated here. Content rules live in `codimai-content`. This skill answers: *where does it go, how does it behave, when does it move.*
 
 ## Scroll-snap rule (all pages)
 
@@ -25,19 +25,19 @@ Global snap is enabled via `html { scroll-snap-type: y mandatory; }`. Mobile deg
 
 ## The one design principle
 
-**Imagery and typography carry the page. UI chrome stays quiet.** If a screen looks busy in grayscale (before imagery), it's wrong — strip components, don't add color.
+**Imagery and typography carry the page. UI chrome stays quiet.** If a screen looks busy in grayscale (before imagery), it's wrong  strip components, don't add color.
 
 ## The seven UI moments (the complete approved list)
 
 Classic ≠ boring. Craft shows up in these seven places only. Anything outside this list is off-brand.
 
-1. **The hero image** — full-bleed or near-full-width 3D-world render. Where 90% of the visual interest lives.
-2. **Scroll-reveal fades** — opacity 0 → 1 over 400–600ms as element enters viewport. No translate, no bounce. One `IntersectionObserver` for the whole page.
-3. **Sticky nav hairline** — nav is transparent at top, gains a 1px `var(--cd-border)` bottom border after 8px scroll.
-4. **Dropdown panels** — soft fade-in on hover/focus. Hairline border, 12px radius, no drop shadow.
-5. **Card hover** — border tone steps from `var(--cd-border)` to `var(--cd-border-strong)`. **No transforms, no shadows, no scale.**
-6. **Mono numbered labels** — small `01 / 02 / 03` in JetBrains Mono above each card title. Does most of the editorial work.
-7. **One dark closing block** — `var(--cd-ink-block)` section used exactly once per page, near the end, as punctuation.
+1. **The hero image**  full-bleed or near-full-width 3D-world render. Where 90% of the visual interest lives.
+2. **Scroll-reveal fades**  opacity 0 → 1 over 400–600ms as element enters viewport. No translate, no bounce. One `IntersectionObserver` for the whole page.
+3. **Sticky nav hairline**  nav is transparent at top, gains a 1px `var(--cd-border)` bottom border after 8px scroll.
+4. **Dropdown panels**  soft fade-in on hover/focus. Hairline border, 12px radius, no drop shadow.
+5. **Card hover**  border tone steps from `var(--cd-border)` to `var(--cd-border-strong)`. **No transforms, no shadows, no scale.**
+6. **Mono numbered labels**  small `01 / 02 / 03` in JetBrains Mono above each card title. Does most of the editorial work.
+7. **One dark closing block**  `var(--cd-ink-block)` section used exactly once per page, near the end, as punctuation.
 
 Forbidden anywhere: gradients on backgrounds, glow shadows, neon, parallax, scroll-jacking, animated SVG blobs, marquee logos, testimonial sliders, video heroes with autoplay, more than two CTAs per hero, drop shadows on cards, customer-logo bars on the home page, emoji.
 
@@ -66,11 +66,11 @@ One container, used everywhere. `max-width: 1180px; margin: 0 auto; padding: 0 2
 
 Stack, top to bottom, centered:
 
-1. **Eyebrow** — JetBrains Mono 12px, uppercase, letter-spacing 0.12em, color `var(--cd-muted)`. Margin-bottom 28px.
-2. **Headline** — Gilda Display 400, `clamp(44px, 7vw, 84px)`, line-height 1.06, max-width 880px, color `var(--cd-ink)`. Margin-bottom 24px.
-3. **Sub** — Inter 18–19px, line-height 1.6, max-width 580px, color `var(--cd-body)`. Margin-bottom 36px.
-4. **CTAs** — primary + secondary, gap 14px, centered. Flex-wrap on mobile.
-5. **Hero image** — margin-top 72px, 12px radius, 1px hairline border. Aspect 16:7 desktop / 4:5 mobile.
+1. **Eyebrow**  JetBrains Mono 12px, uppercase, letter-spacing 0.12em, color `var(--cd-muted)`. Margin-bottom 28px.
+2. **Headline**  Gilda Display 400, `clamp(44px, 7vw, 84px)`, line-height 1.06, max-width 880px, color `var(--cd-ink)`. Margin-bottom 24px.
+3. **Sub**  Inter 18–19px, line-height 1.6, max-width 580px, color `var(--cd-body)`. Margin-bottom 36px.
+4. **CTAs**  primary + secondary, gap 14px, centered. Flex-wrap on mobile.
+5. **Hero image**  margin-top 72px, 12px radius, 1px hairline border. Aspect 16:7 desktop / 4:5 mobile.
 
 Hero section padding: `96px` top / `96px` bottom. Generous, on purpose.
 
@@ -140,7 +140,7 @@ Keyboard accessibility is required: `aria-expanded`, focus-visible state, Esc cl
 
 ## Footer
 
-Two-column grid (1:2). Left: serif logo + © line. Right: three columns of small links (Product / Company / Legal). Single `1px` top border. No social-icon row by default — keep it editorial.
+Two-column grid (1:2). Left: serif logo + © line. Right: three columns of small links (Product / Company / Legal). Single `1px` top border. No social-icon row by default  keep it editorial.
 
 ## Interaction states (the only ones allowed)
 
@@ -187,8 +187,8 @@ When laying out a new page, compose from these. Don't invent new section types u
 
 | Section | When to use | Layout |
 | --- | --- | --- |
-| **Hero — home** | Home page only | Full-screen (`min-height: 100vh`), canvas animation, centered text |
-| **Hero — interior** | All other pages | `.hero--page`: two-column grid (text \| canvas), `padding-block: 96px` |
+| **Hero  home** | Home page only | Full-screen (`min-height: 100vh`), canvas animation, centered text |
+| **Hero  interior** | All other pages | `.hero--page`: two-column grid (text \| canvas), `padding-block: 96px` |
 | **Statement** | Page-defining sentence | One big serif line, centered, `.mission` component |
 | **Capability grid** | 4–6 related items | `.grid--3` of `.cap-card`s with `__num` |
 | **Process list** | Sequential numbered steps | `.process-list` > `.process-item` (mono num \| serif title + body) |
@@ -197,7 +197,7 @@ When laying out a new page, compose from these. Don't invent new section types u
 | **Post list** | Blog teasers, research index | `.post-list` |
 | **Closing dark CTA** | Exactly once, near end | `.site-cta` inside `.closing-screen.cd-block-dark`, serif h2 + one button |
 
-## Interior page hero — standard pattern
+## Interior page hero  standard pattern
 
 All pages except Home use the two-column interior hero. This is not optional.
 

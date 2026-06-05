@@ -4,7 +4,7 @@
 
 ---
 
-## Option A — Apache (recommended, already installed)
+## Option A  Apache (recommended, already installed)
 
 Apache is already running on your machine. One command links the project into it.
 
@@ -47,7 +47,7 @@ http://localhost/codimai/blogs/backend/admin/login.php
 
 ---
 
-## Option B — PHP built-in server (zero config, fastest start)
+## Option B  PHP built-in server (zero config, fastest start)
 
 No Apache config needed. Just run from the project root.
 
@@ -68,7 +68,7 @@ http://localhost:8000/blogs/backend/admin/login.php
 
 ---
 
-## Database setup (already done — skip if you ran seed.php)
+## Database setup (already done  skip if you ran seed.php)
 
 If the database is empty or you're setting up fresh:
 
@@ -111,7 +111,7 @@ Then visit the seed URL above.
 | Admin login | `http://localhost:8000/blogs/backend/admin/login.php` |
 | Admin dashboard | `http://localhost:8000/blogs/backend/admin/dashboard.php` |
 | Seed test data | `http://localhost:8000/blogs/backend/setup/seed.php` |
-| API — posts | `http://localhost:8000/blogs/backend/api/posts.php?status=published` |
+| API  posts | `http://localhost:8000/blogs/backend/api/posts.php?status=published` |
 | AI pages | `http://localhost:8000/ai/agentic-ai.html` |
 | Agents pages | `http://localhost:8000/agents/whatsapp.html` |
 
@@ -158,7 +158,7 @@ sudo tail -f /var/log/apache2/error.log
 cd /home/shivam/Documents/CodimAi/CodimAiWebaiteRebuild && php -S localhost:8000
 ```
 
-Then open `http://localhost:8000/blogs/` — done.
+Then open `http://localhost:8000/blogs/`  done.
 
 
   ┌──────────────────────────────────────┬────────────────────────────────────────────────┐

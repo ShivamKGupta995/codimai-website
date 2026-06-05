@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""CodimAI SEO + GEO auditor — deterministic, read-only.
+"""CodimAI SEO + GEO auditor  deterministic, read-only.
 
 Usage:
     python3 audit.py <path-or-glob> [more paths...]
@@ -174,9 +174,9 @@ def site_checks():
         r = open("robots.txt").read()
         missing = [b for b in AI_BOTS if b not in r]
         lvl = OK if not missing else WARN
-        print(f"  {lvl} robots.txt — AI crawlers " +
+        print(f"  {lvl} robots.txt  AI crawlers " +
               ("all allowed" if not missing else "missing: " + ", ".join(missing)))
-        print(f"  {OK if 'Sitemap:' in r else FAIL} robots.txt — Sitemap directive")
+        print(f"  {OK if 'Sitemap:' in r else FAIL} robots.txt  Sitemap directive")
     else:
         print(f"  {FAIL} robots.txt missing")
     # sitemap
@@ -186,7 +186,7 @@ def site_checks():
         bad = [u for u in urls if u.startswith(SITE) and
                not os.path.exists((u[len(SITE):].lstrip("/") or "index.html").rstrip("/") +
                                   ("/index.html" if u.rstrip("/") == u[:len(SITE)] or u.endswith("/") else ""))]
-        print(f"  {OK} sitemap.xml — {len(urls)} URLs")
+        print(f"  {OK} sitemap.xml  {len(urls)} URLs")
     else:
         print(f"  {FAIL} sitemap.xml missing")
 
@@ -203,12 +203,12 @@ def main():
         results.append((f, pct, rows))
     for f, pct, rows in results:
         color = "\033[32m" if pct >= 95 else "\033[33m" if pct >= 80 else "\033[31m"
-        print(f"\n\033[1m{f}\033[0m — {color}{pct}/100\033[0m")
+        print(f"\n\033[1m{f}\033[0m  {color}{pct}/100\033[0m")
         bad = [r for r in rows if r[0] != OK]
         if not bad:
             print("  all checks pass")
         for lvl, label, detail in bad:
-            print(f"  {lvl} {label}" + (f" — {detail}" if detail else ""))
+            print(f"  {lvl} {label}" + (f"  {detail}" if detail else ""))
     site_checks()
     avg = round(sum(p for _, p, _ in results) / len(results))
     print(f"\n\033[1mAverage: {avg}/100 across {len(results)} pages\033[0m")

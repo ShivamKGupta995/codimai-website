@@ -1,9 +1,9 @@
-# SEO checklist — per page
+# SEO checklist  per page
 
 Run this list before declaring a page's content done.
 
 ## Meta
-- [ ] `<title>` ≤ 60 chars, format `[Topic] — CodimAI`, primary keyword present, no clickbait
+- [ ] `<title>` ≤ 60 chars, format `[Topic]  CodimAI`, primary keyword present, no clickbait
 - [ ] `<meta name="description">` ≤ 155 chars, plain language, keyword once, no exclamation marks
 - [ ] `<link rel="canonical">` set to the page's clean URL
 - [ ] Open Graph: `og:title`, `og:description`, `og:url`, `og:image` (1200×630)
@@ -11,7 +11,7 @@ Run this list before declaring a page's content done.
 - [ ] Favicon + apple-touch-icon present
 
 ## Structure
-- [ ] Exactly one `<h1>` — matches the hero headline
+- [ ] Exactly one `<h1>`  matches the hero headline
 - [ ] H2/H3 hierarchy logical; no skipped levels
 - [ ] Every H2 is a question the user might ask (implicit or explicit)
 - [ ] Semantic landmarks: `<header>`, `<nav>`, `<main>`, `<article>` or `<section>`, `<footer>`
@@ -19,7 +19,7 @@ Run this list before declaring a page's content done.
 
 ## Content
 - [ ] Primary keyword appears in: title, H1, first 100 words, one H2
-- [ ] Secondary keywords appear naturally — never stuffed
+- [ ] Secondary keywords appear naturally  never stuffed
 - [ ] No duplicate content with other pages on the site
 - [ ] Internal links to 2–4 related pages, descriptive anchor text
 - [ ] At least one outbound link to a credible reference (research, standards)

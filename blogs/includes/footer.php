@@ -1,11 +1,11 @@
-<?php /* Shared footer — mirrors partials/footer.html */ ?>
+<?php /* Shared footer  mirrors partials/footer.html */ ?>
 <footer class="site-footer cd-block-dark" role="contentinfo">
   <div class="container site-footer__inner">
 
     <div class="footer-top">
 
       <div class="footer-brand">
-        <a href="/" class="nav-logo nav-logo--on-dark" aria-label="CodimAI — home"><span class="nav-logo__mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span><img src="/assets/img/logo-word.png" alt="" class="nav-logo__word" width="223" height="44"></a>
+        <a href="/" class="nav-logo nav-logo--on-dark" aria-label="CodimAI  home"><span class="nav-logo__mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span><img src="/assets/img/logo-word.png" alt="" class="nav-logo__word" width="223" height="44"></a>
         <p>Frontier AI solutions for the next generation of intelligent business.</p>
       </div>
 

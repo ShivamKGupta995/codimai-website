@@ -1,14 +1,14 @@
-# Build checklist — run before requesting Stage 4 approval
+# Build checklist  run before requesting Stage 4 approval
 
 All boxes must be ticked. If anything fails, fix it before showing the page to the user.
 
 ## Brand fidelity (codimai-brand)
-- [ ] Zero literal hex values outside `tokens.css` — every color is `var(--cd-*)`
+- [ ] Zero literal hex values outside `tokens.css`  every color is `var(--cd-*)`
 - [ ] Fonts are Gilda Display (display) / Inter (body) / JetBrains Mono (mono) only
 - [ ] No gradients on backgrounds
 - [ ] No glow shadows anywhere
 - [ ] No pure `#000` or `#FFF` text
-- [ ] Buttons are ink-fill primary or transparent secondary — no colored CTAs
+- [ ] Buttons are ink-fill primary or transparent secondary  no colored CTAs
 
 ## Design fidelity (codimai-design)
 - [ ] Only the seven approved UI moments are used
@@ -16,7 +16,7 @@ All boxes must be ticked. If anything fails, fix it before showing the page to t
 - [ ] One `.section--dark` block, used once, near the end
 - [ ] All sections use the standard `.section` + `.container` + `.section__head` pattern
 - [ ] Cards are the standard `.card` primitive; no bespoke card markup
-- [ ] Card hover changes border tone only — no transforms, no shadows
+- [ ] Card hover changes border tone only  no transforms, no shadows
 - [ ] `data-reveal` applied to headings and section blocks
 - [ ] Sticky nav has hairline-on-scroll behavior
 - [ ] Dropdowns are keyboard accessible (Tab + Esc work)

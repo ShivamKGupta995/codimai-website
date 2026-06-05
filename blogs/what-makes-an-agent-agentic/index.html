@@ -8,7 +8,7 @@
   <link rel="apple-touch-icon" href="../../assets/img/favicon.png">
 
   <title>What makes an AI agent actually agentic? | CodimAI</title>
-  <meta name="description" content="Planning, tool use, and self-verification — the three properties that separate a chat interface from a system that ships work end-to-end.">
+  <meta name="description" content="Planning, tool use, and self-verification  the three properties that separate a chat interface from a system that ships work end-to-end.">
   <link rel="canonical" href="https://codimai.com/blogs/what-makes-an-agent-agentic/">
 
   <!-- Open Graph (article) -->
@@ -16,7 +16,7 @@
   <meta property="og:site_name"   content="CodimAI">
   <meta property="og:url"         content="https://codimai.com/blogs/what-makes-an-agent-agentic/">
   <meta property="og:title"       content="What makes an AI agent actually agentic? | CodimAI">
-  <meta property="og:description" content="Planning, tool use, and self-verification — the three properties that separate a chat interface from a system that ships work end-to-end.">
+  <meta property="og:description" content="Planning, tool use, and self-verification  the three properties that separate a chat interface from a system that ships work end-to-end.">
   <meta property="og:image"       content="https://codimai.com/assets/img/og-default.png">
   <meta property="article:published_time" content="2025-03-18">
   <meta property="article:section"        content="Agentic AI">
@@ -24,7 +24,7 @@
   <!-- Twitter Card -->
   <meta name="twitter:card"        content="summary_large_image">
   <meta name="twitter:title"       content="What makes an AI agent actually agentic? | CodimAI">
-  <meta name="twitter:description" content="Planning, tool use, and self-verification — the three properties that separate a chat interface from a system that ships work end-to-end.">
+  <meta name="twitter:description" content="Planning, tool use, and self-verification  the three properties that separate a chat interface from a system that ships work end-to-end.">
   <meta name="twitter:image"       content="https://codimai.com/assets/img/og-default.png">
 
   <!-- Fonts -->
@@ -46,7 +46,7 @@
     {
       "@type": "BlogPosting",
       "headline": "What makes an AI agent actually agentic?",
-      "description": "Planning, tool use, and self-verification — the three properties that separate a chat interface from a system that ships work end-to-end.",
+      "description": "Planning, tool use, and self-verification  the three properties that separate a chat interface from a system that ships work end-to-end.",
       "datePublished": "2025-03-18",
       "dateModified": "2025-03-18",
       "author": {
@@ -105,7 +105,7 @@
   <header class="site-header" role="banner">
     <div class="container site-header__inner">
 
-      <a href="../../index.html" class="nav-logo" aria-label="CodimAI — home"><span class="nav-logo__mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span><img src="../../assets/img/logo-word.png" alt="" class="nav-logo__word" width="223" height="44"></a>
+      <a href="../../index.html" class="nav-logo" aria-label="CodimAI  home"><span class="nav-logo__mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span><img src="../../assets/img/logo-word.png" alt="" class="nav-logo__word" width="223" height="44"></a>
 
       <nav aria-label="Primary navigation">
         <ul class="nav-links" role="list">
@@ -196,30 +196,30 @@
       <div class="post-article">
         <div class="container">
           <div class="post-body">
-            <p>Almost every product now claims to have an “AI agent.” Most of them are a text box wired to a language model. That is useful — but it is not agentic. An agent is defined less by the model behind it and more by what it can do without you holding its hand at every step.</p>
+            <p>Almost every product now claims to have an “AI agent.” Most of them are a text box wired to a language model. That is useful  but it is not agentic. An agent is defined less by the model behind it and more by what it can do without you holding its hand at every step.</p>
 
             <p>When we evaluate whether a system is genuinely agentic, we look for three properties. All three have to be present. Drop any one and you are back to a clever autocomplete.</p>
 
             <h2>1. It plans</h2>
             <p>A chat interface answers the question in front of it. An agent decomposes a goal into steps, sequences them, and adapts the plan when a step fails. The difference shows up the moment a task needs more than one move.</p>
-            <p>Ask a chatbot to “reconcile last month’s invoices,” and it will explain how. Ask an agent, and it will list the invoices, fetch each record, compare line items, flag the mismatches, and tell you what it could not resolve — because it treated your sentence as an objective, not a prompt.</p>
+            <p>Ask a chatbot to “reconcile last month’s invoices,” and it will explain how. Ask an agent, and it will list the invoices, fetch each record, compare line items, flag the mismatches, and tell you what it could not resolve  because it treated your sentence as an objective, not a prompt.</p>
 
             <h2>2. It uses tools</h2>
             <p>Language alone cannot read your database, call your API, or send an email. Agentic systems act on the world through tools, and choosing the right tool at the right moment is most of the skill.</p>
             <ul>
-              <li><strong>Retrieval</strong> — pulling the specific record or document a step needs, rather than relying on what the model happens to remember.</li>
-              <li><strong>Action</strong> — writing to systems, triggering workflows, and producing artifacts, not just describing them.</li>
-              <li><strong>Computation</strong> — handing maths, code, and structured logic to something deterministic instead of guessing.</li>
+              <li><strong>Retrieval</strong>  pulling the specific record or document a step needs, rather than relying on what the model happens to remember.</li>
+              <li><strong>Action</strong>  writing to systems, triggering workflows, and producing artifacts, not just describing them.</li>
+              <li><strong>Computation</strong>  handing maths, code, and structured logic to something deterministic instead of guessing.</li>
             </ul>
             <p>An agent without tools is a brain in a jar. Capable, but unable to touch anything.</p>
 
             <h2>3. It verifies its own work</h2>
-            <p>This is the property almost everyone skips, and it is the one that separates a demo from production. A real agent checks its output against the goal before declaring success — re-reading the requirement, testing the result, and retrying when the check fails.</p>
+            <p>This is the property almost everyone skips, and it is the one that separates a demo from production. A real agent checks its output against the goal before declaring success  re-reading the requirement, testing the result, and retrying when the check fails.</p>
             <blockquote>The question isn’t “can it produce an answer?” It’s “can it tell whether the answer is right, and fix it when it isn’t?”</blockquote>
-            <p>Self-verification is what lets you trust an agent with a task while you do something else. Without it, you are still the quality gate — which means you never really left the loop.</p>
+            <p>Self-verification is what lets you trust an agent with a task while you do something else. Without it, you are still the quality gate  which means you never really left the loop.</p>
 
             <h2>The practical test</h2>
-            <p>Next time a tool is described as an agent, ask three questions. Can it break a goal into steps and recover when one fails? Can it act on real systems, not just talk about them? And can it check its own work before handing it back? If the honest answer to any of these is no, it is an assistant — a good one, perhaps, but not an agent.</p>
+            <p>Next time a tool is described as an agent, ask three questions. Can it break a goal into steps and recover when one fails? Can it act on real systems, not just talk about them? And can it check its own work before handing it back? If the honest answer to any of these is no, it is an assistant  a good one, perhaps, but not an agent.</p>
             <p>This distinction is not pedantry. It determines whether the system saves you time or quietly adds a new reviewing job to your plate.</p>
 
             <div class="post-cta-inline">
@@ -243,7 +243,7 @@
           Ready to build with AI?
         </h2>
         <p class="site-cta__body reveal" style="--delay:0.2s">
-          See how CodimAI can work inside your stack — from a single agent to a full intelligence layer.
+          See how CodimAI can work inside your stack  from a single agent to a full intelligence layer.
         </p>
         <a href="../../get-started.html" class="cd-btn-primary reveal" style="--delay:0.3s">Talk to us</a>
       </div>
@@ -255,7 +255,7 @@
         <div class="footer-top">
 
           <div class="footer-brand">
-            <a href="../../index.html" class="nav-logo nav-logo--on-dark" aria-label="CodimAI — home"><span class="nav-logo__mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span><img src="../../assets/img/logo-word.png" alt="" class="nav-logo__word" width="223" height="44"></a>
+            <a href="../../index.html" class="nav-logo nav-logo--on-dark" aria-label="CodimAI  home"><span class="nav-logo__mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span><img src="../../assets/img/logo-word.png" alt="" class="nav-logo__word" width="223" height="44"></a>
             <p>Frontier AI solutions for the next generation of intelligent business.</p>
           </div>
 

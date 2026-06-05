@@ -93,7 +93,7 @@
   function px(node) { return { x: node.fx * W, y: node.fy * H }; }
 
   function nodeRadius(tier) {
-    // Scale freely with canvas width — no hard upper cap so expanded view looks good
+    // Scale freely with canvas width  no hard upper cap so expanded view looks good
     var base = Math.max(14, W * 0.046);
     if (tier === 'io')   return base * 1.10;
     if (tier === 'cog')  return base * 1.00;
@@ -121,7 +121,7 @@
   // ── Spawn a pulse on edge i ───────────────────────────────
   function spawnPulse(edgeIdx) {
     if (pulses.length > 32) return;
-    // Pulse dot size scales with canvas — bigger in expanded view
+    // Pulse dot size scales with canvas  bigger in expanded view
     var dotR = Math.max(2, W * 0.004) + Math.random() * Math.max(1, W * 0.002);
     pulses.push({
       edge:  edgeIdx,
@@ -156,7 +156,7 @@
     ctx.fillStyle = zone.color;
     ctx.fill();
 
-    // Section label — scales with canvas
+    // Section label  scales with canvas
     var fs = Math.max(8, W * 0.012);
     ctx.fillStyle = 'rgba(134,132,124,0.60)';
     ctx.font = fs + 'px "JetBrains Mono", monospace';
@@ -226,7 +226,7 @@
     ctx.lineWidth = 1;
     ctx.stroke();
 
-    // Primary label — scale with node radius (no hard cap so it grows in expanded view)
+    // Primary label  scale with node radius (no hard cap so it grows in expanded view)
     var fs = Math.max(9, r * 0.44);
     ctx.fillStyle = INK;
     ctx.font = '500 ' + fs + 'px "Inter", system-ui, sans-serif';

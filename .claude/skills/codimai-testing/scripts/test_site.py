@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""CodimAI static-site test/validation gate — deterministic, read-only.
+"""CodimAI static-site test/validation gate  deterministic, read-only.
 
 Usage:  python3 test_site.py
 Walks every *.html (excluding partials/ and blogs/includes/) and runs:
@@ -195,7 +195,7 @@ SUITES = [("Links", suite_links), ("Structure", suite_structure),
 
 def main():
     files = pages()
-    print(f"{B}CodimAI site tests — {len(files)} pages{X}\n")
+    print(f"{B}CodimAI site tests  {len(files)} pages{X}\n")
     any_fail = False
     for name, fn in SUITES:
         fails, note = fn(files)
@@ -209,11 +209,11 @@ def main():
                 any_fail = True
             print(f"  {tag}  {name:16}" + (f"  ({note})" if note else ""))
             for f, why in fails[:12]:
-                print(f"        {f} — {why}")
+                print(f"        {f}  {why}")
             if len(fails) > 12:
                 print(f"        … +{len(fails)-12} more")
     print()
-    print(f"{R if any_fail else G}{B}{'FAIL — fix above before shipping' if any_fail else 'PASS — structural gate green'}{X}")
+    print(f"{R if any_fail else G}{B}{'FAIL  fix above before shipping' if any_fail else 'PASS  structural gate green'}{X}")
     sys.exit(1 if any_fail else 0)
 
 

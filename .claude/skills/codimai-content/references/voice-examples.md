@@ -1,4 +1,4 @@
-# Voice — before / after rewrites
+# Voice  before / after rewrites
 
 Train your ear with these. The "after" line is always what a CodimAI page should say.
 
@@ -19,13 +19,13 @@ Train your ear with these. The "after" line is always what a CodimAI page should
 | Our cutting-edge platform leverages state-of-the-art LLMs to deliver seamless, scalable, enterprise-grade AI experiences. | CodimAI is a research company building agents that perceive, reason, and create alongside you. |
 | Effortlessly manage all your customer conversations across every channel with our unified inbox. | One inbox. Every channel. Replies your customers actually want. |
 
-## Section leads (the first sentence — should be quotable)
+## Section leads (the first sentence  should be quotable)
 
 **Before:** Our AI is amazing at understanding context and providing helpful responses.
 **After:** CodimAI's Email Agent reads the full thread before drafting, matches your house tone, and escalates only when a human is genuinely needed.
 
 **Before:** Get insights from your data with our powerful analytics.
-**After:** Data Analytics turns plain-language questions into charts, queries, and explanations — without writing SQL.
+**After:** Data Analytics turns plain-language questions into charts, queries, and explanations  without writing SQL.
 
 ## Buttons
 
@@ -42,7 +42,7 @@ Train your ear with these. The "after" line is always what a CodimAI page should
 **After:** We couldn't reach the server. Try again in a moment.
 
 **Before:** Invalid input.
-**After:** That email address doesn't look right — check the format.
+**After:** That email address doesn't look right  check the format.
 
 ## Empty states
 

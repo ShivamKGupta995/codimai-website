@@ -1,4 +1,4 @@
-# Page spec — Data Analytics
+# Page spec  Data Analytics
 
 > Bridges approved `content.md` and the build. Anyone reading this file should be able to build the page without re-deciding anything.
 
@@ -11,8 +11,8 @@
 - **Page type:** Feature / Product
 - **Primary keyword:** business data analytics AI
 - **Secondary keywords:** business intelligence platform, AI-powered dashboards, KPI analytics
-- **Meta title:** `Data Analytics & Business Intelligence — CodimAI`
-- **Meta description:** `CodimAI turns raw business data into decision-ready intelligence — from customer behaviour to revenue trends, operational metrics, and executive dashboards.`
+- **Meta title:** `Data Analytics & Business Intelligence  CodimAI`
+- **Meta description:** `CodimAI turns raw business data into decision-ready intelligence  from customer behaviour to revenue trends, operational metrics, and executive dashboards.`
 - **Canonical URL:** `https://codimai.com/ai/data-analytics`
 
 ---
@@ -22,12 +22,12 @@
 | # | Section ID | Content source | Section type / Component | Notes |
 |---|---|---|---|---|
 | 1 | `hero` | content.md → Hero | `.hero.hero--page` | Two-column: text left, canvas animation right. Canvas: data pipeline flow. |
-| 2 | `statement` | content.md → Statement | `.mission` | One serif sentence centered. Existing component — no change. |
+| 2 | `statement` | content.md → Statement | `.mission` | One serif sentence centered. Existing component  no change. |
 | 3 | `use-cases` | content.md → Section 1 | `.section.section--soft.section--dense` + `.grid--3` of `.card` | 5 cards, numbered 01–05 with `.card__num`. Lead + body in `.section__head`. Internal link to `agentic-ai.html`. |
 | 4 | `benefits` | content.md → Section 2 | `.section` + `.grid--2` of `.card.card--wide` | 4 benefit cards. No numbers. Lead + body in `.section__head`. |
 | 5 | `approach` | content.md → Section 3 | `.section.section--soft.section--dense` + `.process-list` | 5-step compact process list (`.process-item` with num/title/body). Internal link to `generative.html`. |
 | 6–10 | `process-1` … `process-5` | content.md → Section 4 (5 steps) | `.process-step-section` × 5 | Full-screen scroll storytelling. Each step = one viewport. Unique SVG icon per step. Progress bar + dot indicator included. |
-| 11 | `why-codimai` | content.md → Section 5 | `.section.section--dark` + `.why-codimai__inner` + `.why-list` | Dark block. Left column: heading + lead paragraph. Right column: `.why-list` of 6 `.why-row` items. Exactly one dark section per page — this is it. |
+| 11 | `why-codimai` | content.md → Section 5 | `.section.section--dark` + `.why-codimai__inner` + `.why-list` | Dark block. Left column: heading + lead paragraph. Right column: `.why-list` of 6 `.why-row` items. Exactly one dark section per page  this is it. |
 | 12 | `faq` | content.md → FAQ | `.section` + `.faq` > `.faq-item` (`<details>`) | 6 Q&As. `.section__head` has eyebrow + h2. `.faq` starts below. Max-width 760px on `.faq`. |
 | 13 | `closing` | content.md → Closing CTA | `.closing-screen` + `.site-cta` + `.site-footer` | Standard dark closing screen. Warm-white button (`.cd-btn-primary` dark-block variant). Footer shares this screen. |
 
@@ -57,7 +57,7 @@
 | `.closing-screen`, `.site-cta`, `.site-cta__heading`, `.site-cta__body` | components.css | reused |
 | `.site-footer` | components.css | reused |
 | `.cd-btn-primary`, `.cd-btn-secondary` | base.css / components.css | reused |
-| `.reveal` | components.css | reused — applied to hero text, section heads |
+| `.reveal` | components.css | reused  applied to hero text, section heads |
 | `.container` | base.css | reused |
 
 **No new components required.** All sections compose from existing primitives.
@@ -71,7 +71,7 @@
 - **Text:** `--cd-ink` (headings), `--cd-body` (body), `--cd-muted` (eyebrows, mono labels, process nums), `--cd-on-dark` (headings on dark), `--cd-on-dark-soft` (body on dark)
 - **Borders:** `--cd-border` (cards, list dividers), `--cd-border-strong` (card hover)
 - **Radius:** `--cd-radius` (cards, canvas panel), `--cd-radius-sm` (small elements)
-- **Fonts:** `--cd-font-display` (Gilda Display — headings, card titles, process titles), `--cd-font-body` (Inter — body, nav), `--cd-font-mono` (JetBrains Mono — eyebrows, nums, labels)
+- **Fonts:** `--cd-font-display` (Gilda Display  headings, card titles, process titles), `--cd-font-body` (Inter  body, nav), `--cd-font-mono` (JetBrains Mono  eyebrows, nums, labels)
 
 Zero hex values outside `assets/css/tokens.css`.
 
@@ -93,20 +93,20 @@ Default rules from `codimai-design` apply. Page-specific notes:
 
 ## 6. SEO + schema
 
-- `<title>`: `Data Analytics & Business Intelligence — CodimAI`
-- `<meta name="description">`: `CodimAI turns raw business data into decision-ready intelligence — from customer behaviour to revenue trends, operational metrics, and executive dashboards.`
+- `<title>`: `Data Analytics & Business Intelligence  CodimAI`
+- `<meta name="description">`: `CodimAI turns raw business data into decision-ready intelligence  from customer behaviour to revenue trends, operational metrics, and executive dashboards.`
 - `<link rel="canonical">`: `https://codimai.com/ai/data-analytics`
 - **Open Graph:**
-  - `og:title`: `Data Analytics & Business Intelligence — CodimAI`
+  - `og:title`: `Data Analytics & Business Intelligence  CodimAI`
   - `og:description`: same as meta description
   - `og:image`: `../assets/img/og-data-analytics.webp` (1200×630)
   - `og:type`: `website`
 - **Twitter Card:** `summary_large_image`
 - **JSON-LD blocks:**
-  - [x] `WebPage` — name, description, url, breadcrumb
-  - [x] `BreadcrumbList` — Home → AI → Data Analytics
-  - [x] `FAQPage` — 6 Q&A pairs from FAQ section
-  - [ ] `Organization` — Home only, not repeated here
+  - [x] `WebPage`  name, description, url, breadcrumb
+  - [x] `BreadcrumbList`  Home → AI → Data Analytics
+  - [x] `FAQPage`  6 Q&A pairs from FAQ section
+  - [ ] `Organization`  Home only, not repeated here
 
 ---
 
@@ -118,7 +118,7 @@ Default rules from `codimai-design` apply. Page-specific notes:
 | Approach section lead | `generative.html` | "Generative AI" |
 | Hero CTA secondary | `#use-cases` anchor | "See use cases" |
 | Why CodimAI | `../get-started.html` | implicit via closing CTA |
-| FAQ — Q4 (vs BI tools) | stays on page | — |
+| FAQ  Q4 (vs BI tools) | stays on page |  |
 
 ---
 
@@ -128,14 +128,14 @@ No static images in the hero. Canvas animation is the sole visual on the right.
 
 | Slot | Description | Filename | Alt text |
 |---|---|---|---|
-| OG image | Abstract data-flow render — nodes, edges, warm neutral tones | `og-data-analytics.webp` | Data analytics intelligence layer — CodimAI |
-| (all others) | No section imagery required — the page is copy + canvas + components only | — | — |
+| OG image | Abstract data-flow render  nodes, edges, warm neutral tones | `og-data-analytics.webp` | Data analytics intelligence layer  CodimAI |
+| (all others) | No section imagery required  the page is copy + canvas + components only |  |  |
 
 ---
 
 ## 9. Canvas animation spec (`assets/js/data-analytics-hero.js`)
 
-**Concept:** Data Pipeline Intelligence — raw data sources flow left-to-right through an analytics layer and emerge as structured insights.
+**Concept:** Data Pipeline Intelligence  raw data sources flow left-to-right through an analytics layer and emerge as structured insights.
 
 **Node layout (left → right, 3 zones):**
 
@@ -155,7 +155,7 @@ No static images in the hero. Canvas animation is the sole visual on the right.
 
 **Colors:** `#F7F5F0` BG, `#1A1A18` nodes/edges/text, `#86847C` muted labels, `#FFFFFF` node fill. No other hex.
 
-**Pause/resume:** `visibilitychange` handler — pause on hidden, resume on focus.
+**Pause/resume:** `visibilitychange` handler  pause on hidden, resume on focus.
 
 **Click-to-expand:** triggers `.hero--anim--expanded` + `.hero-anim-backdrop` (existing JS pattern from other pages).
 
@@ -170,10 +170,10 @@ None. All content is fully specified and approved. No open questions before buil
 ## 11. Definition of done for this page
 
 - [x] Every approved content chunk has a section in the map (13 sections)
-- [x] Every section uses an existing component — no new CSS classes required
-- [x] All tokens reference existing CSS variables — no hex values outside tokens.css
+- [x] Every section uses an existing component  no new CSS classes required
+- [x] All tokens reference existing CSS variables  no hex values outside tokens.css
 - [x] Responsive behavior documented for 360 / 768 / 1280
 - [x] SEO + schema block is complete (WebPage, BreadcrumbList, FAQPage)
 - [x] All internal links resolve to real pages (`agentic-ai.html`, `generative.html`, `../get-started.html`)
-- [x] Canvas animation fully specified — concept, nodes, zones, edge routing, pulse behavior
-- [x] No new components — zero additions to components.css required
+- [x] Canvas animation fully specified  concept, nodes, zones, edge routing, pulse behavior
+- [x] No new components  zero additions to components.css required

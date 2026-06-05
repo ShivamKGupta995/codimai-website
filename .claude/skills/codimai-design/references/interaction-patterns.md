@@ -1,6 +1,6 @@
 # Interaction patterns reference
 
-Snippets for the few interactions CodimAI actually uses. Drop in and reuse — don't reimplement.
+Snippets for the few interactions CodimAI actually uses. Drop in and reuse  don't reimplement.
 
 ## Sticky nav with hairline on scroll
 

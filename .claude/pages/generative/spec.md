@@ -1,4 +1,4 @@
-# Page spec — Generative AI
+# Page spec  Generative AI
 
 > Bridges approved `content.md` and the build. Anyone reading this file should be able to build the page without re-deciding anything.
 
@@ -9,8 +9,8 @@
 - **Page type:** Feature / Product
 - **Primary keyword:** generative AI for business content
 - **Secondary keywords:** AI content generation, automated document creation, AI email generation
-- **Meta title:** Generative AI for Business Content — CodimAI
-- **Meta description:** CodimAI builds custom generative AI systems that produce marketing copy, reports, emails, and documents automatically — at scale, on brand.
+- **Meta title:** Generative AI for Business Content  CodimAI
+- **Meta description:** CodimAI builds custom generative AI systems that produce marketing copy, reports, emails, and documents automatically  at scale, on brand.
 - **Canonical URL:** `https://codimai.com/ai/generative`
 
 ---
@@ -36,7 +36,7 @@
 
 ## 3. Components used (reuse map)
 
-All components already exist in `assets/css/components.css` — no new CSS required.
+All components already exist in `assets/css/components.css`  no new CSS required.
 
 | Component | Source file | New or reused? |
 |-----------|-------------|----------------|
@@ -60,13 +60,13 @@ All components already exist in `assets/css/components.css` — no new CSS requi
 | `.cd-btn-primary`, `.cd-btn-secondary` | tokens.css | reused |
 
 **New JS file required:**
-- `assets/js/generative-hero.js` — canvas animation unique to this page (see §8)
+- `assets/js/generative-hero.js`  canvas animation unique to this page (see §8)
 
 ---
 
 ## 4. Brand tokens used
 
-All values via CSS custom properties — zero literal hex values outside `tokens.css`.
+All values via CSS custom properties  zero literal hex values outside `tokens.css`.
 
 - **Backgrounds:** `var(--cd-canvas)`, `var(--cd-surface)`, `var(--cd-soft)`, `var(--cd-ink-block)`
 - **Text:** `var(--cd-ink)`, `var(--cd-body)`, `var(--cd-muted)`, `var(--cd-on-dark)`, `var(--cd-on-dark-soft)`
@@ -87,24 +87,24 @@ Default rules from `codimai-design` apply everywhere. Page-specific notes:
 | Mobile < 640px | 1 column | 1 column | Compact: icon 48px, reduced padding | Single column |
 
 - Hero: collapses to single column at ≤ 1023px (already in `.hero--page` responsive rules)
-- Hero headline: `clamp(44px, 7vw, 76px)` — standard
-- Section padding: `120px` desktop / `88px` mobile — standard
+- Hero headline: `clamp(44px, 7vw, 76px)`  standard
+- Section padding: `120px` desktop / `88px` mobile  standard
 
 ---
 
 ## 6. SEO + schema
 
-- `<title>`: Generative AI for Business Content — CodimAI
-- `<meta name="description">`: CodimAI builds custom generative AI systems that produce marketing copy, reports, emails, and documents automatically — at scale, on brand.
+- `<title>`: Generative AI for Business Content  CodimAI
+- `<meta name="description">`: CodimAI builds custom generative AI systems that produce marketing copy, reports, emails, and documents automatically  at scale, on brand.
 - `<link rel="canonical" href="https://codimai.com/ai/generative">`
 - **Open Graph:** `og:title`, `og:description`, `og:image` → `assets/img/og-generative.webp` (1200×630)
 - **Twitter Card:** `summary_large_image`
 - **JSON-LD blocks:**
-  - [x] `WebPage` — name, description, url, publisher
-  - [x] `BreadcrumbList` — Home → AI → Generative
-  - [x] `FAQPage` — 6 Q&A pairs from FAQ section
-  - [ ] `Organization` — Home only, skip here
-  - [ ] `BlogPosting` — blog only, skip here
+  - [x] `WebPage`  name, description, url, publisher
+  - [x] `BreadcrumbList`  Home → AI → Generative
+  - [x] `FAQPage`  6 Q&A pairs from FAQ section
+  - [ ] `Organization`  Home only, skip here
+  - [ ] `BlogPosting`  blog only, skip here
 
 ---
 
@@ -114,20 +114,20 @@ Default rules from `codimai-design` apply everywhere. Page-specific notes:
 |---|---|---|
 | Hero CTA primary | `../get-started.html` | "Book your free audit" |
 | Hero CTA secondary | `#use-cases` (same-page anchor) | "See the process" |
-| Use Cases section — Email Generation card | `../agents/email.html` | "our Email Agent" |
+| Use Cases section  Email Generation card | `../agents/email.html` | "our Email Agent" |
 | Why CodimAI left column CTA | `../get-started.html` | "Book a free audit" |
 | Closing CTA button | `../get-started.html` | "Book your audit" |
 
 ---
 
-## 8. Canvas animation — `generative-hero.js`
+## 8. Canvas animation  `generative-hero.js`
 
-**Concept:** A content pipeline — documents flowing from structured inputs through a generation layer to output channels. Shows the transformation from raw data/briefs to finished content assets.
+**Concept:** A content pipeline  documents flowing from structured inputs through a generation layer to output channels. Shows the transformation from raw data/briefs to finished content assets.
 
 **Node layout (left → right pipeline):**
 
 ```
-Layer 1 — INPUT          Layer 2 — GENERATE        Layer 3 — OUTPUT
+Layer 1  INPUT          Layer 2  GENERATE        Layer 3  OUTPUT
 [ Brief ]                                           [ Blog Post ]
 [ Product Data ] ──────→ [ AI Content Engine ] ──→ [ Email ]
 [ Brand Guide ]                                     [ Proposal ]
@@ -136,14 +136,14 @@ Layer 1 — INPUT          Layer 2 — GENERATE        Layer 3 — OUTPUT
 
 **Visual spec:**
 - 8 nodes total: 3 input, 1 central engine (larger, ~1.5× radius), 4 output
-- Zone backdrops: `// INPUT`, `// GENERATE`, `// OUTPUT` — faint warm-grey rounded rects drawn with `arcTo`
+- Zone backdrops: `// INPUT`, `// GENERATE`, `// OUTPUT`  faint warm-grey rounded rects drawn with `arcTo`
 - Input nodes: white fill, warm border, mono labels
 - Engine node: slightly larger, slightly darker border to signal importance
 - Output nodes: white fill, same style as input
 - Edges: quadratic bezier curves with arrowheads; pulses travel left-to-right only
 - Pulses: `#1A1A18` dot, 3-ghost trail, activation ring on arrival at engine and each output
 - Two simultaneous pulses on different edges for visual activity
-- All sizes use `W * factor` — no hard-clamped px values
+- All sizes use `W * factor`  no hard-clamped px values
 - Background: `#F7F5F0`; pause on `visibilitychange: hidden`
 
 ---
@@ -154,13 +154,13 @@ Reuse the same draw-animation SVG pattern from `agentic-ai.html`:
 
 | Step | Icon concept | SVG elements |
 |---|---|---|
-| 01 Business Audit | Magnifying glass | `circle` + two `line`s (cross-hairs) — **copy from agentic-ai.html** |
-| 02 ROI Audit | Bar chart | `line` (axes) + 4 vertical `line` bars — **copy from agentic-ai.html** |
-| 03 Consultation & Strategy | Branching tree | `circle` (root) + `line` (stem) + 2 branch `line`s + 2 `circle`s (leaves) — **copy from agentic-ai.html** |
-| 04 Development & Deployment | Code brackets | `polyline` `< >` + diagonal slash — **copy from agentic-ai.html** |
-| 05 ROI Tracking & Optimisation | Trend line | `line` (axes) + `polyline` (upward) + arrowhead — **copy from agentic-ai.html** |
+| 01 Business Audit | Magnifying glass | `circle` + two `line`s (cross-hairs)  **copy from agentic-ai.html** |
+| 02 ROI Audit | Bar chart | `line` (axes) + 4 vertical `line` bars  **copy from agentic-ai.html** |
+| 03 Consultation & Strategy | Branching tree | `circle` (root) + `line` (stem) + 2 branch `line`s + 2 `circle`s (leaves)  **copy from agentic-ai.html** |
+| 04 Development & Deployment | Code brackets | `polyline` `< >` + diagonal slash  **copy from agentic-ai.html** |
+| 05 ROI Tracking & Optimisation | Trend line | `line` (axes) + `polyline` (upward) + arrowhead  **copy from agentic-ai.html** |
 
-All 5 SVGs are already in `agentic-ai.html` lines 282–466 — copy verbatim. Do not redesign.
+All 5 SVGs are already in `agentic-ai.html` lines 282–466  copy verbatim. Do not redesign.
 
 ---
 
@@ -174,7 +174,7 @@ None. All content, layout, components, and tokens are determined.
 
 - [x] Every approved content chunk has a section in the map
 - [x] Every section uses an existing component (no new CSS needed)
-- [x] All tokens reference existing CSS variables — no literal hex
+- [x] All tokens reference existing CSS variables  no literal hex
 - [x] Responsive behavior documented for 360 / 768 / 1280
 - [x] SEO + schema block complete (WebPage + BreadcrumbList + FAQPage)
 - [x] Internal links resolve to real pages

@@ -1,11 +1,11 @@
 ---
 name: codimai-brand
-description: Apply the CodimAI brand system — a light, warm, editorial, imagery-led aesthetic grounded in the REAL worldlabs.ai (white/cream backgrounds, near-black text, Gilda Display serif headlines + Roobert-style grotesk body, color carried by 3D-world imagery rather than UI accents). Use this whenever the task involves CodimAI's website, choosing fonts or text/background colors for CodimAI, styling a CodimAI page, section, or component, or building a premium spatial-intelligence / frontier-AI-research interface in the World Labs aesthetic. Trigger even when the user only says "build the CodimAI hero / about / blog page" or "what color should this text be" — this skill is the single source of truth for CodimAI's typography, color, spacing, and component styling.
+description: Apply the CodimAI brand system  a light, warm, editorial, imagery-led aesthetic grounded in the REAL worldlabs.ai (white/cream backgrounds, near-black text, Gilda Display serif headlines + Roobert-style grotesk body, color carried by 3D-world imagery rather than UI accents). Use this whenever the task involves CodimAI's website, choosing fonts or text/background colors for CodimAI, styling a CodimAI page, section, or component, or building a premium spatial-intelligence / frontier-AI-research interface in the World Labs aesthetic. Trigger even when the user only says "build the CodimAI hero / about / blog page" or "what color should this text be"  this skill is the single source of truth for CodimAI's typography, color, spacing, and component styling.
 ---
 
 # CodimAI Brand System
 
-Grounded in the real worldlabs.ai (fetched and verified, not a generic dark-SaaS template). The actual World Labs site is **light-first, warm, and editorial**: a near-white/cream canvas, near-black serif-led headlines, restrained UI chrome, and large 3D-world imagery doing the emotional and chromatic work. Documented as white/gray palette with Gilda Display + Roobert typefaces. The feeling is a calm, premium research lab — not a neon cinematic dark dashboard.
+Grounded in the real worldlabs.ai (fetched and verified, not a generic dark-SaaS template). The actual World Labs site is **light-first, warm, and editorial**: a near-white/cream canvas, near-black serif-led headlines, restrained UI chrome, and large 3D-world imagery doing the emotional and chromatic work. Documented as white/gray palette with Gilda Display + Roobert typefaces. The feeling is a calm, premium research lab  not a neon cinematic dark dashboard.
 
 Apply the tokens below to any CodimAI surface. For exact values and a paste-ready theme, read `references/tokens.css`.
 
@@ -13,10 +13,10 @@ Apply the tokens below to any CodimAI surface. For exact values and a paste-read
 
 The single biggest driver of the World Labs feel is that **the UI itself is nearly monochrome** (warm whites, soft grays, near-black ink) and all saturated color comes from photographic/3D-render imagery placed in large, confident blocks. So:
 - Keep backgrounds, text, and chrome neutral and warm.
-- Spend "color budget" on hero images, world renders, and case-study thumbnails — not on buttons, gradients, or glows.
+- Spend "color budget" on hero images, world renders, and case-study thumbnails  not on buttons, gradients, or glows.
 - A page should still feel complete and premium in grayscale, with imagery adding the life.
 
-If a screen feels like a typical AI startup (blue CTAs, purple gradients, glow shadows), you've drifted from the reference — pull the chrome back to neutral.
+If a screen feels like a typical AI startup (blue CTAs, purple gradients, glow shadows), you've drifted from the reference  pull the chrome back to neutral.
 
 ## Choosing text color against backgrounds
 
@@ -30,8 +30,8 @@ Pick text by the surface it sits on. Everything is warm-neutral; contrast comes 
 | Dark feature block `#1A1A18` | `#F7F5F0` | `#C9C6BD` | `#86847C` | `#F7F5F0` underlined |
 
 Rules of thumb:
-- Never use pure black `#000` or pure white `#FFF` for text — use the warm near-black `#1A1A18` and warm white `#F7F5F0` so the palette stays soft and premium.
-- Headings are near-black, body steps to a slightly lifted warm gray `#3A3A36` — that gentle gap reads "editorial," not "harsh."
+- Never use pure black `#000` or pure white `#FFF` for text  use the warm near-black `#1A1A18` and warm white `#F7F5F0` so the palette stays soft and premium.
+- Headings are near-black, body steps to a slightly lifted warm gray `#3A3A36`  that gentle gap reads "editorial," not "harsh."
 - Links are the same near-black as headings, distinguished by an underline or weight rather than a bright accent color. World Labs largely avoids colored link text.
 
 ## Typography
@@ -47,7 +47,7 @@ The reference pairs a high-contrast display serif with a clean neutral grotesk.
 
 Notes:
 - The serif is the signature. Use it large, at weight 400, with tight leading and generous size for hero and key statements. Let it breathe.
-- Body grotesk stays modest in size and weight — it's a quiet supporting voice.
+- Body grotesk stays modest in size and weight  it's a quiet supporting voice.
 - Avoid heavy 700/800 weights for the serif; the elegance comes from thin-to-regular high-contrast strokes.
 
 ## Spacing & shape
@@ -64,11 +64,11 @@ Notes:
 
 ## Imagery direction
 
-This is where CodimAI should invest. Use large, atmospheric 3D-world / spatial renders — depth, soft natural light, immersive environments. Place them in big confident blocks against the warm-white canvas. The site's identity is "from pixels to worlds," so favor imagery that implies explorable space and depth over flat illustration or stock UI screenshots.
+This is where CodimAI should invest. Use large, atmospheric 3D-world / spatial renders  depth, soft natural light, immersive environments. Place them in big confident blocks against the warm-white canvas. The site's identity is "from pixels to worlds," so favor imagery that implies explorable space and depth over flat illustration or stock UI screenshots.
 
 ## Motion
 
-Restrained and natural — gentle fades and slow reveals as sections enter. No bounce, no neon transitions, no aggressive parallax. Calm and confident.
+Restrained and natural  gentle fades and slow reveals as sections enter. No bounce, no neon transitions, no aggressive parallax. Calm and confident.
 
 ## Brand voice
 

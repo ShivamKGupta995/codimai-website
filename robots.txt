@@ -1,10 +1,10 @@
-# robots.txt — CodimAI
+# robots.txt  CodimAI
 # All crawlers welcome, including AI / answer-engine bots (GEO).
 
 User-agent: *
 Allow: /
 
-# AI answer engines — explicitly allowed (Generative Engine Optimization)
+# AI answer engines  explicitly allowed (Generative Engine Optimization)
 User-agent: GPTBot
 Allow: /
 

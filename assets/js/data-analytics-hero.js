@@ -67,7 +67,7 @@
   var activation = NODES.map(function () { return 0; });
   var pulses = [];
 
-  // ── Sizing — ALL W-relative, no hard-clamped px ──────────
+  // ── Sizing  ALL W-relative, no hard-clamped px ──────────
   function nodeR() {
     return Math.max(12, W * 0.038);
   }

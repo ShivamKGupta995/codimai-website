@@ -9,7 +9,7 @@ header('Content-Type: application/json; charset=utf-8');
 if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') { http_response_code(204); exit; }
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') { jsonError('Method not allowed', 405); }
 
-/* Honeypot — bots fill the website field */
+/* Honeypot  bots fill the website field */
 if (!empty($_POST['website'])) { jsonOut(['success' => true]); }
 
 $name     = trim($_POST['name']      ?? '');
@@ -62,10 +62,10 @@ $teamTo = CONTACT_TO !== '' ? CONTACT_TO : (SMTP_USER !== '' ? SMTP_USER : ADMIN
 $rows = [
     'Name'      => $name,
     'Email'     => $email,
-    'Company'   => $company !== ''  ? $company  : '—',
-    'Team size' => $teamSize !== '' ? $teamSize : '—',
+    'Company'   => $company !== ''  ? $company  : '',
+    'Team size' => $teamSize !== '' ? $teamSize : '',
     'Interest'  => $interest,
-    'Message'   => $message !== ''  ? $message  : '—',
+    'Message'   => $message !== ''  ? $message  : '',
 ];
 
 $rowsHtml = '';
@@ -90,7 +90,7 @@ $teamHtml =
 
 sendMail(
     $teamTo, 'CodimAI',
-    'New audit request — ' . $interest . ' (' . $name . ')',
+    'New audit request  ' . $interest . ' (' . $name . ')',
     $teamHtml, '',
     $email, $name              // Reply-To the submitter
 );
@@ -101,9 +101,9 @@ $ackHtml =
     . '<div style="max-width:560px;margin:0 auto;background:#fff;border:1px solid #e6e3da;border-radius:10px;padding:32px;">'
     . '<h1 style="margin:0 0 16px;font:400 22px/1.3 Georgia,serif;color:#1a1a18;">Thank you, ' . htmlspecialchars($name, ENT_QUOTES, 'UTF-8') . '.</h1>'
     . '<p style="margin:0 0 16px;font:15px/1.7 Arial,sans-serif;color:#3a3a36;">We’ve received your request for a free Business &amp; ROI Audit. A member of the CodimAI team will reply within one business day to schedule it.</p>'
-    . '<p style="margin:0;font:15px/1.7 Arial,sans-serif;color:#3a3a36;">— The CodimAI Team</p>'
+    . '<p style="margin:0;font:15px/1.7 Arial,sans-serif;color:#3a3a36;"> The CodimAI Team</p>'
     . '</div></div>';
 
-sendMail($email, $name, 'We received your request — CodimAI', $ackHtml);
+sendMail($email, $name, 'We received your request  CodimAI', $ackHtml);
 
-jsonOut(['success' => true, 'message' => 'Thank you — we will be in touch shortly.']);
+jsonOut(['success' => true, 'message' => 'Thank you  we will be in touch shortly.']);

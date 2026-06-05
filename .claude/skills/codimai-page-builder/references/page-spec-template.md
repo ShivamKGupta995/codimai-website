@@ -1,4 +1,4 @@
-# Page spec — [Page Name]
+# Page spec  [Page Name]
 
 > Spec for the page. Bridges approved `content.md` and the build. Anyone reading this file should be able to build the page without re-deciding anything.
 
@@ -33,11 +33,11 @@ List every reusable class/component this page touches. If a component does NOT e
 | `.nav` | components.css | reused |
 | `.btn--primary` | components.css | reused |
 | `.card` | components.css | reused |
-| `.[anything-new]` | components.css | **NEW** — describe |
+| `.[anything-new]` | components.css | **NEW**  describe |
 
 ## 4. Brand tokens used
 
-Only list tokens already defined in `assets/css/tokens.css`. If a value is needed that doesn't exist, escalate — do not invent one.
+Only list tokens already defined in `assets/css/tokens.css`. If a value is needed that doesn't exist, escalate  do not invent one.
 
 - Backgrounds: `--cd-canvas`, `--cd-soft`, `--cd-ink-block`
 - Text: `--cd-ink`, `--cd-body`, `--cd-muted`, `--cd-on-dark`

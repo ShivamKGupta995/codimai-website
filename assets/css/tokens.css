@@ -1,8 +1,8 @@
 /* ============================================================
-   CodimAI Brand Tokens — light, warm, editorial
+   CodimAI Brand Tokens  light, warm, editorial
    Grounded in the real worldlabs.ai (white/gray palette,
    Gilda Display + Roobert/grotesk, imagery-led).
-   Single source of truth — all other CSS uses var(--cd-*) only.
+   Single source of truth  all other CSS uses var(--cd-*) only.
    ============================================================ */
 
 :root {

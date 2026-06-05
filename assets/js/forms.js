@@ -88,7 +88,7 @@
     card.innerHTML =
       '<div class="gs-success">' +
         '<svg class="gs-success__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>' +
-        '<h2 class="gs-success__title">Thank you — we’re on it.</h2>' +
+        '<h2 class="gs-success__title">Thank you  we’re on it.</h2>' +
         '<p class="gs-success__body">Your request reached the CodimAI team. We’ll reply within one business day to schedule your audit.</p>' +
       '</div>';
     var box = card.querySelector('.gs-success');
@@ -99,7 +99,7 @@
   /* ---- mailto fallback (static host, no endpoint) -------- */
 
   function mailtoFallback(data) {
-    var subject = 'Free audit request — ' + (data.interest || 'General');
+    var subject = 'Free audit request  ' + (data.interest || 'General');
     var bodyLines = [
       'Name: ' + (data.name || ''),
       'Email: ' + (data.email || ''),

@@ -1,4 +1,4 @@
-# Dev plan — Data Analytics
+# Dev plan  Data Analytics
 
 > File-by-file, step-by-step plan. The build stage executes this verbatim.
 
@@ -18,26 +18,26 @@
 |---|---|---|---|
 | 1 | `ai/data-analytics.html` | REPLACE | Old stub has wrong title, meta, and no content. Full rebuild from approved content + spec. |
 | 2 | `assets/js/data-analytics-hero.js` | CREATE | Canvas animation for the hero right column (data pipeline flow visualization). |
-| 3 | `assets/css/components.css` | NO CHANGE | All required components already exist — zero new CSS needed. |
-| 4 | `sitemap.xml` | VERIFY | URL `https://codimai.com/ai/data-analytics` — check it exists; add if missing. |
+| 3 | `assets/css/components.css` | NO CHANGE | All required components already exist  zero new CSS needed. |
+| 4 | `sitemap.xml` | VERIFY | URL `https://codimai.com/ai/data-analytics`  check it exists; add if missing. |
 | 5 | `.claude/pages/data-analytics/notes.md` | CREATE | Decisions log. |
 
-No `page-data-analytics.css` needed — everything composes from existing components.
+No `page-data-analytics.css` needed  everything composes from existing components.
 
 ---
 
 ## 2. Build steps (in order)
 
-### Step 2.1 — Branch
+### Step 2.1  Branch
 
 ```bash
 git checkout -b page/data-analytics
 ```
 
-### Step 2.2 — Head (SEO + fonts + JSON-LD)
+### Step 2.2  Head (SEO + fonts + JSON-LD)
 
 Replace the `<head>` of `ai/data-analytics.html` with:
-- `<title>Data Analytics & Business Intelligence — CodimAI</title>`
+- `<title>Data Analytics & Business Intelligence  CodimAI</title>`
 - `<meta name="description">` (155 chars, from content.md)
 - `<link rel="canonical" href="https://codimai.com/ai/data-analytics">`
 - Full Open Graph block: og:type, og:site_name, og:url, og:title, og:description, og:image
@@ -49,11 +49,11 @@ Replace the `<head>` of `ai/data-analytics.html` with:
   - `BreadcrumbList` (Home → AI → Data Analytics, 3 items)
   - `FAQPage` (6 Q&A pairs verbatim from content.md FAQ)
 
-### Step 2.3 — Shared header + mobile nav
+### Step 2.3  Shared header + mobile nav
 
 Copy the nav block verbatim from `ai/generative.html` (it has the correct structure with all dropdown links). Set `aria-current="page"` on the "AI" dropdown button and the "Data Analytics" menu item.
 
-### Step 2.4 — Hero section
+### Step 2.4  Hero section
 
 ```html
 <section class="hero hero--page" aria-labelledby="hero-heading">
@@ -81,7 +81,7 @@ Copy the nav block verbatim from `ai/generative.html` (it has the correct struct
 <div class="hero-anim-backdrop" aria-hidden="true"></div>
 ```
 
-### Step 2.5 — Statement section
+### Step 2.5  Statement section
 
 ```html
 <section class="mission" aria-label="Page statement">
@@ -94,9 +94,9 @@ Copy the nav block verbatim from `ai/generative.html` (it has the correct struct
 </section>
 ```
 
-### Step 2.6 — Use Cases section
+### Step 2.6  Use Cases section
 
-`id="use-cases"` — targeted by hero secondary CTA.
+`id="use-cases"`  targeted by hero secondary CTA.
 
 Layout: `.section.section--soft.section--dense` + `.section__head` (eyebrow, h2, lead, body) + `.grid.grid--3` of 5 `.card` elements (numbered 01–05). Internal link to `agentic-ai.html` added as an inline link in the section body.
 
@@ -107,11 +107,11 @@ Cards:
 - 04 Business Intelligence
 - 05 Executive Reporting
 
-### Step 2.7 — Business Benefits section
+### Step 2.7  Business Benefits section
 
 `id="benefits"`.
 
-Layout: `.section` + `.section__head` + `.grid.grid--2` of 4 `.card` elements (no numbers — these are structural benefits, not sequence). No icon needed.
+Layout: `.section` + `.section__head` + `.grid.grid--2` of 4 `.card` elements (no numbers  these are structural benefits, not sequence). No icon needed.
 
 Cards:
 - Better Decision-Making
@@ -119,7 +119,7 @@ Cards:
 - Increased Visibility
 - Strategic Growth Opportunities
 
-### Step 2.8 — CodimAI Approach section
+### Step 2.8  CodimAI Approach section
 
 `id="approach"`.
 
@@ -127,7 +127,7 @@ Layout: `.section.section--soft.section--dense` + `.section__head` + `.process-l
 
 Steps: Data Audit → KPI Identification → Insight Framework Design → Dashboard & Analytics Development → Continuous Improvement.
 
-### Step 2.9 — The CodimAI Process (5 full-screen sections)
+### Step 2.9  The CodimAI Process (5 full-screen sections)
 
 `id="process"` on first section only.
 
@@ -145,7 +145,7 @@ Progress bar `--fill`: 20% / 40% / 60% / 80% / 100%.
 Dots: update `is-done` / `is-active` per step.
 Step 5 has no `.process-step__next` link (it's the last).
 
-### Step 2.10 — Why CodimAI section (dark)
+### Step 2.10  Why CodimAI section (dark)
 
 `id="why-codimai"`.
 
@@ -155,7 +155,7 @@ Layout: `.section.section--dark` + `.container` + `.why-codimai__inner` (2fr 3fr
 
 Rows: ROI-First Approach, Business-Focused Solutions, Custom AI Development, Enterprise-Ready Architecture, End-to-End Delivery, Long-Term Support & Optimisation.
 
-### Step 2.11 — FAQ section
+### Step 2.11  FAQ section
 
 `id="faq"`.
 
@@ -163,7 +163,7 @@ Layout: `.section` + `.section__head` (eyebrow `// FAQ`, h2 "Common Questions") 
 
 All 6 Q&A pairs verbatim from content.md.
 
-### Step 2.12 — Closing CTA + Footer
+### Step 2.12  Closing CTA + Footer
 
 `.closing-screen` wrapping `.site-cta` + `.site-footer`.
 
@@ -175,7 +175,7 @@ CTA:
 
 Footer: copy verbatim from `ai/generative.html`.
 
-### Step 2.13 — JS files (bottom of `<body>`)
+### Step 2.13  JS files (bottom of `<body>`)
 
 ```html
 <script src="../assets/js/nav.js" defer></script>
@@ -184,7 +184,7 @@ Footer: copy verbatim from `ai/generative.html`.
 <script src="../assets/js/data-analytics-hero.js" defer></script>
 ```
 
-### Step 2.14 — Canvas animation (`assets/js/data-analytics-hero.js`)
+### Step 2.14  Canvas animation (`assets/js/data-analytics-hero.js`)
 
 Build the data pipeline animation per spec §9:
 
@@ -211,7 +211,7 @@ ctx.lineWidth = Math.max(0.8, W * 0.0015);
 
 **Click-to-expand:** `hero--anim` click → add `.hero--anim--expanded` + open `.hero-anim-backdrop`; close button + backdrop click → remove both. (Matches pattern in `agentic-hero.js`.)
 
-### Step 2.15 — Sitemap check
+### Step 2.15  Sitemap check
 
 Verify `sitemap.xml` contains `<loc>https://codimai.com/ai/data-analytics</loc>`. Add if missing.
 
@@ -220,8 +220,8 @@ Verify `sitemap.xml` contains `<loc>https://codimai.com/ai/data-analytics</loc>`
 ## 3. Self-check before declaring done
 
 - [ ] `<h1>` is unique and present once
-- [ ] Heading hierarchy: h1 → h2 (section titles) → h3 (card titles if any) — no skips
-- [ ] All `class` names exist in `components.css` or `base.css` — zero invented classes
+- [ ] Heading hierarchy: h1 → h2 (section titles) → h3 (card titles if any)  no skips
+- [ ] All `class` names exist in `components.css` or `base.css`  zero invented classes
 - [ ] Zero hex values in `data-analytics.html` or `data-analytics-hero.js` outside the four allowed canvas colours
 - [ ] All internal links resolve: `agentic-ai.html`, `generative.html`, `../get-started.html`, `#use-cases`
 - [ ] Canvas animation loads, animates, pauses on tab switch, resumes correctly
@@ -230,7 +230,7 @@ Verify `sitemap.xml` contains `<loc>https://codimai.com/ai/data-analytics</loc>`
 - [ ] Mobile 360px: hero single column, all grids single column, process steps legible
 - [ ] Nav: active state on "AI" + "Data Analytics" item
 - [ ] JSON-LD: WebPage, BreadcrumbList, FAQPage all present and valid
-- [ ] OG image path is correct (`../assets/img/og-data-analytics.webp`) — file may not exist yet, path must be correct
+- [ ] OG image path is correct (`../assets/img/og-data-analytics.webp`)  file may not exist yet, path must be correct
 - [ ] `sitemap.xml` contains the data-analytics URL
 
 ---
@@ -253,7 +253,7 @@ feat(pages): add data-analytics page
 
 - Full rebuild of ai/data-analytics.html from approved content + spec
 - New canvas animation: assets/js/data-analytics-hero.js
-  (data pipeline flow — sources → analytics layer → insights)
+  (data pipeline flow  sources → analytics layer → insights)
 - 13 scroll-snap sections; zero new CSS components required
 - WebPage, BreadcrumbList, FAQPage JSON-LD included
 - Content, spec, and plan in .claude/pages/data-analytics/
@@ -263,5 +263,5 @@ feat(pages): add data-analytics page
 
 ## 6. Out of scope for this PR
 
-- OG image `og-data-analytics.webp` — path is set correctly; image file is a future asset task
-- Backend form handling for "Request your audit" CTA — handled in get-started.html
+- OG image `og-data-analytics.webp`  path is set correctly; image file is a future asset task
+- Backend form handling for "Request your audit" CTA  handled in get-started.html

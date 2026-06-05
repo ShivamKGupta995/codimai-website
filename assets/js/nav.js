@@ -30,7 +30,7 @@
     }
 
     function close() {
-      /* 180ms delay — cursor moving from button toward menu won't close it */
+      /* 180ms delay  cursor moving from button toward menu won't close it */
       closeTimer = setTimeout(function () {
         dropdown.classList.remove('is-open');
         trigger.setAttribute('aria-expanded', 'false');

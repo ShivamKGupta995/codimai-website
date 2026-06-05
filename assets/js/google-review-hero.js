@@ -300,7 +300,7 @@
     ctx.font = 'bold ' + Math.max(7, W * 0.013) + 'px Inter, sans-serif';
     ctx.textAlign = 'center';
     ctx.textBaseline = 'middle';
-    ctx.fillText('✓ AI Reply — Auto-posting', cardX + cardW / 2, cardY + hdrH / 2);
+    ctx.fillText('✓ AI Reply  Auto-posting', cardX + cardW / 2, cardY + hdrH / 2);
 
     // Reply text typing
     var fy = cardY + hdrH + Math.max(8, H * 0.024);

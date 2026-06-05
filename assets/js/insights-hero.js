@@ -14,7 +14,7 @@
   var SAMPLES = 46;   // points held per metric row
   var STEP    = 5;    // advance the series every Nth frame (slow scroll)
 
-  // ── Metric rows — each a live, scrolling time series ──────
+  // ── Metric rows  each a live, scrolling time series ──────
   var ROWS = [
     { name: 'Revenue', mono: 'trend ↑',  base: 0.52, amp: 0.10, freq: 1.7, phase: 0.0, vals: [], anom: [], spike: 0 },
     { name: 'Churn',   mono: 'watch',    base: 0.46, amp: 0.07, freq: 2.3, phase: 1.4, vals: [], anom: [], spike: 0 },

@@ -34,7 +34,7 @@ try {
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width,initial-scale=1"/>
-  <title>Dashboard — CodimAI Blog Admin</title>
+  <title>Dashboard  CodimAI Blog Admin</title>
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet"/>
   <meta name="robots" content="noindex, nofollow"/>
@@ -175,10 +175,10 @@ try {
                 <strong><a href="editor.php?id=<?= $p['id'] ?>" style="color:inherit;text-decoration:none"><?= htmlspecialchars($p['title']) ?></a></strong>
                 <span>/blogs/<?= htmlspecialchars($p['slug']) ?>/</span>
               </td>
-              <td><?= htmlspecialchars($p['category'] ?? '—') ?></td>
+              <td><?= htmlspecialchars($p['category'] ?? '') ?></td>
               <td><span class="badge badge-<?= $p['status'] ?>"><?= ucfirst($p['status']) ?></span></td>
               <td><?= htmlspecialchars($p['author_name']) ?></td>
-              <td><?= $p['published_at'] ? date('d M Y', strtotime($p['published_at'])) : '—' ?></td>
+              <td><?= $p['published_at'] ? date('d M Y', strtotime($p['published_at'])) : '' ?></td>
               <td>
                 <div class="actions">
                   <a href="editor.php?id=<?= $p['id'] ?>" class="btn btn-outline btn-sm">Edit</a>

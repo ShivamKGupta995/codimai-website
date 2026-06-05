@@ -1,4 +1,4 @@
-# Gate script — exact phrasing
+# Gate script  exact phrasing
 
 Use these lines verbatim at each gate. Consistent language teaches the user the protocol fast.
 
@@ -20,7 +20,7 @@ If critical info is missing, replace the last line with a single `ask_user_input
 
 ## Gate 1 (after content.md)
 
-> **Stage 1 — Content draft complete.**
+> **Stage 1  Content draft complete.**
 >
 > File: `.claude/pages/[slug]/content.md`
 >
@@ -34,7 +34,7 @@ If critical info is missing, replace the last line with a single `ask_user_input
 
 ## Gate 2 (after spec.md)
 
-> **Stage 2 — Page spec complete.**
+> **Stage 2  Page spec complete.**
 >
 > File: `.claude/pages/[slug]/spec.md`
 >
@@ -47,7 +47,7 @@ If critical info is missing, replace the last line with a single `ask_user_input
 
 ## Gate 3 (after plan.md)
 
-> **Stage 3 — Dev plan complete.**
+> **Stage 3  Dev plan complete.**
 >
 > File: `.claude/pages/[slug]/plan.md`
 >
@@ -61,7 +61,7 @@ If critical info is missing, replace the last line with a single `ask_user_input
 
 ## Gate 4 (after build, before commit)
 
-> **Stage 4 — Build complete.**
+> **Stage 4  Build complete.**
 >
 > Branch: `page/[slug]` (not yet committed)
 > Staged files:
@@ -76,7 +76,7 @@ If critical info is missing, replace the last line with a single `ask_user_input
 
 ## After Stage 5 (post-commit)
 
-> **Stage 5 — Committed.**
+> **Stage 5  Committed.**
 >
 > Branch: `page/[slug]`
 > Commit: `[hash] feat(pages): add [slug] page`
@@ -89,5 +89,5 @@ If critical info is missing, replace the last line with a single `ask_user_input
 If the user replies with:
 - A question → answer it; do not change the gate; re-ask for approval after answering
 - An edit → make the edit, re-present the artifact, re-issue the gate prompt
-- "Looks good" / "ok" / 👍 → reply: *"Reply **approved** to proceed — I'll wait."*
+- "Looks good" / "ok" / 👍 → reply: *"Reply **approved** to proceed  I'll wait."*
 - "Skip the gates" / "just go" → reply: *"The gates are part of this workflow you set up. Want me to summarize all stages so you can approve in one go? You'll still need to reply **approved** at each gate so I know we're aligned."*
