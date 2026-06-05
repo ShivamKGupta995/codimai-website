@@ -1,6 +1,7 @@
 <?php
 require_once __DIR__ . '/../includes/helpers.php';
 require_once __DIR__ . '/../includes/db.php';
+require_once __DIR__ . '/../includes/mailer.php';
 
 setCors();
 header('Content-Type: application/json; charset=utf-8');
@@ -52,5 +53,57 @@ $stmt->execute([
     ':interest'  => $interest,
     ':message'   => $message,
 ]);
+
+/* ── Notify the team + acknowledge the sender ────────────────
+   Best-effort: the lead is already saved, so a mail failure is
+   logged but does not fail the request. */
+$teamTo = CONTACT_TO !== '' ? CONTACT_TO : (SMTP_USER !== '' ? SMTP_USER : ADMIN_EMAIL);
+
+$rows = [
+    'Name'      => $name,
+    'Email'     => $email,
+    'Company'   => $company !== ''  ? $company  : '—',
+    'Team size' => $teamSize !== '' ? $teamSize : '—',
+    'Interest'  => $interest,
+    'Message'   => $message !== ''  ? $message  : '—',
+];
+
+$rowsHtml = '';
+foreach ($rows as $label => $value) {
+    $rowsHtml .=
+        '<tr>'
+        . '<td style="padding:8px 16px 8px 0;color:#86847c;font:13px/1.5 Arial,sans-serif;vertical-align:top;white-space:nowrap;">'
+        . htmlspecialchars($label, ENT_QUOTES, 'UTF-8') . '</td>'
+        . '<td style="padding:8px 0;color:#1a1a18;font:14px/1.6 Arial,sans-serif;">'
+        . nl2br(htmlspecialchars($value, ENT_QUOTES, 'UTF-8')) . '</td>'
+        . '</tr>';
+}
+
+$teamHtml =
+    '<div style="background:#f7f5f0;padding:32px;">'
+    . '<div style="max-width:560px;margin:0 auto;background:#fff;border:1px solid #e6e3da;border-radius:10px;padding:32px;">'
+    . '<p style="margin:0 0 4px;font:12px/1.4 Arial,sans-serif;letter-spacing:.08em;text-transform:uppercase;color:#86847c;">New audit request</p>'
+    . '<h1 style="margin:0 0 24px;font:400 22px/1.3 Georgia,serif;color:#1a1a18;">' . htmlspecialchars($name, ENT_QUOTES, 'UTF-8') . ' wants to talk.</h1>'
+    . '<table style="width:100%;border-collapse:collapse;">' . $rowsHtml . '</table>'
+    . '<p style="margin:24px 0 0;font:12px/1.5 Arial,sans-serif;color:#86847c;">Reply directly to this email to reach ' . htmlspecialchars($name, ENT_QUOTES, 'UTF-8') . '.</p>'
+    . '</div></div>';
+
+sendMail(
+    $teamTo, 'CodimAI',
+    'New audit request — ' . $interest . ' (' . $name . ')',
+    $teamHtml, '',
+    $email, $name              // Reply-To the submitter
+);
+
+/* Courtesy acknowledgement to the person who filled the form. */
+$ackHtml =
+    '<div style="background:#f7f5f0;padding:32px;">'
+    . '<div style="max-width:560px;margin:0 auto;background:#fff;border:1px solid #e6e3da;border-radius:10px;padding:32px;">'
+    . '<h1 style="margin:0 0 16px;font:400 22px/1.3 Georgia,serif;color:#1a1a18;">Thank you, ' . htmlspecialchars($name, ENT_QUOTES, 'UTF-8') . '.</h1>'
+    . '<p style="margin:0 0 16px;font:15px/1.7 Arial,sans-serif;color:#3a3a36;">We’ve received your request for a free Business &amp; ROI Audit. A member of the CodimAI team will reply within one business day to schedule it.</p>'
+    . '<p style="margin:0;font:15px/1.7 Arial,sans-serif;color:#3a3a36;">— The CodimAI Team</p>'
+    . '</div></div>';
+
+sendMail($email, $name, 'We received your request — CodimAI', $ackHtml);
 
 jsonOut(['success' => true, 'message' => 'Thank you — we will be in touch shortly.']);
