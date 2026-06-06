@@ -1,0 +1,47 @@
+# ── CodimAI · root server config ──────────────────────────────
+
+# Do not list directory contents
+Options -Indexes
+
+# ── Force HTTPS (and strip www) ───────────────────────────────
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  # http → https
+  RewriteCond %{HTTPS} off
+  RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+  # www → non-www (canonical host is codimai.com)
+  RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
+  RewriteRule ^ https://%1%{REQUEST_URI} [L,R=301]
+</IfModule>
+
+# ── Block the .git directory and dotfiles ─────────────────────
+RewriteRule (^|/)\.git(/|$) - [F,L]
+
+<FilesMatch "(^\.|\.(env|local|production|example|md|sql|log)$)">
+  Require all denied
+</FilesMatch>
+
+# ── Custom 404 ────────────────────────────────────────────────
+ErrorDocument 404 /404.html
+
+# ── Long-cache static assets (perf / Core Web Vitals) ─────────
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType text/css            "access plus 1 year"
+  ExpiresByType application/javascript "access plus 1 year"
+  ExpiresByType image/png           "access plus 1 year"
+  ExpiresByType image/jpeg          "access plus 1 year"
+  ExpiresByType image/webp          "access plus 1 year"
+  ExpiresByType image/avif          "access plus 1 year"
+  ExpiresByType image/svg+xml       "access plus 1 year"
+  ExpiresByType font/woff2          "access plus 1 year"
+  ExpiresByType text/html           "access plus 0 seconds"
+</IfModule>
+
+# ── Compression ───────────────────────────────────────────────
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/css text/plain text/xml \
+    application/javascript application/json image/svg+xml
+</IfModule>
