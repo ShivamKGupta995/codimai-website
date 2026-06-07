@@ -30,3 +30,4 @@ User-agent: Applebot-Extended
 Allow: /
 
 Sitemap: https://codimai.com/sitemap.xml
+Sitemap: https://codimai.com/sitemap.rss
