@@ -46,6 +46,9 @@ function post_loc(string $base, string $blogsDir, string $slug): string {
         : $base . '/blogs/post.php?slug=' . rawurlencode($slug);
 }
 
+$seen = [];   // slugs already added, to de-dupe DB posts vs on-disk pages
+
+/* Published posts from the database (if reachable). */
 try {
     $dsn  = sprintf('mysql:host=%s;dbname=%s;charset=%s', DB_HOST, DB_NAME, DB_CHARSET);
     $db   = new PDO($dsn, DB_USER, DB_PASS, [
@@ -56,6 +59,7 @@ try {
         "SELECT slug, published_at FROM posts WHERE status = 'published' ORDER BY published_at DESC"
     )->fetchAll();
     foreach ($rows as $r) {
+        $seen[$r['slug']] = true;
         $urls[] = [
             'loc'        => post_loc($base, $blogsDir, $r['slug']),
             'priority'   => '0.6',
@@ -64,13 +68,21 @@ try {
         ];
     }
 } catch (Throwable $e) {
-    /* DB unreachable: list the pre-rendered post directories instead. */
-    error_log('sitemap.php: DB unavailable, using static post dirs  ' . $e->getMessage());
-    foreach (glob($blogsDir . '*/index.html') as $f) {
-        $slug = basename(dirname($f));
-        if (in_array($slug, ['includes', 'backend', 'posts'], true)) continue;
-        $urls[] = ['loc' => $base . '/blogs/' . $slug . '/', 'priority' => '0.6', 'changefreq' => 'monthly', 'lastmod' => null];
-    }
+    error_log('sitemap.php: DB unavailable  ' . $e->getMessage());
+}
+
+/* Always include pre-rendered blog post pages on disk (not in the DB),
+   so hand-built posts are crawled regardless of DB state. */
+foreach (glob($blogsDir . '*/index.html') as $f) {
+    $slug = basename(dirname($f));
+    if (in_array($slug, ['includes', 'backend', 'posts'], true)) continue;
+    if (isset($seen[$slug])) continue;
+    $urls[] = [
+        'loc'        => $base . '/blogs/' . $slug . '/',
+        'priority'   => '0.6',
+        'changefreq' => 'monthly',
+        'lastmod'    => date('Y-m-d', filemtime($f)),
+    ];
 }
 
 echo '<?xml version="1.0" encoding="UTF-8"?>' . "\n";
