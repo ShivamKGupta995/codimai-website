@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" href="assets/img/favicon.png">
+  <link rel="apple-touch-icon" href="assets/img/favicon.png">
+
+  <title>Email AI Agent for Business | CodimAI</title>
+  <meta name="description" content="An email AI agent from CodimAI triages, drafts, and resolves your inbox 24/7, automating up to 75% of routine emails in your brand voice.">
+  <link rel="canonical" href="https://codimai.com/email-ai-agent">
+
+  <meta property="og:type"        content="website">
+  <meta property="og:site_name"   content="CodimAI">
+  <meta property="og:url"         content="https://codimai.com/email-ai-agent">
+  <meta property="og:title"       content="Email AI Agent for Business | CodimAI">
+  <meta property="og:description" content="An email AI agent that triages, drafts, and resolves your inbox 24/7 in your brand voice.">
+  <meta property="og:image"       content="https://codimai.com/assets/img/og-default.png">
+
+  <meta name="twitter:card"        content="summary_large_image">
+  <meta name="twitter:title"       content="Email AI Agent for Business | CodimAI">
+  <meta name="twitter:description" content="An email AI agent that triages, drafts, and resolves your inbox 24/7 in your brand voice.">
+  <meta name="twitter:image"       content="https://codimai.com/assets/img/og-default.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gilda+Display&family=Inter:wght@400;500&family=JetBrains+Mono&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/tokens.css">
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Service",
+        "name": "Email AI Agent",
+        "serviceType": "Email AI agent development",
+        "provider": { "@type": "Organization", "name": "CodimAI", "url": "https://codimai.com/" },
+        "areaServed": "Worldwide",
+        "description": "CodimAI builds email AI agents that triage, draft, and resolve inbound email 24/7 in your brand voice, integrated with your mailbox, helpdesk, and CRM.",
+        "url": "https://codimai.com/email-ai-agent"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://codimai.com/" },
+          { "@type": "ListItem", "position": 2, "name": "Email AI Agent", "item": "https://codimai.com/email-ai-agent" }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {"@type":"Question","name":"What is an email AI agent?","acceptedAnswer":{"@type":"Answer","text":"An email AI agent is an AI system that handles your inbound email automatically. It reads each message, works out the intent, sorts and prioritises it, drafts or sends an accurate reply in your brand voice, and takes actions like looking up an order or updating a record, escalating anything sensitive to a person with full context."}},
+          {"@type":"Question","name":"How much of our email can it automate?","acceptedAnswer":{"@type":"Answer","text":"Most teams automate 60 to 75 percent of routine email: common questions, status requests, form-style enquiries, and follow-ups. The remaining complex or sensitive messages are routed to the right person with the full thread attached."}},
+          {"@type":"Question","name":"Which email systems does it work with?","acceptedAnswer":{"@type":"Answer","text":"It works with Gmail and Google Workspace, Outlook and Microsoft 365, and shared helpdesks such as Zendesk, Freshdesk, and Help Scout. We connect to your existing mailbox rather than asking you to switch tools."}},
+          {"@type":"Question","name":"Can it connect to our CRM and other tools?","acceptedAnswer":{"@type":"Answer","text":"Yes. The agent integrates with your CRM, order and ticketing systems, and calendar so it can answer with real data, log every message, and take actions like updating a record or booking a slot."}},
+          {"@type":"Question","name":"Will it sound like our brand?","acceptedAnswer":{"@type":"Answer","text":"Yes. We tune the agent to your tone and rules and ground it in your real product, order, and policy information, so replies read like your best team member, not a generic template."}},
+          {"@type":"Question","name":"Can it draft replies for review instead of sending automatically?","acceptedAnswer":{"@type":"Answer","text":"Yes. You choose the level of autonomy per category. The agent can send routine replies on its own, draft replies for one-click approval, or simply triage and route, and you can change those rules at any time."}},
+          {"@type":"Question","name":"How long does it take to launch?","acceptedAnswer":{"@type":"Answer","text":"A focused email agent typically goes live in two to four weeks. We build a working prototype on your real inbox first so you can validate it before it touches a live reply."}}
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header class="site-header" role="banner">
+    <div class="container site-header__inner">
+      <a href="/" class="nav-logo" aria-label="CodimAI  home"><span class="nav-logo__mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span><img src="assets/img/logo-word.png" alt="" class="nav-logo__word" width="223" height="44"></a>
+      <nav aria-label="Primary navigation">
+        <ul class="nav-links" role="list">
+          <li><a href="/">Home</a></li>
+          <li class="nav-dropdown">
+            <button class="nav-btn-ghost" aria-haspopup="true" aria-expanded="false">AI</button>
+            <ul class="nav-dropdown__menu" role="menu">
+              <li role="none"><a href="/ai/agentic-ai"         role="menuitem">Agentic AI</a></li>
+              <li role="none"><a href="/ai/generative"    role="menuitem">Generative</a></li>
+              <li role="none"><a href="/ai/insights"      role="menuitem">Insights</a></li>
+              <li role="none"><a href="/ai/recommendation"role="menuitem">Recommendation</a></li>
+              <li role="none"><a href="/ai/prediction"    role="menuitem">Prediction</a></li>
+              <li role="none"><a href="/ai/data-analytics"role="menuitem">Data Analytics</a></li>
+            </ul>
+          </li>
+          <li class="nav-dropdown">
+            <button class="nav-btn-ghost" aria-haspopup="true" aria-expanded="false">Agents</button>
+            <ul class="nav-dropdown__menu" role="menu">
+              <li role="none"><a href="/agents/whatsapp"     role="menuitem">WhatsApp</a></li>
+              <li role="none"><a href="/agents/email"        role="menuitem">Email</a></li>
+              <li role="none"><a href="/agents/google-review"role="menuitem">Google Review</a></li>
+              <li role="none"><a href="/agents/blogs-agent"  role="menuitem">Blogs Agent</a></li>
+            </ul>
+          </li>
+          <li><a href="blogs/">Blogs</a></li>
+        </ul>
+      </nav>
+      <a href="/get-started" class="cd-btn-primary nav-cta">Get Started</a>
+      <button class="nav-hamburger" aria-expanded="false" aria-controls="nav-mobile-overlay" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <div id="nav-mobile-overlay" class="nav-mobile-overlay" role="navigation" aria-label="Mobile navigation">
+    <a href="/">Home</a>
+    <button class="nav-btn-ghost" aria-expanded="false">AI</button>
+    <ul class="nav-mobile-submenu">
+      <li><a href="/ai/agentic-ai">Agentic AI</a></li>
+      <li><a href="/ai/generative">Generative</a></li>
+      <li><a href="/ai/insights">Insights</a></li>
+      <li><a href="/ai/recommendation">Recommendation</a></li>
+      <li><a href="/ai/prediction">Prediction</a></li>
+      <li><a href="/ai/data-analytics">Data Analytics</a></li>
+    </ul>
+    <button class="nav-btn-ghost" aria-expanded="false">Agents</button>
+    <ul class="nav-mobile-submenu">
+      <li><a href="/agents/whatsapp">WhatsApp</a></li>
+      <li><a href="/agents/email">Email</a></li>
+      <li><a href="/agents/google-review">Google Review</a></li>
+      <li><a href="/agents/blogs-agent">Blogs Agent</a></li>
+    </ul>
+    <a href="blogs/">Blogs</a>
+    <a href="/get-started" class="cd-btn-primary nav-mobile-cta">Get Started</a>
+  </div>
+
+  <main id="main-content">
+
+    <section class="hero hero--page" aria-labelledby="hero-heading">
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <p class="hero__eyebrow reveal" style="--delay:0.05s">Email AI agent</p>
+          <h1 id="hero-heading" class="hero__title cd-display reveal" style="--delay:0.15s">
+            Inbox handled,<br>in your voice.
+          </h1>
+          <p class="hero__lede reveal" style="--delay:0.3s">
+            An email AI agent is an AI system that handles your inbound email
+            automatically. CodimAI builds agents that triage, draft, and resolve
+            up to 75% of routine email, 24/7, in your brand voice.
+          </p>
+          <div class="hero__actions reveal" style="--delay:0.45s">
+            <a href="/get-started" class="cd-btn-primary">Book a free AI audit</a>
+            <a href="/agents/email" class="cd-btn-secondary">See the live demo</a>
+          </div>
+        </div>
+        <aside class="lp-aside reveal" style="--delay:0.4s" aria-label="At a glance">
+          <div class="stat"><span class="stat__num">75%</span><span class="stat__label">Email auto-handled</span></div>
+          <div class="stat"><span class="stat__num">5x</span><span class="stat__label">Faster replies</span></div>
+          <div class="stat"><span class="stat__num">24/7</span><span class="stat__label">Always on</span></div>
+          <div class="stat"><span class="stat__num">25+ hrs</span><span class="stat__label">Saved per week</span></div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="def-heading">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="section__eyebrow">// What it is</p>
+          <h2 id="def-heading" class="section__heading">What is an email AI agent?</h2>
+        </header>
+        <div class="lp-prose reveal" style="--delay:0.1s">
+          <p>An email AI agent is an AI system that handles your inbound email on your behalf. It reads each message, works out what the sender actually wants, and sorts it, then drafts or sends an accurate, on-brand reply grounded in your real product, order, and policy information. When a message calls for it, the agent takes action: it looks up an order, updates a record, books a slot, or routes the email to the right person with the full thread attached.</p>
+          <p>Email is still where most serious business gets done, which is exactly why it piles up. Messages arrive constantly, in volume, and the majority are variations on the same handful of requests. A person working through them one by one is slow and expensive, and important emails get buried under routine ones. An agent reads and triages everything the moment it lands, and answers the routine majority without anyone lifting a finger.</p>
+          <p>CodimAI builds these agents on top of your existing mailbox, whether that is Gmail, Microsoft 365, or a shared helpdesk, and tunes each one to your brand and your business. The goal is not an auto-responder but a genuinely helpful teammate that clears the repetitive volume and surfaces the messages that need a human. The result is faster replies, a calmer inbox, and nothing important slipping through the cracks.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--soft" aria-labelledby="does-heading">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="section__eyebrow">// What it does</p>
+          <h2 id="does-heading" class="section__heading">More than an auto-responder</h2>
+          <p class="section__lead">Your agent does not just reply. It reads, sorts, acts, and knows when to bring in a person.</p>
+        </header>
+        <div class="ai-cap-grid" role="list">
+          <div class="ai-cap-card reveal" role="listitem" style="--delay:0.05s"><p class="ai-cap-card__num">01</p><h3 class="ai-cap-card__title">Triage</h3><p class="ai-cap-card__body">Reads every incoming email, classifies the intent, prioritises it, and routes it to the right queue or person.</p></div>
+          <div class="ai-cap-card reveal" role="listitem" style="--delay:0.10s"><p class="ai-cap-card__num">02</p><h3 class="ai-cap-card__title">Draft</h3><p class="ai-cap-card__body">Writes accurate, on-brand replies grounded in your data, ready to send or to approve in one click.</p></div>
+          <div class="ai-cap-card reveal" role="listitem" style="--delay:0.15s"><p class="ai-cap-card__num">03</p><h3 class="ai-cap-card__title">Act</h3><p class="ai-cap-card__body">Looks up orders, updates records, and books slots by connecting to your real systems.</p></div>
+          <div class="ai-cap-card reveal" role="listitem" style="--delay:0.20s"><p class="ai-cap-card__num">04</p><h3 class="ai-cap-card__title">Escalate</h3><p class="ai-cap-card__body">Recognises complex or sensitive messages and hands them to your team with the full thread.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--dense" aria-labelledby="process-heading">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="section__eyebrow">// How we build it</p>
+          <h2 id="process-heading" class="section__heading">Live in weeks, not months</h2>
+        </header>
+        <ol class="process-list">
+          <li class="process-item reveal" style="--delay:0.04s"><span class="process-item__num">01</span><div><h3 class="process-item__title">Audit your inbox</h3><p class="process-item__body">We review your real email to find what is repetitive and automatable, and model the time saved.</p></div></li>
+          <li class="process-item reveal" style="--delay:0.08s"><span class="process-item__num">02</span><div><h3 class="process-item__title">Ground the agent</h3><p class="process-item__body">We load your products, policies, and past replies so answers are accurate, not guesswork.</p></div></li>
+          <li class="process-item reveal" style="--delay:0.12s"><span class="process-item__num">03</span><div><h3 class="process-item__title">Connect systems</h3><p class="process-item__body">We integrate your CRM, helpdesk, and calendar so the agent can act, not just reply.</p></div></li>
+          <li class="process-item reveal" style="--delay:0.16s"><span class="process-item__num">04</span><div><h3 class="process-item__title">Connect the mailbox</h3><p class="process-item__body">We link your existing Gmail, Microsoft 365, or helpdesk securely, with no tool switch.</p></div></li>
+          <li class="process-item reveal" style="--delay:0.20s"><span class="process-item__num">05</span><div><h3 class="process-item__title">Test &amp; tune</h3><p class="process-item__body">We validate against real emails, refine the tone, and set the autonomy and escalation rules.</p></div></li>
+          <li class="process-item reveal" style="--delay:0.24s"><span class="process-item__num">06</span><div><h3 class="process-item__title">Launch &amp; improve</h3><p class="process-item__body">We go live with monitoring and keep improving from real messages.</p></div></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section section--soft" aria-label="Benefits and use cases">
+      <div class="container">
+        <div class="two-col-lists">
+          <div class="two-col-lists__col reveal">
+            <p class="section__eyebrow">// Benefits</p>
+            <h2 class="two-col-lists__heading">Why an email agent</h2>
+            <div class="benefit-grid">
+              <div class="benefit-item"><span class="benefit-item__icon" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></span><span class="benefit-item__text">Faster replies, 24/7</span></div>
+              <div class="benefit-item"><span class="benefit-item__icon" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></span><span class="benefit-item__text">Up to 75% email automated</span></div>
+              <div class="benefit-item"><span class="benefit-item__icon" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></span><span class="benefit-item__text">Nothing important buried</span></div>
+              <div class="benefit-item"><span class="benefit-item__icon" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><span class="benefit-item__text">Lower support cost</span></div>
+              <div class="benefit-item"><span class="benefit-item__icon" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg></span><span class="benefit-item__text">Staff freed for hard cases</span></div>
+              <div class="benefit-item"><span class="benefit-item__icon" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M8 12h8"/></svg></span><span class="benefit-item__text">Consistent, on-brand replies</span></div>
+            </div>
+          </div>
+          <div class="two-col-lists__col reveal" style="--delay:0.1s">
+            <p class="section__eyebrow">// Use cases</p>
+            <h2 class="two-col-lists__heading">What it handles</h2>
+            <div class="use-case-tags" role="list">
+              <span class="use-case-tag" role="listitem">Customer support</span>
+              <span class="use-case-tag" role="listitem">Order &amp; status enquiries</span>
+              <span class="use-case-tag" role="listitem">Lead qualification</span>
+              <span class="use-case-tag" role="listitem">Quote &amp; pricing requests</span>
+              <span class="use-case-tag" role="listitem">Appointment booking</span>
+              <span class="use-case-tag" role="listitem">Invoice &amp; billing queries</span>
+              <span class="use-case-tag" role="listitem">FAQs</span>
+              <span class="use-case-tag" role="listitem">Follow-ups &amp; reminders</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="why-channel-heading">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="section__eyebrow">// Why email</p>
+          <h2 id="why-channel-heading" class="section__heading">The channel that never empties</h2>
+        </header>
+        <div class="lp-prose reveal" style="--delay:0.1s">
+          <p>Email is the default way businesses talk to customers, suppliers, and each other, and that is precisely why it never stops. Every enquiry, order, complaint, and follow-up lands in the same place, and the volume only grows. For most teams the inbox is a permanent backlog, with genuinely important messages sitting unread behind a wall of routine ones.</p>
+          <p>Working through it by hand does not scale. Replies slow down, threads get lost, and the same questions get answered again and again by people whose time is worth far more. A customer who emailed on Friday and heard nothing until Tuesday has often already moved on, and the cost of that slow reply rarely shows up on any report, but it is real.</p>
+          <p>An email agent changes the maths. It reads and sorts every message the instant it arrives, answers the routine majority, and pushes the rest to the right person already prioritised and summarised. Your team stops triaging and starts handling only what genuinely needs them. The inbox stops being a source of dread and becomes something that quietly stays under control.</p>
+          <p>And because the agent is grounded in your real data and connected to your systems, it does more than write polite replies. It resolves. A status request returns the real status. An invoice query is answered from the actual record. That is the difference between an auto-responder that stalls and an agent that genuinely closes the loop.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--soft section--dense" aria-labelledby="case-heading">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="section__eyebrow">// Case study</p>
+          <h2 id="case-heading" class="section__heading">2,000+ monthly emails, triaged</h2>
+        </header>
+        <div class="grid grid--3">
+          <article class="card case reveal" style="--delay:0.05s">
+            <span class="card__num">Services</span>
+            <h3 class="card__title">From backlog to same-day replies</h3>
+            <p class="case__cs"><strong>Challenge:</strong> over 2,000 emails a month, replies taking days.</p>
+            <p class="case__cs"><strong>Solution:</strong> an email AI agent grounded in policies and connected to the helpdesk.</p>
+            <dl class="case__results">
+              <div><dt>72%</dt><dd>Auto-handled</dd></div>
+              <div><dt>5x</dt><dd>Faster reply time</dd></div>
+              <div><dt>38%</dt><dd>Cost reduction</dd></div>
+            </dl>
+          </article>
+          <article class="card reveal" style="--delay:0.1s">
+            <h3 class="card__title">See it in action</h3>
+            <p class="card__body">Our email agent product page walks through how a message flows, from arrival and triage to a grounded reply or a clean hand-off.</p>
+            <p style="margin-top:1rem"><a href="/agents/email">Open the live demo</a></p>
+          </article>
+          <article class="card reveal" style="--delay:0.15s">
+            <h3 class="card__title">Start with the audit</h3>
+            <p class="card__body">We review your real inbox and model how many hours an email agent would save your team.</p>
+            <p style="margin-top:1rem"><a href="/get-started">Book your free AI audit</a></p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--dense" aria-labelledby="start-heading">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="section__eyebrow">// Getting started</p>
+          <h2 id="start-heading" class="section__heading">How to launch your email agent</h2>
+        </header>
+        <div class="lp-prose reveal" style="--delay:0.1s">
+          <p>Getting started is simpler than most teams expect. You do not need to migrate your email or rebuild your systems. You need your existing mailbox, the questions your senders actually ask, and the information needed to answer them, all of which you already have.</p>
+          <p>We begin with a free audit. We look at your real email to see what is repetitive and automatable, and we estimate the hours and cost an agent would save. From there we ground the agent in your content, connect it to your mailbox and systems, and set it live, usually within a few weeks.</p>
+          <p>You stay in control throughout. You decide, per category, whether the agent sends on its own, drafts for one-click approval, or simply triages and routes. We prove it on real emails before it touches a live reply, and once it is live we keep tuning it from actual messages so it gets sharper the longer it runs.</p>
+          <p>If you already run a shared inbox or helpdesk with a person or small team behind it, you are in the best possible position to start. The agent slots in alongside them, takes the repetitive volume off their plate, and escalates the rest, so nothing breaks and the load simply lightens. There is no rip-and-replace and no risky switch-over, just a calmer inbox and faster replies from day one.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="why-heading">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="section__eyebrow">// Why CodimAI</p>
+          <h2 id="why-heading" class="section__heading">An email agent you can trust</h2>
+        </header>
+        <div class="lp-prose reveal" style="--delay:0.1s">
+          <p>Email carries your most important conversations, so it is the last place you want a careless bot. A wrong answer sent in writing, under your name, does lasting damage, and senders can tell immediately whether a reply actually understood them or just pattern-matched a template. We build agents that earn the reply, not ones that paper over the inbox.</p>
+          <p>That starts with grounding. Our agents answer from your real product, order, and policy data, so they tell people what is actually true, not a plausible guess. When the agent does not know, it says so and routes the message to a person rather than inventing an answer. On a written channel, accuracy is not a nice-to-have; it is the whole game, and we engineer for it.</p>
+          <p>It continues with control. You set the autonomy for every category, from fully automatic to draft-for-approval to triage-only, and every message the agent touches is logged and reviewable. High-stakes emails, a complaint, a refund, a legal query, route to your team with the full thread and a summary attached. The agent extends your team's reach without ever taking decisions out of their hands.</p>
+          <p>And it shows in the details: replies in your tone, sensible handling of vague or multi-part messages, threads kept tidy, and hand-offs that arrive already prioritised and summarised. These are the things that separate an agent people thank from an auto-responder they learn to ignore. We sweat them because they are what make automation feel like good service rather than a brush-off.</p>
+          <p>The payoff is an inbox that finally stays under control: fast, accurate answers at any hour, important messages surfaced instead of buried, and a team freed from the repetitive grind to focus on the email that genuinely needs them. That is what an email AI agent should deliver, and it is what we build.</p>
+          <p>It also compounds. Every message the agent handles is a chance to learn what people actually ask and where they get stuck, and we feed that back in so the agent gets sharper and your team gets a clearer picture of demand. The inbox stops being a black hole of repetitive requests and becomes a source of insight as well as a place that simply works.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--dense" aria-labelledby="explore-heading">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="section__eyebrow">// Explore</p>
+          <h2 id="explore-heading" class="section__heading">Related agents &amp; capabilities</h2>
+        </header>
+        <div class="grid grid--4">
+          <a href="/agents/email" class="card reveal" style="--delay:0.04s"><h3 class="card__title">Email Agent</h3><p class="card__body">The product page, with a live demo.</p></a>
+          <a href="/whatsapp-ai-agent" class="card reveal" style="--delay:0.08s"><h3 class="card__title">WhatsApp AI Agent</h3><p class="card__body">Answer and resolve chats 24/7.</p></a>
+          <a href="/customer-support-ai" class="card reveal" style="--delay:0.12s"><h3 class="card__title">Customer Support AI</h3><p class="card__body">Automate support across every channel.</p></a>
+          <a href="/ai-agent-development" class="card reveal" style="--delay:0.16s"><h3 class="card__title">AI Agent Development</h3><p class="card__body">How we design and ship custom agents.</p></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--dense" aria-labelledby="faq-heading">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="section__eyebrow">// FAQ</p>
+          <h2 id="faq-heading" class="section__heading">Email AI agent questions</h2>
+        </header>
+        <div class="faq reveal" style="--delay:0.1s">
+          <details class="faq-item"><summary>What is an email AI agent?</summary><p class="faq-item__body">An email AI agent is an AI system that handles your inbound email automatically. It reads each message, works out the intent, sorts and prioritises it, drafts or sends an accurate reply in your brand voice, and takes actions like looking up an order or updating a record, escalating anything sensitive to a person with full context.</p></details>
+          <details class="faq-item"><summary>How much of our email can it automate?</summary><p class="faq-item__body">Most teams automate 60 to 75 percent of routine email: common questions, status requests, form-style enquiries, and follow-ups. The remaining complex or sensitive messages are routed to the right person with the full thread attached.</p></details>
+          <details class="faq-item"><summary>Which email systems does it work with?</summary><p class="faq-item__body">It works with Gmail and Google Workspace, Outlook and Microsoft 365, and shared helpdesks such as Zendesk, Freshdesk, and Help Scout. We connect to your existing mailbox rather than asking you to switch tools.</p></details>
+          <details class="faq-item"><summary>Can it connect to our CRM and other tools?</summary><p class="faq-item__body">Yes. The agent integrates with your CRM, order and ticketing systems, and calendar so it can answer with real data, log every message, and take actions like updating a record or booking a slot.</p></details>
+          <details class="faq-item"><summary>Will it sound like our brand?</summary><p class="faq-item__body">Yes. We tune the agent to your tone and rules and ground it in your real product, order, and policy information, so replies read like your best team member, not a generic template.</p></details>
+          <details class="faq-item"><summary>Can it draft replies for review instead of sending automatically?</summary><p class="faq-item__body">Yes. You choose the level of autonomy per category. The agent can send routine replies on its own, draft replies for one-click approval, or simply triage and route, and you can change those rules at any time.</p></details>
+          <details class="faq-item"><summary>How long does it take to launch?</summary><p class="faq-item__body">A focused email agent typically goes live in two to four weeks. We build a working prototype on your real inbox first so you can validate it before it touches a live reply.</p></details>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <div class="closing-screen cd-block-dark">
+    <section class="site-cta" aria-labelledby="cta-heading">
+      <div class="container">
+        <p class="section__eyebrow reveal">Get started</p>
+        <h2 id="cta-heading" class="site-cta__heading reveal" style="--delay:0.1s">Ready to automate your inbox?</h2>
+        <p class="site-cta__body reveal" style="--delay:0.2s">Book a free AI audit and ROI assessment. We will show you how many hours an email agent saves your team, before any build.</p>
+        <div class="site-cta__actions reveal" style="--delay:0.3s">
+          <a href="/get-started" class="cd-btn-primary">Book a consultation</a>
+          <a href="/agents/email" class="cd-btn-secondary cd-btn-secondary--on-dark">See the live demo</a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="site-footer" role="contentinfo">
+      <div class="container site-footer__inner">
+        <div class="footer-top">
+          <div class="footer-brand">
+            <a href="/" class="nav-logo nav-logo--on-dark" aria-label="CodimAI  home"><span class="nav-logo__mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span><img src="assets/img/logo-word.png" alt="" class="nav-logo__word" width="223" height="44"></a>
+            <p>AI agents that eliminate repetitive work across sales, support, operations, HR, and marketing.</p>
+          </div>
+          <div class="footer-col">
+            <h3>AI</h3>
+            <ul>
+              <li><a href="/ai/agentic-ai">Agentic AI</a></li>
+              <li><a href="/ai/generative">Generative</a></li>
+              <li><a href="/ai/insights">Insights</a></li>
+              <li><a href="/ai/recommendation">Recommendation</a></li>
+              <li><a href="/ai/prediction">Prediction</a></li>
+              <li><a href="/ai/data-analytics">Data Analytics</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h3>Agents</h3>
+            <ul>
+              <li><a href="/agents/whatsapp">WhatsApp</a></li>
+              <li><a href="/agents/email">Email</a></li>
+              <li><a href="/agents/google-review">Google Review</a></li>
+              <li><a href="/agents/blogs-agent">Blogs Agent</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h3>Company</h3>
+            <ul>
+              <li><a href="blogs/">Blogs</a></li>
+              <li><a href="/get-started">Get Started</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p class="footer-legal">&copy; <span id="footer-year">2025</span> CodimAI. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    var el = document.getElementById('footer-year');
+    if (el) el.textContent = new Date().getFullYear();
+  </script>
+
+  <script src="assets/js/nav.js" defer></script>
+  <script src="assets/js/reveal.js" defer></script>
+
+</body>
+</html>
