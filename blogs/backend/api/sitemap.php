@@ -35,6 +35,13 @@ $static = [
     ['/ai-agent-development',     '0.9', 'monthly'],
     ['/agentic-ai-development',   '0.9', 'monthly'],
     ['/generative-ai-services',   '0.9', 'monthly'],
+    ['/ai-consulting',            '0.9', 'monthly'],
+    ['/ai-automation-services',   '0.9', 'monthly'],
+    ['/ai-chatbot-development',   '0.9', 'monthly'],
+    ['/whatsapp-ai-agent',        '0.9', 'monthly'],
+    ['/email-ai-agent',           '0.9', 'monthly'],
+    ['/customer-support-ai',      '0.9', 'monthly'],
+    ['/predictive-analytics',     '0.9', 'monthly'],
 ];
 
 $urls = [];
