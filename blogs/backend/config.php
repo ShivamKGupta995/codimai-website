@@ -39,3 +39,22 @@ define('MAIL_FROM_NAME', env('MAIL_FROM_NAME', 'CodimAI'));
 define('CONTACT_TO',     env('CONTACT_TO',     ''));   // where audit-request leads are emailed; defaults to SMTP_USER
 
 define('DEBUG', env('DEBUG', 'false') === 'true');
+
+/**
+ * Public base URL for the live site (no trailing slash).
+ * Derives from the actual request host so generated URLs (sitemap, RSS)
+ * are correct even when the env file is missing  config defaults
+ * SITE_URL to localhost, which must never leak into public output.
+ * Falls back to SITE_URL, then the canonical production host.
+ */
+function public_base_url(): string {
+    $host = $_SERVER['HTTP_HOST'] ?? '';
+    if ($host !== '' && stripos($host, 'localhost') === false && strpos($host, '127.0.0.1') === false) {
+        $https = (!empty($_SERVER['HTTPS']) && strtolower($_SERVER['HTTPS']) !== 'off')
+              || (($_SERVER['HTTP_X_FORWARDED_PROTO'] ?? '') === 'https')
+              || ((int)($_SERVER['SERVER_PORT'] ?? 0) === 443);
+        return ($https ? 'https://' : 'http://') . $host;
+    }
+    $site = rtrim(SITE_URL, '/');
+    return ($site !== '' && stripos($site, 'localhost') === false) ? $site : 'https://codimai.com';
+}

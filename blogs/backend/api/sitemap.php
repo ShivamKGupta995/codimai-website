@@ -12,7 +12,7 @@ require_once __DIR__ . '/../config.php';   // SITE_URL + DB_* constants
 
 header('Content-Type: application/xml; charset=utf-8');
 
-$base     = rtrim(SITE_URL, '/');
+$base     = public_base_url();                   // correct host even if env is missing
 $blogsDir = __DIR__ . '/../../';                 // repo .../blogs/
 
 /* Stable marketing pages (clean URLs). */
