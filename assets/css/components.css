@@ -3361,3 +3361,23 @@ a.card:hover { opacity: 1; border-color: var(--cd-border-strong); }
   line-height: 1.4;
   color: var(--cd-ink);
 }
+
+/* ============================================================
+   SEO landing pages  hero aside panel (reuses .stat tokens).
+   Body sections reuse existing components (ai-cap-grid,
+   two-col-lists, benefit-grid, use-case-tags, process-list,
+   faq, card). Only the hero aside needs its own rule.
+   ============================================================ */
+.lp-aside {
+  background: var(--cd-surface);
+  border: 1px solid var(--cd-border);
+  border-radius: var(--cd-radius);
+  padding: clamp(1.75rem, 3vw, 2.5rem);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(1.5rem, 3vw, 2rem) 1rem;
+}
+.lp-aside .stat { text-align: left; }
+.lp-prose p { margin-bottom: 1.1rem; }
+.lp-prose p:last-child { margin-bottom: 0; }
+@media (max-width: 480px) { .lp-aside { grid-template-columns: 1fr; } }

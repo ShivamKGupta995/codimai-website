@@ -30,6 +30,9 @@ $static = [
     ['/agents/blogs-agent',  '0.8', 'monthly'],
     ['/get-started',         '0.9', 'monthly'],
     ['/blogs/',              '0.7', 'weekly'],
+
+    /* SEO landing pages */
+    ['/ai-agent-development', '0.9', 'monthly'],
 ];
 
 $urls = [];
