@@ -32,7 +32,9 @@ $static = [
     ['/blogs/',              '0.7', 'weekly'],
 
     /* SEO landing pages */
-    ['/ai-agent-development', '0.9', 'monthly'],
+    ['/ai-agent-development',     '0.9', 'monthly'],
+    ['/agentic-ai-development',   '0.9', 'monthly'],
+    ['/generative-ai-services',   '0.9', 'monthly'],
 ];
 
 $urls = [];
