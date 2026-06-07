@@ -12,22 +12,22 @@
         <li class="nav-dropdown">
           <button class="nav-btn-ghost" aria-haspopup="true" aria-expanded="false">AI</button>
           <ul class="nav-dropdown__menu" role="menu">
-            <li role="none"><a href="/ai.html#agentic-ai"    role="menuitem">Agentic AI</a></li>
-            <li role="none"><a href="/ai/generative.html"    role="menuitem">Generative</a></li>
-            <li role="none"><a href="/ai.html#insights"      role="menuitem">Insights</a></li>
-            <li role="none"><a href="/ai.html#recommendation"role="menuitem">Recommendation</a></li>
-            <li role="none"><a href="/ai.html#prediction"    role="menuitem">Prediction</a></li>
-            <li role="none"><a href="/ai.html#data-analytics"role="menuitem">Data Analytics</a></li>
+            <li role="none"><a href="/ai#agentic-ai"    role="menuitem">Agentic AI</a></li>
+            <li role="none"><a href="/ai/generative"    role="menuitem">Generative</a></li>
+            <li role="none"><a href="/ai#insights"      role="menuitem">Insights</a></li>
+            <li role="none"><a href="/ai#recommendation"role="menuitem">Recommendation</a></li>
+            <li role="none"><a href="/ai#prediction"    role="menuitem">Prediction</a></li>
+            <li role="none"><a href="/ai#data-analytics"role="menuitem">Data Analytics</a></li>
           </ul>
         </li>
 
         <li class="nav-dropdown">
           <button class="nav-btn-ghost" aria-haspopup="true" aria-expanded="false">Agents</button>
           <ul class="nav-dropdown__menu" role="menu">
-            <li role="none"><a href="/agents.html#whatsapp"     role="menuitem">WhatsApp</a></li>
-            <li role="none"><a href="/agents.html#email"        role="menuitem">Email</a></li>
-            <li role="none"><a href="/agents.html#google-review"role="menuitem">Google Review</a></li>
-            <li role="none"><a href="/agents.html#blogs-agent"  role="menuitem">Blogs Agent</a></li>
+            <li role="none"><a href="/agents#whatsapp"     role="menuitem">WhatsApp</a></li>
+            <li role="none"><a href="/agents#email"        role="menuitem">Email</a></li>
+            <li role="none"><a href="/agents#google-review"role="menuitem">Google Review</a></li>
+            <li role="none"><a href="/agents#blogs-agent"  role="menuitem">Blogs Agent</a></li>
           </ul>
         </li>
 
@@ -36,7 +36,7 @@
       </ul>
     </nav>
 
-    <a href="/get-started.html" class="cd-btn-primary nav-cta">Get Started</a>
+    <a href="/get-started" class="cd-btn-primary nav-cta">Get Started</a>
 
     <button class="nav-hamburger" aria-expanded="false" aria-controls="nav-mobile-overlay" aria-label="Open menu">
       <span></span><span></span><span></span>
@@ -49,20 +49,20 @@
   <a href="/">Home</a>
   <button class="nav-btn-ghost" aria-expanded="false">AI</button>
   <ul class="nav-mobile-submenu">
-    <li><a href="/ai.html#agentic-ai">Agentic AI</a></li>
-    <li><a href="/ai/generative.html">Generative</a></li>
-    <li><a href="/ai.html#insights">Insights</a></li>
-    <li><a href="/ai.html#recommendation">Recommendation</a></li>
-    <li><a href="/ai.html#prediction">Prediction</a></li>
-    <li><a href="/ai.html#data-analytics">Data Analytics</a></li>
+    <li><a href="/ai#agentic-ai">Agentic AI</a></li>
+    <li><a href="/ai/generative">Generative</a></li>
+    <li><a href="/ai#insights">Insights</a></li>
+    <li><a href="/ai#recommendation">Recommendation</a></li>
+    <li><a href="/ai#prediction">Prediction</a></li>
+    <li><a href="/ai#data-analytics">Data Analytics</a></li>
   </ul>
   <button class="nav-btn-ghost" aria-expanded="false">Agents</button>
   <ul class="nav-mobile-submenu">
-    <li><a href="/agents.html#whatsapp">WhatsApp</a></li>
-    <li><a href="/agents.html#email">Email</a></li>
-    <li><a href="/agents.html#google-review">Google Review</a></li>
-    <li><a href="/agents.html#blogs-agent">Blogs Agent</a></li>
+    <li><a href="/agents#whatsapp">WhatsApp</a></li>
+    <li><a href="/agents#email">Email</a></li>
+    <li><a href="/agents#google-review">Google Review</a></li>
+    <li><a href="/agents#blogs-agent">Blogs Agent</a></li>
   </ul>
   <a href="/blogs/">Blogs</a>
-  <a href="/get-started.html" class="cd-btn-primary" style="margin-top:1rem;justify-content:center;">Get Started</a>
+  <a href="/get-started" class="cd-btn-primary" style="margin-top:1rem;justify-content:center;">Get Started</a>
 </div>

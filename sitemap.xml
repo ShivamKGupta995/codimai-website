@@ -8,21 +8,21 @@
   </url>
 
   <!-- AI capabilities -->
-  <url><loc>https://codimai.com/ai/agentic-ai.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://codimai.com/ai/generative.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://codimai.com/ai/insights.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://codimai.com/ai/recommendation.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://codimai.com/ai/prediction.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://codimai.com/ai/data-analytics.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://codimai.com/ai/agentic-ai</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://codimai.com/ai/generative</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://codimai.com/ai/insights</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://codimai.com/ai/recommendation</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://codimai.com/ai/prediction</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://codimai.com/ai/data-analytics</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
 
   <!-- Agents -->
-  <url><loc>https://codimai.com/agents/whatsapp.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://codimai.com/agents/email.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://codimai.com/agents/google-review.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://codimai.com/agents/blogs-agent.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://codimai.com/agents/whatsapp</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://codimai.com/agents/email</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://codimai.com/agents/google-review</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://codimai.com/agents/blogs-agent</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
 
   <!-- Conversion -->
-  <url><loc>https://codimai.com/get-started.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://codimai.com/get-started</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
 
   <!-- Blog -->
   <url><loc>https://codimai.com/blogs/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>

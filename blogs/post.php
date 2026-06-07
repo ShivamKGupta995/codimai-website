@@ -133,36 +133,36 @@ $canonical = $siteUrl . '/blogs/post.php?slug=' . urlencode($slug);
   <header class="site-header" role="banner">
     <div class="container site-header__inner">
 
-      <a href="../index.html" class="nav-logo" aria-label="CodimAI  home"><span class="nav-logo__mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span><img src="../assets/img/logo-word.png" alt="" class="nav-logo__word" width="223" height="44"></a>
+      <a href="/" class="nav-logo" aria-label="CodimAI  home"><span class="nav-logo__mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span><img src="../assets/img/logo-word.png" alt="" class="nav-logo__word" width="223" height="44"></a>
 
       <nav aria-label="Primary navigation">
         <ul class="nav-links" role="list">
-          <li><a href="../index.html">Home</a></li>
+          <li><a href="/">Home</a></li>
           <li class="nav-dropdown">
             <button class="nav-btn-ghost" aria-haspopup="true" aria-expanded="false">AI</button>
             <ul class="nav-dropdown__menu" role="menu">
-              <li role="none"><a href="../ai/agentic-ai.html"     role="menuitem">Agentic AI</a></li>
-              <li role="none"><a href="../ai/generative.html"     role="menuitem">Generative</a></li>
-              <li role="none"><a href="../ai/insights.html"       role="menuitem">Insights</a></li>
-              <li role="none"><a href="../ai/recommendation.html" role="menuitem">Recommendation</a></li>
-              <li role="none"><a href="../ai/prediction.html"     role="menuitem">Prediction</a></li>
-              <li role="none"><a href="../ai/data-analytics.html" role="menuitem">Data Analytics</a></li>
+              <li role="none"><a href="/ai/agentic-ai"     role="menuitem">Agentic AI</a></li>
+              <li role="none"><a href="/ai/generative"     role="menuitem">Generative</a></li>
+              <li role="none"><a href="/ai/insights"       role="menuitem">Insights</a></li>
+              <li role="none"><a href="/ai/recommendation" role="menuitem">Recommendation</a></li>
+              <li role="none"><a href="/ai/prediction"     role="menuitem">Prediction</a></li>
+              <li role="none"><a href="/ai/data-analytics" role="menuitem">Data Analytics</a></li>
             </ul>
           </li>
           <li class="nav-dropdown">
             <button class="nav-btn-ghost" aria-haspopup="true" aria-expanded="false">Agents</button>
             <ul class="nav-dropdown__menu" role="menu">
-              <li role="none"><a href="../agents/whatsapp.html"      role="menuitem">WhatsApp</a></li>
-              <li role="none"><a href="../agents/email.html"         role="menuitem">Email</a></li>
-              <li role="none"><a href="../agents/google-review.html" role="menuitem">Google Review</a></li>
-              <li role="none"><a href="../agents/blogs-agent.html"   role="menuitem">Blogs Agent</a></li>
+              <li role="none"><a href="/agents/whatsapp"      role="menuitem">WhatsApp</a></li>
+              <li role="none"><a href="/agents/email"         role="menuitem">Email</a></li>
+              <li role="none"><a href="/agents/google-review" role="menuitem">Google Review</a></li>
+              <li role="none"><a href="/agents/blogs-agent"   role="menuitem">Blogs Agent</a></li>
             </ul>
           </li>
           <li><a href="./" aria-current="page">Blogs</a></li>
         </ul>
       </nav>
 
-      <a href="../get-started.html" class="cd-btn-primary nav-cta">Get Started</a>
+      <a href="/get-started" class="cd-btn-primary nav-cta">Get Started</a>
 
       <button class="nav-hamburger" aria-expanded="false" aria-controls="nav-mobile-overlay" aria-label="Open menu">
         <span></span><span></span><span></span>
@@ -171,25 +171,25 @@ $canonical = $siteUrl . '/blogs/post.php?slug=' . urlencode($slug);
   </header>
 
   <div id="nav-mobile-overlay" class="nav-mobile-overlay" role="navigation" aria-label="Mobile navigation">
-    <a href="../index.html">Home</a>
+    <a href="/">Home</a>
     <button class="nav-btn-ghost" aria-expanded="false">AI</button>
     <ul class="nav-mobile-submenu">
-      <li><a href="../ai/agentic-ai.html">Agentic AI</a></li>
-      <li><a href="../ai/generative.html">Generative</a></li>
-      <li><a href="../ai/insights.html">Insights</a></li>
-      <li><a href="../ai/recommendation.html">Recommendation</a></li>
-      <li><a href="../ai/prediction.html">Prediction</a></li>
-      <li><a href="../ai/data-analytics.html">Data Analytics</a></li>
+      <li><a href="/ai/agentic-ai">Agentic AI</a></li>
+      <li><a href="/ai/generative">Generative</a></li>
+      <li><a href="/ai/insights">Insights</a></li>
+      <li><a href="/ai/recommendation">Recommendation</a></li>
+      <li><a href="/ai/prediction">Prediction</a></li>
+      <li><a href="/ai/data-analytics">Data Analytics</a></li>
     </ul>
     <button class="nav-btn-ghost" aria-expanded="false">Agents</button>
     <ul class="nav-mobile-submenu">
-      <li><a href="../agents/whatsapp.html">WhatsApp</a></li>
-      <li><a href="../agents/email.html">Email</a></li>
-      <li><a href="../agents/google-review.html">Google Review</a></li>
-      <li><a href="../agents/blogs-agent.html">Blogs Agent</a></li>
+      <li><a href="/agents/whatsapp">WhatsApp</a></li>
+      <li><a href="/agents/email">Email</a></li>
+      <li><a href="/agents/google-review">Google Review</a></li>
+      <li><a href="/agents/blogs-agent">Blogs Agent</a></li>
     </ul>
     <a href="./">Blogs</a>
-    <a href="../get-started.html" class="nav-mobile-cta">Get Started</a>
+    <a href="/get-started" class="nav-mobile-cta">Get Started</a>
     <button class="nav-mobile-close" aria-label="Close menu">
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
     </button>
@@ -304,16 +304,16 @@ $canonical = $siteUrl . '/blogs/post.php?slug=' . urlencode($slug);
   <footer class="site-footer" role="contentinfo">
     <div class="container site-footer__inner">
       <div class="site-footer__brand">
-        <a href="../index.html" class="nav-logo" aria-label="CodimAI  home"><span class="nav-logo__mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span><img src="../assets/img/logo-word.png" alt="CodimAI" class="nav-logo__word" width="160" height="32"></a>
+        <a href="/" class="nav-logo" aria-label="CodimAI  home"><span class="nav-logo__mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span><img src="../assets/img/logo-word.png" alt="CodimAI" class="nav-logo__word" width="160" height="32"></a>
         <p class="site-footer__tagline">Frontier AI built for the real world.</p>
       </div>
       <nav class="site-footer__nav" aria-label="Footer navigation">
         <ul>
-          <li><a href="../index.html">Home</a></li>
-          <li><a href="../ai/agentic-ai.html">Agentic AI</a></li>
-          <li><a href="../agents/whatsapp.html">Agents</a></li>
+          <li><a href="/">Home</a></li>
+          <li><a href="/ai/agentic-ai">Agentic AI</a></li>
+          <li><a href="/agents/whatsapp">Agents</a></li>
           <li><a href="./">Blog</a></li>
-          <li><a href="../get-started.html">Get Started</a></li>
+          <li><a href="/get-started">Get Started</a></li>
         </ul>
       </nav>
     </div>
