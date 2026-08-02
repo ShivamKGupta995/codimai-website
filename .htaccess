@@ -15,6 +15,10 @@ Options -Indexes
   RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
   RewriteRule ^ https://%1%{REQUEST_URI} [L,R=301]
 
+  # ── WhatsApp agent now lives on its own product subdomain ────
+  # Bookmarks, indexed URLs and any stale link land on WACO.
+  RewriteRule ^agents/whatsapp(\.html)?/?$ https://waco.codimai.com/ [R=301,L]
+
   # ── Dynamic sitemaps (PHP-generated; auto-include blog posts) ─
   RewriteRule ^sitemap\.xml$ blogs/backend/api/sitemap.php [L]
   RewriteRule ^sitemap\.rss$ blogs/backend/api/rss.php [L]

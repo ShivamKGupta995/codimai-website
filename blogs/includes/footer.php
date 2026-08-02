@@ -24,7 +24,7 @@
       <div class="footer-col">
         <h3>Agents</h3>
         <ul>
-          <li><a href="/agents#whatsapp">WhatsApp</a></li>
+          <li><a href="https://waco.codimai.com">WhatsApp</a></li>
           <li><a href="/agents#email">Email</a></li>
           <li><a href="/agents#google-review">Google Review</a></li>
           <li><a href="/agents#blogs-agent">Blogs Agent</a></li>

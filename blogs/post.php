@@ -152,7 +152,7 @@ $canonical = $siteUrl . '/blogs/post.php?slug=' . urlencode($slug);
           <li class="nav-dropdown">
             <button class="nav-btn-ghost" aria-haspopup="true" aria-expanded="false">Agents</button>
             <ul class="nav-dropdown__menu" role="menu">
-              <li role="none"><a href="/agents/whatsapp"      role="menuitem">WhatsApp</a></li>
+              <li role="none"><a href="https://waco.codimai.com"      role="menuitem">WhatsApp</a></li>
               <li role="none"><a href="/agents/email"         role="menuitem">Email</a></li>
               <li role="none"><a href="/agents/google-review" role="menuitem">Google Review</a></li>
               <li role="none"><a href="/agents/blogs-agent"   role="menuitem">Blogs Agent</a></li>
@@ -183,7 +183,7 @@ $canonical = $siteUrl . '/blogs/post.php?slug=' . urlencode($slug);
     </ul>
     <button class="nav-btn-ghost" aria-expanded="false">Agents</button>
     <ul class="nav-mobile-submenu">
-      <li><a href="/agents/whatsapp">WhatsApp</a></li>
+      <li><a href="https://waco.codimai.com">WhatsApp</a></li>
       <li><a href="/agents/email">Email</a></li>
       <li><a href="/agents/google-review">Google Review</a></li>
       <li><a href="/agents/blogs-agent">Blogs Agent</a></li>
@@ -311,7 +311,7 @@ $canonical = $siteUrl . '/blogs/post.php?slug=' . urlencode($slug);
         <ul>
           <li><a href="/">Home</a></li>
           <li><a href="/ai/agentic-ai">Agentic AI</a></li>
-          <li><a href="/agents/whatsapp">Agents</a></li>
+          <li><a href="https://waco.codimai.com">Agents</a></li>
           <li><a href="./">Blog</a></li>
           <li><a href="/get-started">Get Started</a></li>
         </ul>
