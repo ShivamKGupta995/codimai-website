@@ -24,7 +24,7 @@ $static = [
     ['/ai/recommendation',   '0.8', 'monthly'],
     ['/ai/prediction',       '0.8', 'monthly'],
     ['/ai/data-analytics',   '0.8', 'monthly'],
-    ['/agents/whatsapp',     '0.8', 'monthly'],
+    /* /agents/whatsapp is 301'd to waco.codimai.com — never list a redirect */
     ['/agents/email',        '0.8', 'monthly'],
     ['/agents/google-review','0.8', 'monthly'],
     ['/agents/blogs-agent',  '0.8', 'monthly'],

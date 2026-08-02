@@ -16,7 +16,6 @@
   <url><loc>https://codimai.com/ai/data-analytics</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
 
   <!-- Agents -->
-  <url><loc>https://codimai.com/agents/whatsapp</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://codimai.com/agents/email</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://codimai.com/agents/google-review</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://codimai.com/agents/blogs-agent</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
